@@ -1,3 +1,5 @@
+body { background: #dfc762; }
+
 #container
 {
 	margin: 0 auto;
@@ -9,6 +11,8 @@
 {
 	background: #eeda83;
 	padding: 20px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #header h1 { 
