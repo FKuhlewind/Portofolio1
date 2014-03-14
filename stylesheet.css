@@ -5,6 +5,7 @@ body { background: #c64e4c; }
 	margin: 0 auto;
 	width: 100%;
 	background: #dfc762;
+	border-radius: 10px;
 }
 
 #header
