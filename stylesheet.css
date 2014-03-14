@@ -37,7 +37,7 @@
 {
 	color: #fff;
 	list-style-type: none;
-	display: block;
+	display: inline-block;
 	text-align: center;
 }
 
