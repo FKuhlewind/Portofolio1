@@ -85,6 +85,7 @@ body { background: #c64e4c; }
 {
 	float: right;
 	width: 40%;
+	height 100%;
 	padding: 20px 0;
 	margin: 0 3% 0 0;
 	display: inline;
