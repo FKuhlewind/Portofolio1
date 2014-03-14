@@ -25,6 +25,7 @@ body { background: #c64e4c; }
 #navigation
 {
 	float: left;
+	padding: 5px;
 	width: 100%;
 	background: #c69a4c;
 	text-align: center;
