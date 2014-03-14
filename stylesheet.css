@@ -62,7 +62,7 @@ body { background: #c64e4c;
 	/*border-right: 1px solid #fff;*/
 }
 
-#navigation li a:hover { background: #c67e4c; }
+#navigation li a:hover { background: red; }
 
 #content-container
 {
