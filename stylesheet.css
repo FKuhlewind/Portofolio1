@@ -36,6 +36,7 @@
 #navigation ul li
 {
 	color: #fff;
+	padding: 5px 10px;
 	list-style-type: none;
 	display: inline-block;
 	text-align: center;
