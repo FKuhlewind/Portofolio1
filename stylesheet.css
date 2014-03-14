@@ -36,8 +36,8 @@
 #navigation ul li
 {
 	color: #fff;
-	/*list-style-type: none;*/
-	display: inline-block;
+	list-style-type: none;
+	display: block;
 	text-align: center;
 }
 
