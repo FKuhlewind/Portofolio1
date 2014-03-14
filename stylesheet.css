@@ -39,7 +39,7 @@
 	list-style-type: none;
 	display: inline-block;
 	text-align: center;
-	vertical-align: center;
+	
 }
 
 #navigation li a
@@ -49,6 +49,7 @@
 	padding: 5px 15px 5px 15px;
 	color: #fff;
 	text-decoration: none;
+	vertical-align: center;
 	/*border-right: 1px solid #fff;*/
 }
 
