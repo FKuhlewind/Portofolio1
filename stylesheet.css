@@ -59,7 +59,7 @@
 {
 	float: left;
 	width: 100%;
-	background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 0;
+	background: #eecc8f;
 }
 
 #content
@@ -88,7 +88,7 @@
 #footer
 {
 	clear: left;
-	background: #ccc;
+	background: #c69a4c;
 	text-align: right;
 	padding: 20px;
 	height: 1%;
