@@ -41,7 +41,7 @@
 	text-align: center;
 }
 
-#navigation li
+#navigation li a
 {
 	display: block;
 	float: left;
