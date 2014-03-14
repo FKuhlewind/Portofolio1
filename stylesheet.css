@@ -39,6 +39,7 @@
 	list-style-type: none;
 	display: inline-block;
 	text-align: center;
+	vertical-align: center;
 }
 
 #navigation li a
