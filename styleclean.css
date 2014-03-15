@@ -47,8 +47,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
         float: right;
         padding: 14px 27px 0 0; }
 
-
-/* ------------------------- NAVIGATION HERE ---------------*/
+/*navigation*/
 .nav										
     {   width: 100%;
         background: #333333; }
@@ -75,11 +74,6 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
     {
         color: #E89E0C;
     }
-/*.ped										
-    {   padding-right: 0 !important; } */
-
-
-/* ---------------------------------------------------------*/
 
 /* ------------------------ MIAN CONTENT HERE --------------*/
 .container									{ width:980px; margin:0 auto; padding:24px 0 24px 0; background:#ffffff;}
