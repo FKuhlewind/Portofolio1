@@ -82,8 +82,6 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .main-in				
     {   width: 942px;
         margin: 0 auto; }
-
-
 .code									
     {   background: #333333;
         margin: 30px 0 32px 0;
@@ -95,19 +93,8 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
         color: #eeeeee; 
         display: inline-block; 
         padding: 0 0 18px;}
-/*.code p									
-    {   font-family: Arial, Helvetica, sans-serif; 
-        font-size: 13px;
-        color: #cccccc;
-        font-weight: normal; 
-        display: inline-block;
-        padding: 0 34px 0 0; 
-        line-height: 20px; } */
 
-
-/* ---------------------------------------------------------*/
-
-/* ------------------ FOOTER HERE --------------------------*/
+/*footer*/
 .footer										{ width:100%; background:#333333;}
 .footer-in									{ width:980px; margin:0 auto; padding:10px 0 10px 0;}
 
