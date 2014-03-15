@@ -70,6 +70,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .welcome a									{ font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; color:#ffffff; display:inline-block; text-decoration:underline; line-height:20px; margin:0 0 0 5px;}
 .welcome a:hover							{ text-decoration:none;}
 
+/*
 .bottom-cont1								{ width:265px; float:left; padding:0 0 0 20px; margin:0 43px 0 0;}
 .bottom-cont1 h6							{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal;font-size:20px; color:#333333; display:inline-block; padding:0 0 13px;}
 .bottom-cont1 p								{ font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; color:#666666; display:inline-block; line-height:20px; padding:0 0 10px 0;}
@@ -79,6 +80,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .bottom-cont1 ul li a:hover					{ text-decoration:underline;}
 
 .bottom-cont1 span							{ font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; color:#8f9d45; display:block; line-height:24px;; background:url(../images/arrow-li.png) no-repeat left center; padding:0 0 0 13px;}
+*/
 
 /* ---------------------------------------------------------*/
 
