@@ -87,12 +87,16 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 /* ------------------ FOOTER HERE --------------------------*/
 .footer										{ width:100%; background:#333333;}
 .footer-in									{ width:980px; margin:0 auto; padding:36px 0 36px 0;}
+/*
 .social-icons								{ float:left; padding:0 0 0 28px; display:inline-block;}
 .social-icons ul							{ float:left; display:inline-block;}
 .social-icons ul li							{ float:left; display:inline-block; margin:0 10px 0 0;}
 .social-icons ul li a						{ display:block;}
+*/
 .copy										{ float:right; display:inline-block; padding:0 15px 0 0;}
 .copy p										{ font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:11px; color:#999999; display:inline-block;}
+/*
 .copy a										{ font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:11px; color:#999999; display:inline-block;text-decoration:underline;}
 .copy a:hover								{ text-decoration:none;}
+*/
 /* ---------------------------------------------------------*/
