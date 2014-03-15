@@ -1,28 +1,33 @@
 /*reset css*/
 body, div, dl, dt, dd ,ul ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,form ,fieldset ,input ,textarea ,p ,blockquote ,th , td
-    { margin: 0; 
-      padding: 0;
-      outline: none; }
+    {   margin: 0; 
+        padding: 0;
+        outline: none; }
 .clear
-    { clear: both;
-      font-size: 0px; 
-      line-height: 0px;
-      display: block; }
+    {   clear: both;
+        font-size: 0px; 
+        line-height: 0px;
+        display: block; }
 .last	
-    { margin: 0 !important; }
+    {   margin: 0 !important; }
 .pad_last
-    { padding: 0 !important; }
+    {   padding: 0 !important; }
 .no_bg
-    { background: none !important;}
+    {   background: none !important;}
 
-
-a											{color:#000; text-decoration:none; outline:0 none;}
-html 										{}
-body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; background:#f4f4f4;}
+a											
+    {   color: #000;
+        text-decoration: none;
+        outline: 0 none; }
+body										
+    {   color: #b1b1b1; 
+        /*font-family: "Arial", Verdana, Tahoma; font-size:12px; */
+        background: #f4f4f4; }
 
 /*layout*/
-.wrapper									{margin:0 auto; min-width:980px;}
-.main_content								{}
+.wrapper									
+    {   margin: 0 auto; 
+        min-width:980px; }
 
 /*header*/
 .quote										
