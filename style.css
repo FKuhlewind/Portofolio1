@@ -57,12 +57,16 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .container									{ width:980px; margin:0 auto; padding:24px 0 24px 0; background:#ffffff;}
 .container-in								{ width:942px; margin:0 auto;}
 .container-in img							{ padding:0 0 26px 0;}
+
+/*
 .read1										{ width:302px; background:#eeeeee; float:left; padding:26px 0 23px 0; margin:0 18px 0 0;}
 .read1-img1									{ width:32px; height:30px; margin:0 auto 24px auto;}
 .read1 h3									{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; color:#333333; font-weight:normal; text-align:center; padding:0 0 22px;}
 .read1 p									{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; font-weight:normal; text-align:center; line-height:20px; padding:0 9px 27px 9px;}
 .read1 a									{ width:97px; margin:0 auto; background:#98a748; border-radius:6px; position:relative;behavior: url(PIE.htc); display:block; text-align:center; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ffffff; font-size:11px; padding:7px 0 6px;}
 .read1 a:hover								{ text-decoration:underline;}
+*/
+
 
 .welcome									{ background:#333333; margin:30px 0 32px 0; padding:22px 0 26px 18px;}
 .welcome h5									{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; font-size:20px; color:#eeeeee; display:inline-block; padding:0 0 18px;}
