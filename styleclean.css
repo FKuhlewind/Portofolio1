@@ -87,6 +87,8 @@ body
 .assignment
     {    
         color: black;
+        height: 500px;
+        overflow: auto;
     }
 .code									
     {   background: #333333;
