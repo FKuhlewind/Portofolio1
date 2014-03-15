@@ -106,6 +106,7 @@ body
 .copy										
     {   /*float: right; */
         text-align: center;
+        margin: 0 auto; 
         display: inline-block; 
         padding :0 15px 0 0;
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
