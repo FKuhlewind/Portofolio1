@@ -111,6 +111,8 @@ iframe
         padding: 5px 0 5px 0; 
         margin: 10px 0px 10px 0px;
     }
+    
+.left .right {display: inline-block;}
 
 /*footer*/
 .footer										
