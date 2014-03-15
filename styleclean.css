@@ -23,7 +23,7 @@ body, div, dl, dt, dd ,ul ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,form ,fieldset ,
 
 /**************************************************************************************/
 
-a											{color:#000; text-decoration:none; outline:0 none;}
+/*a											{color:#000; text-decoration:none; outline:0 none;}
 a:hover										{color:#000;  text-decoration:none;}
 h1											{font-size:24px;}
 h2											{font-size:22px;}
@@ -31,6 +31,8 @@ h3											{font-size:18px;}
 h4											{font-size:16px;}
 h5											{font-size:14px;}
 h6											{font-size:12px;}
+*/
+
 /*----------------------------------------------------------------------------------*/
 html 										{}
 body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; background:#f4f4f4;}
