@@ -55,7 +55,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
     {   display: inline-block;
         float: left;
         padding: 0 0 0 34px; }
-.quote-container .text a					
+.quote-container .text 					
     {   
         font-size:20px;
         
@@ -64,7 +64,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
     {   display: inline-block;
         float: right;
         padding: 14px 27px 0 0; }
-.quote-container .author p				
+.quote-container .author 				
     {   
         font-size: 12px; 
         
