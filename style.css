@@ -35,7 +35,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .main_content								{}
 /* ------------------ HEADER HERE -------------------*/
 .header										{ width:100%; background:#8f9d45;}
-.header-container							{ width:980px; height: 80px; margin:0 auto; padding:22px 0;}
+.header-container							{ width:980px; height: 60px; margin:0 auto; padding:22px 0;}
 .header-container .logo						{ display:inline-block; float:left; padding:0 0 0 34px;}
 .header-container .logo a					{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; color:#ffffff; font-weight:normal; display:block;}
 .header-container .toll-free				{ display:inline-block; float:right; padding:20px 27px 0 0;}
