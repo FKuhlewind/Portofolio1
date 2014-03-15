@@ -73,7 +73,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .nav-in ul li a:hover						
     {   color: #E89E0C; }
 
-/* ------------------------ MIAN CONTENT HERE --------------*/
+/*main content*/
 .container									
     {   width: 980px;
         margin: 0 auto;
@@ -82,15 +82,37 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .container-in				
     {   width: 942px;
         margin: 0 auto; }
-/*.container-in img							
-    {   padding: 0 0 26px 0; }*/
 
 
-.welcome									{ background:#333333; margin:30px 0 32px 0; padding:22px 0 26px 18px;}
-.welcome h5									{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; font-size:20px; color:#eeeeee; display:inline-block; padding:0 0 18px;}
-.welcome p									{ font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#cccccc; font-weight:normal; display:inline-block; padding:0 34px 0 0; line-height:20px;}
-.welcome a									{ font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px; color:#ffffff; display:inline-block; text-decoration:underline; line-height:20px; margin:0 0 0 5px;}
-.welcome a:hover							{ text-decoration:none;}
+.welcome									
+    {   background: #333333;
+        margin: 30px 0 32px 0;
+        padding:22px 0 26px 18px; }
+.welcome h5									
+    {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+        font-weight: normal;
+        font-size: 20px; 
+        color: #eeeeee; 
+        display: inline-block; 
+        padding: 0 0 18px;}
+.welcome p									
+    {   font-family: Arial, Helvetica, sans-serif; 
+        font-size: 13px;
+        color: #cccccc;
+        font-weight: normal; 
+        display: inline-block;
+        padding: 0 34px 0 0; 
+        line-height: 20px; }
+.welcome a				
+    {   font-family: Arial, Helvetica, sans-serif; 
+        font-weight: bold; font-size: 11px;
+        color: #ffffff;
+        display: inline-block; 
+        text-decoration: underline;
+        line-height: 20px; 
+        margin: 0 0 0 5px; }
+.welcome a:hover		
+    {   text-decoration: none; }
 
 
 /* ---------------------------------------------------------*/
