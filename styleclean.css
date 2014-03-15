@@ -78,6 +78,7 @@ body
 /*main content*/
 .main									
     {   width: 980px;
+        height: 700px;
         margin: 0 auto;
         padding: 24px 0 5px 0; 
         background:#ffffff; }
