@@ -100,6 +100,12 @@ iframe
         margin: 25px 0 15px 0;
         padding: 5px 0 20px 18px; }
 
+.swap 
+    {
+        width: 100%;
+        background: #333333;
+    }
+
 /*footer*/
 .footer										
     {   width: 100%;
