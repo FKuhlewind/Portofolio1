@@ -114,11 +114,11 @@ iframe
     
 .right 
     {   display: inline-block;
-        float: right; }
+        text-align: right; }
 
 .left 
     {   display: inline-block;
-        float: left; }
+        text-align: left; }
 
 /*footer*/
 .footer										
