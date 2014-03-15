@@ -103,7 +103,8 @@ iframe
 /*footer*/
 .footer										
     {   width: 100%;
-        background: #333333; }
+        background: #333333; 
+        clear: both; }
 .footer-in									
     {   width: 980px; 
         margin: 0 auto;
