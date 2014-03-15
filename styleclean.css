@@ -72,7 +72,9 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .nav-in ul li a span						
     {}
 .nav-in ul li a:hover						
-    {}
+    {
+        background: #8f9d45;
+    }
 /*.ped										
     {   padding-right: 0 !important; } */
 
