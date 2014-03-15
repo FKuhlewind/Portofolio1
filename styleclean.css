@@ -104,7 +104,7 @@ body
         margin: 0 auto;
         padding: 10px 0 10px 0; }
 .copy										
-    {   float: right; 
+    {   /*float: right; */
         display: inline-block; 
         padding :0 15px 0 0;
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
