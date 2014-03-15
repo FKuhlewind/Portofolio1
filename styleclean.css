@@ -47,21 +47,21 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
         height: 70px; 
         margin: 0 auto;
         padding:22px 0; }
-.quote-container .logo						
+.quote-container .text						
     {   display: inline-block;
         float: left;
         padding: 0 0 0 34px; }
-.quote-container .logo a					
+.quote-container .text a					
     {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
         font-size:20px;
         color: #ffffff;
         font-weight: normal;
         display: block; }
-.quote-container .toll-free				
+.quote-container .author				
     {   display: inline-block;
         float: right;
         padding: 14px 27px 0 0; }
-.quote-container .toll-free p				
+.quote-container .author p				
     {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
         font-size: 12px; 
         color: #ffffff; 
