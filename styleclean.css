@@ -112,7 +112,7 @@ iframe
         margin: 10px 0px 10px 0px;
     }
     
-.left .right {display: inline-block;}
+.left, .right {display: inline-block;}
 
 /*footer*/
 .footer										
