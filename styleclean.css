@@ -90,9 +90,8 @@ body
         height: 500px;
     }
 iframe
-    {   width: 940px;
-        height: 500px;
-        scrolling: no; }
+    {   width: 100%;
+        height: 500px; }
 .code									
     {   background: #333333;
         height: 200px;
