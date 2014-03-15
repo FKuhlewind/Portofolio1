@@ -74,12 +74,12 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
     {   color: #E89E0C; }
 
 /*main content*/
-.container									
+.main									
     {   width: 980px;
         margin: 0 auto;
         padding: 24px 0 24px 0; 
         background:#ffffff; }
-.container-in				
+.main-in				
     {   width: 942px;
         margin: 0 auto; }
 
