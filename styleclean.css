@@ -29,17 +29,15 @@ a											{color:#000; text-decoration:none; outline:0 none;}
 html 										{}
 body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; background:#f4f4f4;}
 
-/*
-.flt_lt										{float:left; display:inline;}
-.flt_rt										{float:right; display:inline;}
-*/
+
 /* ---------------------------------------------------------------------------------*/
 
 
 /* ----------------------- layout ----------*/
 .wrapper									{margin:0 auto; min-width:980px;}
-
 .main_content								{}
+
+
 /* ------------------ HEADER HERE -------------------*/
 .header										{ width:100%; background:#8f9d45;}
 .header-container							{ width:980px; height: 70px; margin:0 auto; padding:22px 0;}
