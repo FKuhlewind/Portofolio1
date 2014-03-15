@@ -60,25 +60,39 @@
 <div class="code">
 <pre><code>
 // CODE
-$("#storeData")
-	.on("click", function() {
-		n = vibData.length;
+$(document).ready(function(){
 
-		for ( var i = 0, l = 10; i < l; i++ ) {
-			p = i + 1;
-    			myDataRef.child(n).child(i).set( parseInt( $("#val"+p).val()) );
-    			};
-		myDataRef.child(n).child(10).set( $("#newLabel").val() );
+// CHANGE LAYOUT
 
-		createForm();
-		$('#newValues :input').val('');
+// change background color and font in body
+$('body').css({'background-color': 'greenyellow', 'font-family': 'Cambria'});
 
-		d3.json('https://vib-data.firebaseio.com/.json', function(data) {
-			vibData = data; 
-			alert("New data stored successfully, you can now select it from the dropdown 
-			menu to be displayed.");
-			});
-	});
+// for the tables, change background, font color and weight
+$('table').css({'background-color': 'green', 'color': 'brown', 'font-weight': 'bold'});
+
+// change color and font weight for all h1 elements
+$('h1').css({'color': '#660066', 'font-weight': 'bold'});
+
+// align text to center for .session-info and all h1 which descent from .session
+$('.session-info, .schedule h1').css({'text-align': 'center'});
+
+
+// REPLACE ELEMENTS
+
+// change deadlines
+$('.deadlines li:first').text('deadline 1: Whenever you feel like handing it in');
+$('.deadlines li:last').text('deadline 2: Some time after you have met the first deadline');
+
+// replace instructor and staff table with a picture of iceland
+$(".info table").replaceWith('<img src="http://charterforcompassion.org/sites/default/files/images/1iceland.jpg"/>');
+
+// MAKE THE SITE INTERACTIVE
+
+// for all tables inside .session enable slideToggle by clicking on their respective h1
+
+$('.schedule h1').on('click', function () { $(this).siblings("table").slideToggle("slow")});
+
+});
 </code></pre>
 </div>
       
