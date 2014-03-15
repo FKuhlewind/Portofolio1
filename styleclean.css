@@ -1,44 +1,30 @@
-/*====================================== reset.css is here ========================================*/
-
-
+/*reset css*/
 body, div, dl, dt, dd ,ul ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,form ,fieldset ,input ,textarea ,p ,blockquote ,th , td
     { margin: 0; 
       padding: 0;
       outline: none; }
-
 .clear
     { clear: both;
       font-size: 0px; 
       line-height: 0px;
       display: block; }
-      
 .last	
     { margin: 0 !important; }
-    
 .pad_last
     { padding: 0 !important; }
-  
 .no_bg
     { background: none !important;}
 
-/**************************************************************************************/
 
 a											{color:#000; text-decoration:none; outline:0 none;}
-
-/*----------------------------------------------------------------------------------*/
 html 										{}
 body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; background:#f4f4f4;}
 
-
-/* ---------------------------------------------------------------------------------*/
-
-
-/* ----------------------- layout ----------*/
+/*layout*/
 .wrapper									{margin:0 auto; min-width:980px;}
 .main_content								{}
 
-
-/* ------------------ HEADER HERE -------------------*/
+/*header*/
 .quote										
     {   width: 100%;
         background: #8f9d45; }
@@ -61,17 +47,37 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
         float: right;
         padding: 14px 27px 0 0; }
 
-/*-------------------------------------------*/
 
 /* ------------------------- NAVIGATION HERE ---------------*/
-.nav										{ width:100%; background: #333333/*url(../images/nav-bg.jpg) repeat-x;*/ ;}
-.nav-in										{ width:980px; margin:0 auto;}
-.nav-in ul									{ width:727px; margin:0 auto;}
-.nav-in ul li								{ float:left; display:inline-block; background:url(../images/nav-li-bg.png) no-repeat right center; padding:10px 20px 10px 0; margin:0 0 0 41px;}
-.nav-in ul li a								{ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; color:#ffffff; display:inline-block; }
-.nav-in ul li a span						{}
-.nav-in ul li a:hover						{}
-.ped										{ padding-right:0 !important;}
+.nav										
+    {   width: 100%;
+        background: #333333; }
+.nav-in										
+    {   width: 980px; 
+        margin: 0 auto; }
+.nav-in ul									
+    {   width: 727px; 
+        margin: 0 auto; }
+.nav-in ul li								
+    {   float: left;
+        display: inline-block;
+        background: url(../images/nav-li-bg.png) no-repeat right center;
+        padding: 10px 20px 10px 0;
+        margin:0 0 0 41px; }
+.nav-in ul li a								
+    {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+        font-weight: normal;
+        font-size: 16px; 
+        color: #ffffff;
+        display: inline-block; }
+.nav-in ul li a span						
+    {}
+.nav-in ul li a:hover						
+    {}
+.ped										
+    {   padding-right: 0 !important; }
+
+
 /* ---------------------------------------------------------*/
 
 /* ------------------------ MIAN CONTENT HERE --------------*/
