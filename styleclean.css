@@ -112,7 +112,13 @@ iframe
         margin: 10px 0px 10px 0px;
     }
     
-.left, .right {display: inline-block;}
+.right 
+    {   display: inline-block;
+        float: right; }
+
+.left 
+    {   display: inline-block;
+        float: left; }
 
 /*footer*/
 .footer										
