@@ -52,23 +52,25 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
         margin: 0 auto;
         padding:22px 0; }
 .quote-container .text						
-    {   display: inline-block;
+    {   font-size:20px;
+        display: inline-block;
         float: left;
         padding: 0 0 0 34px; }
-.quote-container .text 					
+/*.quote-container .text 					
     {   
-        font-size:20px;
         
-        display: block; }
+        
+        display: block; }*/
 .quote-container .author				
-    {   display: inline-block;
+    {   font-size: 12px; 
+        display: inline-block;
         float: right;
         padding: 14px 27px 0 0; }
-.quote-container .author 				
+/*.quote-container .author 				
     {   
-        font-size: 12px; 
         
-        display: inline-block; }
+        
+        display: inline-block; } */
 /*-------------------------------------------*/
 
 /* ------------------------- NAVIGATION HERE ---------------*/
