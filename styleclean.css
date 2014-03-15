@@ -21,7 +21,6 @@ a
         outline: 0 none; }
 body										
     {   color: #b1b1b1; 
-        /*font-family: "Arial", Verdana, Tahoma; font-size:12px; */
         background: #f4f4f4; }
 
 /*layout*/
@@ -73,8 +72,6 @@ body
         font-size: 16px; 
         color: #ffffff;
         display: inline-block; }
-.nav-in ul li a span						
-    {}
 .nav-in ul li a:hover						
     {   color: #E89E0C; }
 
