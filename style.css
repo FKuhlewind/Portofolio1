@@ -43,7 +43,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 /*-------------------------------------------*/
 
 /* ------------------------- NAVIGATION HERE ---------------*/
-.nav										{ width:100%; background:url(../images/nav-bg.jpg) repeat-x; }
+.nav										{ width:100%; background: black/*url(../images/nav-bg.jpg) repeat-x;*/ ;}
 .nav-in										{ width:980px; margin:0 auto;}
 .nav-in ul									{ width:727px; margin:0 auto;}
 .nav-in ul li								{ float:left; display:inline-block; background:url(../images/nav-li-bg.png) no-repeat right center; padding:16px 37px 16px 0; margin:0 0 0 41px;}
