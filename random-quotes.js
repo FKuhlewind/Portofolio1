@@ -28,6 +28,6 @@ $(document).ready(function() {
         
         };
         
-    setInterval(changeText, 3000);
+    setInterval(changeText, 10000);
     
 });  
