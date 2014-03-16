@@ -124,17 +124,6 @@ iframe
         margin: 10px 0 0px 0;
         padding: 0px 0 20px 18px; }
 
-.swap 
-    {
-        width: 100%;
-        background: #8f9d45;
-        color: black;
-        text-align: center;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        padding: 5px 0 5px 0; 
-        margin: 10px 0px 10px 0px;
-    }
-    
 .right 
     {   display: inline-block;
         text-align: right; }
