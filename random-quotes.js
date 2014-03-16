@@ -6,7 +6,7 @@ $(document).ready(function() {
  
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
 		    quotes = data;
-            var random = Math.floor(Math.random() * 3);
+            var random = Math.floor(Math.random() * 11);
             
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
