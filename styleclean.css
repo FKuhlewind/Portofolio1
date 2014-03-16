@@ -75,7 +75,9 @@ body
 .nav-in ul li svg
     {   padding: 0 0px 0 5px; }
     
-#svg_1 {   fill: #ffffff;
+.svg_1 
+    {   fill: #ffffff;
+        stroke-width: 2; 
         
 }
 
