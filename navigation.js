@@ -46,7 +46,7 @@ $(document).ready(function() {
 
         // Mache den alten Tab inaktiv
         $active.removeClass('active');
-        $content.hide();
+        $content.hide("slow");
 
         // Aktualisiere die Variablen mit dem neuen Link und Inhalt
         $active = $(this);
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
         // Setze den Tab aktiv
         $active.addClass('active');
-        $content.show();
+        $content.show("slow");
 
         // Verhindere die Anker standard click Aktion
         e.preventDefault();
