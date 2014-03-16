@@ -19,24 +19,12 @@ $(document).ready(function() {
    
     
     $("#size_button").on("click", function () {
-        
         $( ".code" ).animate({
             height: $(".assignment").css("height")
-            
             }, 1500 );
-            
         $( ".assignment" ).animate({
             height: $(".code").css("height")
-            
-            
             }, 1500 );    
-            
-        
-        
         });
-   
-   
-   
-   
         
 });  
