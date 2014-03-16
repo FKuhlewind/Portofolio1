@@ -17,17 +17,25 @@ $(document).ready(function() {
         swapElements($(".code")[0], $(".assignment")[0]);
         });
    
+    
     $("#size_button").on("click", function () {
         
         $( ".code" ).animate({
-            height: "70%"
+            height: function () {
+                    if ( $(".code").css("height")==70% ) {return "30%"} else {return "70%"}
+                    }
+            
             }, 1500 );
             
         $( ".assignment" ).animate({
-            height: "20%"
+            height: function () {
+                    if ( $(".assignment").css("height")==70% ) {return "30%"} else {return "70%"}
+                    }
+            
+            
             }, 1500 );    
             
-            
+        
         
         });
    
