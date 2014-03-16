@@ -54,7 +54,7 @@ $(document).ready(function() {
 
         // Setze den Tab aktiv
         $active.addClass('active');
-        $content.fadeIn("slow");
+        $content.delay(100).fadeIn("slow");
 
         // Verhindere die Anker standard click Aktion
         e.preventDefault();
