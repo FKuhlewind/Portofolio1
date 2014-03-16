@@ -1,7 +1,7 @@
 $(document).ready(function() { 
     
-    $(".").on(click, function() {  
+    $("#swap_button").on(click, function() {  
+        $(".code").swap($(".assignment"))
+        }); 
         
-        
-        });  
 });  
