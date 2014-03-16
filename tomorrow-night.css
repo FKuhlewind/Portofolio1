@@ -1,73 +1,73 @@
-/* Hemisu Dark */
-/* Original theme - http://noahfrederick.com/vim-color-scheme-hemisu/ */
+/* Tomorrow Night Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
 .prettyprint {
-  background: black;
+  background: #333333;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-  /*font-size: 12px;
-  line-height: 1.5;
+  font-size: 10px;
+  /*line-height: 1.5;
   border: 1px solid #ccc;
   padding: 10px;*/
 }
 
 .pln {
-  color: #eeeeee;
+  color: #c5c8c6;
 }
 
 @media screen {
   .str {
-    color: #b1d631;
+    color: #b5bd68;
   }
 
   .kwd {
-    color: #b1d631;
+    color: #b294bb;
   }
 
   .com {
-    color: #777777;
+    color: #969896;
   }
 
   .typ {
-    color: #bbffaa;
+    color: #81a2be;
   }
 
   .lit {
-    color: #9fd3e6;
+    color: #de935f;
   }
 
   .pun {
-    color: #eeeeee;
+    color: #c5c8c6;
   }
 
   .opn {
-    color: #eeeeee;
+    color: #c5c8c6;
   }
 
   .clo {
-    color: #eeeeee;
+    color: #c5c8c6;
   }
 
   .tag {
-    color: #eeeeee;
+    color: #cc6666;
   }
 
   .atn {
-    color: #b1d631;
+    color: #de935f;
   }
 
   .atv {
-    color: #bbffaa;
+    color: #8abeb7;
   }
 
   .dec {
-    color: #eeeeee;
+    color: #de935f;
   }
 
   .var {
-    color: #eeeeee;
+    color: #cc6666;
   }
 
   .fun {
-    color: #9fd3e6;
+    color: #81a2be;
   }
 }
 @media print, projection {
