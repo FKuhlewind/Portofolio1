@@ -15,6 +15,13 @@
   <script type="text/javascript" src="d3.js"></script>
   <script type="text/javascript" src="jquery-ui-1.10.4.custom.js"></script>
   
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+
+  
 </head>
 
 <body>
@@ -38,15 +45,15 @@
   
   <!-- Nav start -->
   <div class="nav">
-    <div class="nav-in">
+    <div class="nav-in" id="tabs">
       <ul>
-        <li class="last"><a href="#">Home </a></li>
-        <li><a href="#">#1 </a></li>
-        <li><a href="#">#2 </a></li>
-        <li><a href="#">#3 </a></li>
-        <li><a href="#">#4 </a></li>
-        <li><a href="#">#5 </a></li>
-        <li><a href="#">Project Idea </a></li>
+        <li class="last"><a href="#home">Home </a></li>
+        <li><a href="#asg1">#1 </a></li>
+        <li><a href="#asg2">#2 </a></li>
+        <li><a href="#asg3">#3 </a></li>
+        <li><a href="#asg4">#4 </a></li>
+        <li><a href="#asg5">#5 </a></li>
+        <li><a href="#proj">Project Idea </a></li>
 	<li>
 	<svg class="svg_button" id="swap_button" width="24" height="24">
  		<g>
@@ -82,23 +89,46 @@
 <div class="main-in"> 
 
 
-
-<div class="assignment" id="ass">
-	<iframe name="ast" id="astid" src="http://ast.codingthehumanities.com/"></iframe>
+<div id="home">
+Home
 </div>
 
 
-<div class="code" id="cod">
-	<pre><code>
+<div id="asg1">
+	<div class="assignment" id="ass">
+		<iframe name="ast" id="astid" src="http://ast.codingthehumanities.com/"></iframe>
+	</div>
+
+	<div class="code" id="cod">
+		<pre><code>
 // CODE
 $(document).ready(function(){
 	$('.schedule h1').on('click', function () { $(this).siblings("table").slideToggle("slow")});
 	});
-	</code></pre>
+		</code></pre>
+	</div>
 </div>
       
-      
-      
+<div id="asg2">
+Assignment2
+</div>
+
+<div id="asg3">
+Assignment3
+</div>
+
+<div id="asg4">
+Assignment4
+</div>
+
+<div id="asg5">
+Assignment5
+</div>
+
+<div id="proj">
+Project Idea
+</div>
+
       
     </div>
   </div>
