@@ -34,15 +34,13 @@ $(document).ready(function() {
     $links.not(':first').each(function () {
         $($(this).attr('href')).hide();
     });
-    $(this).on('click', 'a', function(e){
+    $(this).on('click', 'a', function(){
         $active.removeClass('active');
         $content.hide();    
         $active = $(this);
         $content = $($(this).attr('href'));
         $active.addClass('active');
         $content.delay(100).fadeIn("slow");
-        e.preventDefault();
-        
         
     	});
    });
