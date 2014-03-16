@@ -46,7 +46,7 @@ $(document).ready(function() {
 
         // Mache den alten Tab inaktiv
         $active.removeClass('active');
-        $content.fadeOut("slow");    
+        $content.fadeOut("fast");    
 		
         // Aktualisiere die Variablen mit dem neuen Link und Inhalt
         $active = $(this);
