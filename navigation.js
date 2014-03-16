@@ -2,8 +2,8 @@ $(document).ready(function() {
     
     //enable swapping
     function swapElements(elm1, elm2) {
-        /*var parent1, next1,
-        parent2, next2;*/
+        var parent1, next1,
+        parent2, next2;
         parent1 = elm1.parentNode;
         next1   = elm1.nextSibling;
         parent2 = elm2.parentNode;
