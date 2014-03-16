@@ -8,7 +8,19 @@ $(document).ready(function() {
 		    quotes = data;
             var random = Math.floor(Math.random() * 3);
             
-            console.log(quotes[random].author);
+            $('.text').fadeOut("slow", function(){
+   		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
+   		$(this).replaceWith(div);
+   		$('.text').fadeIn("slow");
+		});
+            $('.author').fadeOut("slow", function(){
+   		var div = $("<div class='author'>"+quotes[random].author+"</div>").hide();
+   		$(this).replaceWith(div);
+   		$('.author').fadeIn("slow");
+		});
+            
+            
+            //console.log(quotes[random].author);
             
             });
         
@@ -16,6 +28,6 @@ $(document).ready(function() {
         
         };
         
-    setInterval(changeText, 50000);
+    setInterval(changeText, 3000);
     
 });  
