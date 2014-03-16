@@ -16,6 +16,6 @@ $(document).ready(function() {
         
         };
         
-    setInterval(changeText, 5000);
+    setInterval(changeText, 50000);
     
 });  
