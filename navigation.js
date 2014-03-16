@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     // Fuer jeden Satz Tabs wollen wir verfolgen welcher
     // Tab aktiv ist und der ihm zugeordnete Inhalt
-    $active, $content, $links = $(this).find('a');
+    var $active, $content, $links = $(this).find('a');
 
     // Der erste Link ist der zu Anfang akitve Tab
     $active = $links.first().addClass('active');
