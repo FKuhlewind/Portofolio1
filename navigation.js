@@ -19,7 +19,15 @@ $(document).ready(function() {
    
     $("#size_button").on("click", function () {
         
-        
+        $( ".code" ).animate({
+            height: "70%";
+            }, 1500 );
+            
+        $( ".assignment" ).animate({
+            height: "20%";
+            }, 1500 );    
+            
+            
         
         });
    
