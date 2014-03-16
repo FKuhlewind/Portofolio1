@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="tomorrow-night.css" />
+</head>
+
+<body>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="prettify.js"></script>
+
+<script type="text/javascript">
+(function(jQuery){
+        
+  jQuery( document ).ready( function() {
+                
+    prettyPrint();
+                
+  } );
+ 
+}(jQuery))
+</script>
+
+
+<pre><code class="prettyprint">
 // CODE
 
 /* add the template scripts */
@@ -35,3 +60,6 @@ $(".info").append("<p></p><h1>Show Assignments</h1>").append(theAssignmentTempla
 /* hide new tables and enable slideToggle */
 $(".info table").slice(1).hide();
 $('.info h1').on('click', function () { $(this).next("table").slideToggle("slow")});
+</code></pre>
+</body>
+</html>
