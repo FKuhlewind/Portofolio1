@@ -22,14 +22,14 @@ $(document).ready(function() {
         
         $( ".code" ).animate({
             height: function () {
-                    if ( $(".code").css("height")==70% ) {return "30%"} else {return "70%"}
+                    if ( $(".code").css("height")==70% ) {return "30%"} else {return "70%"};
                     }
             
             }, 1500 );
             
         $( ".assignment" ).animate({
             height: function () {
-                    if ( $(".assignment").css("height")==70% ) {return "30%"} else {return "70%"}
+                    if ( $(".assignment").css("height")==70% ) {return "30%"} else {return "70%"};
                     }
             
             
