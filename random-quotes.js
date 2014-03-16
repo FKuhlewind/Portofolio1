@@ -20,7 +20,7 @@ $(document).ready(function() {
 		});
             
             
-            //console.log(quotes[random].author);
+            console.log(random);
             
             });
         
