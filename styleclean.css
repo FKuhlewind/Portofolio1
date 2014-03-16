@@ -69,16 +69,15 @@ body
         margin: 0 0 0 41px; }
         
 .nav-in ul li:last-child
-    {
-        float: right;
-        padding: 3px 41px 0 0;
-    }
+    {   float: right;
+        padding: 3px 41px 0 0; }
 
-.nav-in ul li svg{
-            /*float: right;*/
-            padding: 0 0px 0 5px;
-            
-         }
+.nav-in ul li svg
+    {   padding: 0 0px 0 5px; }
+    
+svg {   fill: orange;
+        
+}
 
 .nav-in ul li a								
     {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
