@@ -1,11 +1,9 @@
 $(document).ready(function() { 
     
     myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
-    
     function changeText() {
- 
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
-		    quotes = data;
+	    quotes = data;
             var random = Math.floor(Math.random() * 11);
             
             $('.text').fadeOut("slow", function(){
@@ -18,16 +16,7 @@ $(document).ready(function() {
    		$(this).replaceWith(div);
    		$('.author').fadeIn("slow");
 		});
-            
-            
-            //console.log(random);
-            
             });
-        
-        //console.log(random);
-        
         };
-        
     setInterval(changeText, 15000);
-    
 });  
