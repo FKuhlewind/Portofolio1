@@ -21,16 +21,12 @@ $(document).ready(function() {
     $("#size_button").on("click", function () {
         
         $( ".code" ).animate({
-            height: function () {
-                    if ( $(".code").css("height")==70% ) {return "30%"} else {return "70%"};
-                    }
+            height: $(".assignment").css("height")
             
             }, 1500 );
             
         $( ".assignment" ).animate({
-            height: function () {
-                    if ( $(".assignment").css("height")==70% ) {return "30%"} else {return "70%"};
-                    }
+            height: $(".code").css("height")
             
             
             }, 1500 );    
