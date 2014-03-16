@@ -71,7 +71,7 @@ body
 .nav-in ul li:last-child
     {
         float: right;
-        padding: 0 27px 0 0;
+        padding: 10px 27px 0 0;
     }
 
 .nav-in ul li svg{
