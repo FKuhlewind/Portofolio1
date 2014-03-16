@@ -26,10 +26,10 @@
 // CODE
 
 /* add the template scripts */
-var studentsTemplate ='<script id="students-template" type="text/x-handlebars-template"><table><thead><th>First</th><th>Last</th><th>UvA ID</th><th>Email</th></thead><tbody>{{#students}}<tr><td>{{first}}</td><td>{{last}}</td><td>{{uvaID}}</td><td>{{email}}</td></tr>{{/students}}</tbody></table></script>';
+var studentsTemplate ='/<script id="students-template" type="text/x-handlebars-template"><table><thead><th>First</th><th>Last</th><th>UvA ID</th><th>Email</th></thead><tbody>{{#students}}<tr><td>{{first}}</td><td>{{last}}</td><td>{{uvaID}}</td><td>{{email}}</td></tr>{{/students}}</tbody></table></script>';
 $(".content").append(studentsTemplate);
 
-var assignmentsTemplate ='<script id="assignments-template" type="text/x-handlebars-template"><table><thead><th>#</th><th>Description</th><th>Deadline</th><th>Done</th></thead><tbody>{{#assignments}}<tr><td>{{no}}</td><td>{{desc}}</td><td>{{dead}}</td><td>{{done}}</td></tr>{{/assignments}}</tbody></table></script>';
+var assignmentsTemplate ='/<script id="assignments-template" type="text/x-handlebars-template"><table><thead><th>#</th><th>Description</th><th>Deadline</th><th>Done</th></thead><tbody>{{#assignments}}<tr><td>{{no}}</td><td>{{desc}}</td><td>{{dead}}</td><td>{{done}}</td></tr>{{/assignments}}</tbody></table></script>';
 $(".content").append(assignmentsTemplate);
 
 /* initialize the data objects */
