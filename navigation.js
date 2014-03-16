@@ -31,10 +31,9 @@ $(document).ready(function() {
     $('ul.tabs').each(function(){
     var $active, $content, $links = $(this).find('a');
     
-    /*$active = $links.first().addClass('active');*/
+    $active = $links.first().addClass('active');
     
-    $active = $links.addClass('active');
-    
+  
     $content = $($active.attr('href'));
     $links.not(':first').each(function () {
         $($(this).attr('href')).hide();
