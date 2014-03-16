@@ -14,6 +14,44 @@
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   <script type="text/javascript" src="d3.js"></script>
 
+  <script>
+  $('ul.tabs').each(function(){
+
+    // Fuer jeden Satz Tabs wollen wir verfolgen welcher
+    // Tab aktiv ist und der ihm zugeordnete Inhalt
+    var $active, $content, $links = $(this).find('a');
+
+    // Der erste Link ist der zu Anfang akitve Tab
+    $active = $links.first().addClass('active');
+    $content = $($active.attr('href'));
+
+    // Verstecke den restlichen Inhalt
+    $links.not(':first').each(function () {
+        $($(this).attr('href')).hide();
+    });
+
+    // Binde den click event handler ein
+    $(this).on('click', 'a', function(e){
+
+        // Mache den alten Tab inaktiv
+        $active.removeClass('active');
+        $content.hide();
+
+        // Aktualisiere die Variablen mit dem neuen Link und Inhalt
+        $active = $(this);
+        $content = $($(this).attr('href'));
+
+        // Setze den Tab aktiv
+        $active.addClass('active');
+        $content.show();
+
+        // Verhindere die Anker standard click Aktion
+        e.preventDefault();
+    });
+	});	
+  </script>
+
+
 </head>
 
 <body>
@@ -38,7 +76,7 @@
   <!-- Nav start -->
   <div class="nav">
     <div class="nav-in" id="tabs">
-      <ul>
+      <ul class="tabs">
         <li class="last"><a href="#home">Home </a></li>
         <li><a href="#asg1">#1 </a></li>
         <li><a href="#asg2">#2 </a></li>
