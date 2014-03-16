@@ -38,7 +38,7 @@ body
         font-weight: normal;
         width: 980px;
         height: 70px; 
-        margin: 0 auto;
+        margin: auto;
         padding: 10px 0; }
 .quote-container .text						
     {   font-size: 20px;
