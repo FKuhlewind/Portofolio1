@@ -77,9 +77,12 @@ body
     
 .svg_1 
     {   fill: #ffffff;
-        stroke-width: 2; 
+        stroke-width: 2; }
+
+.green
+    {   fill: #8f9d45;
         
-}
+    }
 
 .nav-in ul li a								
     {   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
