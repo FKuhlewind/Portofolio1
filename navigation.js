@@ -16,13 +16,14 @@ $(document).ready(function() {
         });
    
     //enable resizing
-    $("#size_button").on("click", function () {
+    $("#size_button").on("click", function (e) {
         $( ".code" ).animate({
             height: $(".assignment").css("height")
             }, 1500 );
         $( ".assignment" ).animate({
             height: $(".code").css("height")
             }, 1500 );    
+        e.preventDefault();
         });
         
     //enable navigation    
