@@ -65,13 +65,13 @@ body
 .nav-in ul li								
     {   float: left;
         display: inline-block;
-        padding: 3px 10px 3px 0px;
+        padding: 5px 10px 5px 0px;
         margin: 0 0 0 41px; }
         
 .nav-in ul li:last-child
     {
         float: right;
-        padding: 5px 41px 0 0;
+        padding: 3px 41px 0 0;
     }
 
 .nav-in ul li svg{
