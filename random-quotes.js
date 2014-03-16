@@ -1,6 +1,6 @@
 $(document).ready(function() { 
     
-    myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
+    //myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
     
     function changeText() {
  
