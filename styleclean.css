@@ -68,8 +68,13 @@ body
         padding: 10px 10px 10px 0px;
         margin: 0 0 0 41px; }
         
+.nav-in ul li:last-child
+    {
+        float: right;
+    }
+
 .nav-in ul li svg{
-            float: right;
+            /*float: right;*/
             padding: 0 0 0 10px;
             
          }
