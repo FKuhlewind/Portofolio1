@@ -16,5 +16,15 @@ $(document).ready(function() {
     $("#swap_button").on("click", function () {
         swapElements($(".code")[0], $(".assignment")[0]);
         });
+   
+    $("#size_button").on("click", function () {
+        
+        
+        
+        });
+   
+   
+   
+   
         
 });  
