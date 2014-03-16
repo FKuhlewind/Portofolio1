@@ -49,8 +49,7 @@ body
     {   font-size: 12px; 
         display: inline-block;
         float: right;
-        vertical-align: bottom;
-        padding: 0px 24px 0px 0; }
+        padding: 15px 24px 0px 0; }
 
 /*navigation*/
 .nav										
