@@ -13,7 +13,7 @@ $(document).ready(function() {
         };
     $("#swap_button").on("click", function () {
     	
-        swapElements($(".choose .code")[0], $(".choose .assignment")[0]);
+        swapElements($(".main-in .code")[0], $(".main-in .assignment")[0]);
         });
    
     //enable resizing
