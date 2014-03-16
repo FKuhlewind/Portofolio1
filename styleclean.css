@@ -60,7 +60,7 @@ body
         margin: 0 auto; }
 .nav-in ul									
     {   width: 727px; 
-        margin: 0 auto; }
+        /*margin: 0 auto;*/ }
 .nav-in ul li								
     {   float: left;
         display: inline-block;
