@@ -20,7 +20,7 @@ $(document).ready(function() {
 		});
             
             
-            console.log(random);
+            //console.log(random);
             
             });
         
