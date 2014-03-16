@@ -13,7 +13,7 @@ $(document).ready(function() {
         parent2.insertBefore(elm1, next2);
         };
     
-    &("#swap_button").on("click", function {
+    $("#swap_button").on("click", function {
         swapElements($(".code")[0], $(".assignment")[0]);
         });
         
