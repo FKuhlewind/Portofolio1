@@ -12,7 +12,7 @@ $(document).ready(function() {
         parent2.insertBefore(elm1, next2);
         };
     $("#swap_button").on("click", function () {
-        swapElements($(".code"), $(".assignment"));
+        swapElements($(".code")[0], $(".assignment")[0]);
         });
    
     //enable resizing
