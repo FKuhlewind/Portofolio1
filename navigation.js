@@ -27,38 +27,42 @@ $(document).ready(function() {
         
     //enable navigation    
     $('ul.tabs').each(function(){
-
-    // Fuer jeden Satz Tabs wollen wir verfolgen welcher
-    // Tab aktiv ist und der ihm zugeordnete Inhalt
     var $active, $content, $links = $(this).find('a');
-
-    // Der erste Link ist der zu Anfang akitve Tab
     $active = $links.first().addClass('active');
     $content = $($active.attr('href'));
-
-    // Verstecke den restlichen Inhalt
     $links.not(':first').each(function () {
         $($(this).attr('href')).hide();
     });
-
-    // Binde den click event handler ein
     $(this).on('click', 'a', function(e){
-
-        // Mache den alten Tab inaktiv
         $active.removeClass('active');
         $content.hide();    
-		
-        // Aktualisiere die Variablen mit dem neuen Link und Inhalt
         $active = $(this);
         $content = $($(this).attr('href'));
-
-        // Setze den Tab aktiv
         $active.addClass('active');
         $content.delay(100).fadeIn("slow");
-
-        // Verhindere die Anker standard click Aktion
         e.preventDefault();
-        	
     	});
    });
+   
+   //create random quotes
+   myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
+    function changeText() {
+        d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
+	    quotes = data;
+            var random = Math.floor(Math.random() * 11);
+            
+            $('.text').fadeOut("slow", function(){
+   		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
+   		$(this).replaceWith(div);
+   		$('.text').fadeIn("slow");
+		});
+            $('.author').fadeOut("slow", function(){
+   		var div = $("<div class='author'>"+quotes[random].author+"</div>").hide();
+   		$(this).replaceWith(div);
+   		$('.author').fadeIn("slow");
+		});
+            });
+        };
+    setInterval(changeText, 15000);
+   
 });  
