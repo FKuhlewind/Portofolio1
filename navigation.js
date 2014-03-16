@@ -46,19 +46,19 @@ $(document).ready(function() {
 
         // Mache den alten Tab inaktiv
         $active.removeClass('active');
-        $content.fadeOut("slow", function () {    
+        $content.fadeOut("slow");    
 		
-        	// Aktualisiere die Variablen mit dem neuen Link und Inhalt
-        	$active = $(this);
-        	$content = $($(this).attr('href'));
+        // Aktualisiere die Variablen mit dem neuen Link und Inhalt
+        $active = $(this);
+        $content = $($(this).attr('href'));
 
-        	// Setze den Tab aktiv
-        	$active.addClass('active');
-        	$content.fadeIn("slow");
+        // Setze den Tab aktiv
+        $active.addClass('active');
+        $content.fadeIn("slow");
 
-        	// Verhindere die Anker standard click Aktion
-        	e.preventDefault();
-        	});
+        // Verhindere die Anker standard click Aktion
+        e.preventDefault();
+        	
     	});
    });
 });  
