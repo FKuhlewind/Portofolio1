@@ -72,7 +72,7 @@ body
         
 .nav-in ul li:last-child
     {   float: right;
-        padding: 3px 20px 0 0; }
+        padding: 3px 0px 0 0; }
 
 .nav-in ul li svg
     {   padding: 0 0px 0 5px; }
