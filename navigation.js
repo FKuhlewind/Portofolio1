@@ -47,7 +47,7 @@ $(document).ready(function() {
     	});
    
    //create random quotes
-   myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
+   /*myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
     function changeText() {
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
 	    quotes = data;
@@ -65,6 +65,6 @@ $(document).ready(function() {
 		});
             });
         };
-    setInterval(changeText, 15000);
+    setInterval(changeText, 15000);*/
    
 });  
