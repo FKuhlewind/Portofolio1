@@ -94,7 +94,9 @@ body
         font-weight: normal;
         font-size: 14px; 
         color: #ffffff;
-        display: inline-block; }
+        display: inline-block; 
+        padding: 2px;}
+        
 .nav-in ul li a:hover						
     {   color: #E89E0C; }
 
