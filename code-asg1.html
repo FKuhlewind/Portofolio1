@@ -18,7 +18,13 @@
                 
     prettyPrint();
     
-    $('.yell').tooltipster();
+    $('.yell')tooltipster({
+        animation: 'fade',
+        delay: 200,
+        theme: 'tooltipster-default',
+        touchDevices: false,
+        trigger: 'hover'
+        });
                 
   });
  
