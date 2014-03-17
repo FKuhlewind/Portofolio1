@@ -33,10 +33,10 @@ $(document).ready(function() {
     	
     	sel = ($(this).attr("value"));
     	
-    	$(".assignment iframe").fadeTo(1400, 0).delay(1400).remove(); 
+    	$(".assignment iframe").fadeOut(1400).remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
-    	$(".code iframe").fadeTo(1400, 0).delay(1400).remove(); 
+    	$(".code iframe").remove(); 
     	$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
     	
