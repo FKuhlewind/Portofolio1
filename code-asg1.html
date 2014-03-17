@@ -2,12 +2,14 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="tomorrow-night.css" />
+    <link rel="stylesheet" type="text/css" href="tooltipster.css" />
 </head>
 
 <body>
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="prettify.js"></script>
+<script type="text/javascript" src="tooltipster.js"></script>
 
 <script type="text/javascript">
 (function(jQuery){
@@ -15,6 +17,8 @@
   jQuery( document ).ready( function() {
                 
     prettyPrint();
+    
+    $('.yell').tooltipster();
                 
   });
  
