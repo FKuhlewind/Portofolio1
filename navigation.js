@@ -33,7 +33,7 @@ $(document).ready(function() {
     	
     	alert ( $(this).val() );
     	
-    	}):
+    	});
     
     
     /*$('ul.tabs').each(function(){
