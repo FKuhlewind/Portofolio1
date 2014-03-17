@@ -9,7 +9,10 @@
   padding: 10px;*/
 }
 
-.yell:hover {background: orange;}
+.yell:hover {background: orange;
+              border: 1px solid white;
+              border-radius: 3px;
+}
 
 
 .pln {
