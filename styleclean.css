@@ -98,10 +98,12 @@ body
         padding: 1px 4px 1px 4px;
         border: 2px solid #333333;}
         
-.nav-in ul li a:hover						
-    {   color: green;
+.nav-in ul li a:hover
+    {   color: #E89E0C;
+    
+        /*color: green;
         border: 2px solid gray;
-        background: white; 
+        background: white; */
    
     
     }
