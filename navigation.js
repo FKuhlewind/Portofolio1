@@ -31,7 +31,9 @@ $(document).ready(function() {
     
     $(".tabs").on("click", "a", function () {
     	
-    	console.log(  $(this).attr("value") );
+    	sel = ($(this).attr("value"));
+    	
+    	$(".assignment iframe").replaceWith("<iframe src='page-"+sel+".html></iframe>")
     	
     	});
     
