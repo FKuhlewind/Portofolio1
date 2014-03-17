@@ -31,7 +31,7 @@ $(document).ready(function() {
     
     $(".tabs").on("click", "a", function () {
     	
-    	console.log( $(this).val() + "---" + $(this) );
+    	console.log(  $(this) );
     	
     	});
     
