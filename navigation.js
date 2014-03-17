@@ -35,7 +35,7 @@ $(document).ready(function() {
     	
     	$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
     	
-    	$(this).css({'color': 'black', 'border' : '2px solid gray', 'background': 'white'});
+    	$(this).css({'color': 'black', 'border' : '2px solid gray', 'background': 'white', 'border-radius':'2px'});
     	
     	$(".assignment iframe").remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
