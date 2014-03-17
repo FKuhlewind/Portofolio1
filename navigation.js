@@ -27,8 +27,12 @@ $(document).ready(function() {
         e.preventDefault();
         });
         
-    //enable navigation    
-    $('ul.tabs').each(function(){
+    //enable navigation  
+    
+    
+    
+    
+    /*$('ul.tabs').each(function(){
     var $active, $content, $links = $(this).find('a');
     
     $active = $links.first().addClass('active');
@@ -47,7 +51,7 @@ $(document).ready(function() {
         $content.delay(100).fadeIn("slow");
         
     	});
-   });
+   });*/
    
    //create random quotes
    /*myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
