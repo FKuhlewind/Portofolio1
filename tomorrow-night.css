@@ -9,6 +9,9 @@
   padding: 10px;*/
 }
 
+span:hover {background: yellow;}
+
+
 .pln {
   color: #eaeaea;
 }
