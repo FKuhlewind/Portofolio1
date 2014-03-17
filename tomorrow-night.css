@@ -9,8 +9,8 @@
   padding: 10px;*/
 }
 
-.yell:hover {background: orange;
-              border: 1px solid white;
+.yell:hover { /*background: orange;*/
+              border: 1px solid orange;
               border-radius: 5px;
 }
 
