@@ -29,7 +29,11 @@ $(document).ready(function() {
         
     //enable navigation  
     
-    
+    $(".tabs").on("click", "a", function () {
+    	
+    	alert ( $(this).val() );
+    	
+    	}):
     
     
     /*$('ul.tabs').each(function(){
