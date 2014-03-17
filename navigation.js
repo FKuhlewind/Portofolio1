@@ -34,7 +34,7 @@ $(document).ready(function() {
     	sel = ($(this).attr("value"));
     	
     	$(".assignment iframe").remove(); 
-    	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").hide().fadeIn();
+    	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").hide().fadeIn(slow);
     	
     	});
     
