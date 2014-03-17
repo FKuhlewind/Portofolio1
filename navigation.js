@@ -31,8 +31,6 @@ $(document).ready(function() {
     
     $(".tabs").on("click", "a", function () {
     	
-    	$("html").stop();
-    	
     	sel = ($(this).attr("value"));
     	
     	$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
