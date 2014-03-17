@@ -36,6 +36,10 @@ $(document).ready(function() {
     	$(".assignment iframe").remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
+    	$(".code iframe").remove(); 
+    	$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
+    	
+    	
     	});
     
     
