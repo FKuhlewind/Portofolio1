@@ -33,7 +33,7 @@ $(document).ready(function() {
     	
     	sel = ($(this).attr("value"));
     	
-    	$(".assignment iframe").fadeOut(1400).remove(); 
+    	$(".assignment iframe").remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
     	$(".code iframe").remove(); 
@@ -41,31 +41,9 @@ $(document).ready(function() {
     	
     	
     	});
-    
-    
-    /*$('ul.tabs').each(function(){
-    var $active, $content, $links = $(this).find('a');
-    
-    $active = $links.first().addClass('active');
-    
-  
-    $content = $($active.attr('href'));
-    $links.not(':first').each(function () {
-        $($(this).attr('href')).hide();
-    });
-    $(this).on('click', 'a', function(){
-        $active.removeClass('active');
-        $content.hide();    
-        $active = $(this);
-        $content = $($(this).attr('href'));
-        $active.addClass('active');
-        $content.delay(100).fadeIn("slow");
-        
-    	});
-   });*/
    
    //create random quotes
-   /*myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
+   myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
     function changeText() {
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
 	    quotes = data;
@@ -83,6 +61,6 @@ $(document).ready(function() {
 		});
             });
         };
-    setInterval(changeText, 15000);*/
+    setInterval(changeText, 15000);
    
 });  
