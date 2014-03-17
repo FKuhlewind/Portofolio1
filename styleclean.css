@@ -98,7 +98,11 @@ body
         padding: 3px 4px 3px 4px;}
         
 .nav-in ul li a:hover						
-    {   color: #E89E0C; }
+    {   color: #E89E0C;
+        border: 2px solid gray;
+    
+    
+    }
 
 /*main content*/
 .main									
