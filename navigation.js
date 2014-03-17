@@ -33,7 +33,7 @@ $(document).ready(function() {
     	
     	sel = ($(this).attr("value"));
     	
-    	$(".assignment iframe").replaceWith("Hello");   //("<iframe src='page-"+sel+".html></iframe>")
+    	$(".assignment iframe").remove();   //("<iframe src='page-"+sel+".html></iframe>")
     	
     	});
     
