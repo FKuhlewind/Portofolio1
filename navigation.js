@@ -33,6 +33,10 @@ $(document).ready(function() {
     	
     	sel = ($(this).attr("value"));
     	
+    	$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
+    	
+    	$(this).css({'color': 'green', 'border' : '2px solid gray', 'background': 'white'});
+    	
     	$(".assignment iframe").remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
