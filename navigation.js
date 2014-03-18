@@ -33,9 +33,11 @@ $(document).ready(function() {
     	
     	sel = ($(this).attr("value"));
     	
-    	$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
+    	//$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
+       	//$(this).css({'color': 'black', 'border' : '2px solid gray', 'background': 'white', 'border-radius':'4px'});
     	
-    	$(this).css({'color': 'black', 'border' : '2px solid gray', 'background': 'white', 'border-radius':'4px'});
+    	$("a").removeClass("selected");
+    	$(this).addClass("selected");
     	
     	$(".assignment iframe").remove(); 
     	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
