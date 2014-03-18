@@ -32,6 +32,8 @@ $(document).ready(function() {
     $(".tabs").on("click", "a", function (e) {
     	
     	if ( !$(this).hasClass('selected') ) {
+    		
+    		$.stop();
     	 
     		sel = ($(this).attr("value"));
     	
