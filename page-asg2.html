@@ -1,1 +1,43 @@
-Assignment 2
+<!DOCTYPE html PUBLIC >
+<html></html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>/title>
+  
+  <link href="styleclean.css" rel="stylesheet" type="text/css" media="all" />
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="handlebars.js"></script>
+  
+  <script id="students-template" type="text/x-handlebars-template">
+  <table>
+    <thead>
+      <th>First</th>
+      <th>Last</th>
+      <th>UvA ID</th>
+      <th>Email</th>
+    </thead>
+    <tbody>
+      {{#students}}
+        <tr>
+          <td> {{first}} </td>
+          <td> {{last}}  </td>
+          <td> {{uvaID}} </td>
+          <td> {{email}} </td>
+        </tr>
+      {{/students}}
+    </tbody>
+  </table>
+  </script>
+  
+</head>
+
+<body>
+
+
+
+
+
+
+</body>
+</html>
