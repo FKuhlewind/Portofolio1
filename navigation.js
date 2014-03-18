@@ -45,7 +45,7 @@ $(document).ready(function() {
     		$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
     		e.preventDefault();
-    		} 
+    		} { e.preventDefault() }
     	});
    
    //create random quotes
