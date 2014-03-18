@@ -33,7 +33,7 @@ $(document).ready(function() {
     	
     	if ( !$(this).hasClass('selected') ) {
     		
-    		$.stop();
+    		//$.stop();
     	 
     		sel = ($(this).attr("value"));
     	
