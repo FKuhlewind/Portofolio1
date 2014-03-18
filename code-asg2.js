@@ -15,7 +15,7 @@ var studentTemplateScript = $("#students-template").html();
 var theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
 /* append the tables */
-$("body").append("<p></p><h1>Show Students</h1>").append(theStudentTemplate(studentData));
+$("body").append(theStudentTemplate(studentData));
 
 
 /* hide new tables and enable slideToggle */
