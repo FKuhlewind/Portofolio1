@@ -29,7 +29,7 @@ $(document).ready(function() {
         
     //enable navigation  
     
-    $(".tabs").on("click", "a", function () {
+    $(".tabs").on("click", "a", function (e) {
     	
     	sel = ($(this).attr("value"));
     	
@@ -43,6 +43,7 @@ $(document).ready(function() {
     	$(".code iframe").remove(); 
     	$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
+    	e.preventDefault();
     	
     	});
    
