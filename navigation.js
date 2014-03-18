@@ -1,8 +1,5 @@
 $(document).ready(function() { 
 	
-    //initialise
-    $("#home").addClass('selected');
-    
     //enable swapping
     function swapElements(elm1, elm2) {
         var parent1, next1,
