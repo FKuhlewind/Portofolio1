@@ -11,3 +11,26 @@
     background-color: #E89E0C;  
 }  */
 
+
+table {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: table;
+  background-color: #eee8d5;
+  margin-bottom: 2em; }
+  table:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 43.75em) {
+    table {
+      margin-bottom: 1.5em;
+      margin-top: 0.5em; } }
+  table th, table td {
+    padding: 0.5em; }
+  table tr {
+    background-color: #fdf6e3; }
+  table th {
+    background-color: #073642;
+    color: #fdf6e3; }
+
