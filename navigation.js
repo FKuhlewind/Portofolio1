@@ -41,10 +41,10 @@ $(document).ready(function() {
     		$(this).addClass("selected");
     	
     		$(".assignment iframe").remove(); 
-    		$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
+    		$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
     	
     		$(".code iframe").remove(); 
-    		$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
+    		$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
     	
     		e.preventDefault();
     		} { e.preventDefault() }
