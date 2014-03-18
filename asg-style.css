@@ -1,0 +1,13 @@
+/* toolbar style */
+::-webkit-scrollbar {  
+    width: 16px;  }  
+::-webkit-scrollbar-track {  
+    background-color: white;  }  
+::-webkit-scrollbar-thumb {  
+    background-color: #8f9d45;  
+    border-radius: 8px;
+    border: 3px solid white; }  
+/*::-webkit-scrollbar-thumb:hover {  
+    background-color: #E89E0C;  
+}  */
+
