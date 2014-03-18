@@ -1,4 +1,7 @@
 $(document).ready(function() { 
+	
+    //initialise
+    $("#home").addClass('selected');
     
     //enable swapping
     function swapElements(elm1, elm2) {
