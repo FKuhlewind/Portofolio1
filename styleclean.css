@@ -143,6 +143,9 @@ iframe
 
 .assignment iframe
     {   border: 0; }
+    
+.code iframe
+    {   border: 0; }
 
 .code									
     {   background: #333333;
