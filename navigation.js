@@ -20,10 +20,10 @@ $(document).ready(function() {
     $("#size_button").on("click", function (e) {
         $( ".code" ).animate({
             height: $(".assignment").css("height")
-            }, 1500 ).delay(1500);
+            }, 1000 );
         $( ".assignment" ).animate({
             height: $(".code").css("height")
-            }, 1500 ).delay(1500);    
+            }, 1000 );    
         e.preventDefault();
         });
         
