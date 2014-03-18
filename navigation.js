@@ -31,22 +31,21 @@ $(document).ready(function() {
     
     $(".tabs").on("click", "a", function (e) {
     	
-    	sel = ($(this).attr("value"));
+    	if ( !$(this).hasClass('selected') ) {
+    	 
+    		sel = ($(this).attr("value"));
     	
-    	//$("a").css({'color': '#ffffff', 'border' : '2px solid #333333', 'background': '#333333'});
-       	//$(this).css({'color': 'black', 'border' : '2px solid gray', 'background': 'white', 'border-radius':'4px'});
+    	    	$("a").removeClass("selected");
+    		$(this).addClass("selected");
     	
-    	$("a").removeClass("selected");
-    	$(this).addClass("selected");
+    		$(".assignment iframe").remove(); 
+    		$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
-    	$(".assignment iframe").remove(); 
-    	$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
+    		$(".code iframe").remove(); 
+    		$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
     	
-    	$(".code iframe").remove(); 
-    	$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(1000,1);
-    	
-    	e.preventDefault();
-    	
+    		e.preventDefault();
+    		} 
     	});
    
    //create random quotes
