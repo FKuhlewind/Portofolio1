@@ -4,19 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Florian Portofolio yes</title>
   
-  <!-- stylesheet -->
   <link href="styleclean.css" rel="stylesheet" type="text/css" media="all" />
-  <!-- scripts go here -->
-  
-  
+
   <script type="text/javascript" src="jquery.js"></script>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   <script type="text/javascript" src="d3.js"></script>
-  
-  <script type="text/javascript" src="random-quotes.js"></script>
-
-  
-
+  <script type="text/javascript" src="navigation.js"></script>
 </head>
 
 <body>
@@ -24,65 +17,62 @@
 <!-- wrapper starts -->
 <div class="wrapper"> 
   
-  <!-- Header Starts -->
-  <div class="quote">
+<!-- Header Starts -->
+<div class="quote">
     <div class="quote-container">
-      <div class="text">
-        Modern science simultaneously establishes itself and differentiates itself in its projections of specific object-spheres.
-      </div>
-      <div class="author">
-        <p>Martin Heidegger, The Age of the World Picture</p>
-      </div>
-      <div class="clear"></div>
+      	<div class="text">
+           Modern science simultaneously establishes itself and differentiates itself in its projections of specific object-spheres.
+      	</div>
+      	<div class="author">
+           <p>Martin Heidegger, The Age of the World Picture</p>
+        </div>
+      	<div class="clear"></div>
     </div>
-  </div>
-  <!-- Header ends --> 
+</div>
+<!-- Header ends --> 
   
-  <!-- Nav start -->
-  <div class="nav">
-    <div class="nav-in">
-      <ul class="tabs">
-        <li><a href="#home" value="home" class="selected">Start </a></li>
-        <li><a href="#asg1" value="asg1">#1 </a></li>
-        <li><a href="#asg2" value="asg2">#2 </a></li>
-        <li><a href="#asg3" value="asg3">#3 </a></li>
-        <li><a href="#asg4" value="asg4">#4 </a></li>
-        <li><a href="#asg5" value="asg5">#5 </a></li>
-        <li><a href="#proj" value="proj">Tools </a></li>
-	<li>
-	<svg class="svg_button" id="swap_button" width="24" height="24">
- 		<g>
-	 	<title>Swap</title>
-  		<rect stroke="#666666" class="svg_1" height="22.634219" width="22.129835" y="0.695501" x="0.827902" ry="4" rx="4"/>
-  		<rect class="green" height="11.789969" width="5.296029" y="8.072112" x="4.926019"/>
-  		<path class="green" d="m37.590137,23.234825l0.744999,-1.303751l0.744999,1.303751l-1.489998,0z"/>
-  		<path class="green" d="m4.716299,8.174244l2.837176,-4.539454l2.83714,4.539454l-5.674316,0z"/>
-  		<rect class="green" height="11.789969" width="5.232981" y="3.910947" x="13.689686"/>
-  		<path class="green" transform="rotate(180 16.2541 17.7569)" d="m13.416912,20.026627l2.83717,-4.539454l2.837139,4.539454l-5.674309,0z"/>
- 		</g>
-	</svg>
-	<svg class="svg_button" id="size_button" width="24" height="24">
- 		<g>
-  		<title>Resize</title>
-  		<rect stroke="#666666" class="svg_1" height="22.634219" width="22.129835" y="0.695501" x="0.827902" ry="4" rx="4" />
-  		<rect class="green" height="10.970345" width="5.296029" y="3.847899" x="4.799923"/>
-  		<path class="green" d="m37.590137,23.234825l0.744999,-1.303751l0.744999,1.303751l-1.489998,0z"/>
-  		<rect class="green" height="10.655105" width="5.232981" y="10.278791" x="13.87883"/>
-  		<rect class="green" height="4.791645" width="5.296029" y="16.205299" x="4.799923"/>
-  		<rect class="green" height="4.791645" width="5.296029" y="3.721803" x="13.752733"/>
- 		</g>
-	</svg>	
-	</li>
-      </ul>
-      <div class="clear"></div>
+<!-- Nav start -->
+<div class="nav">
+   <div class="nav-in">
+   	<ul class="tabs">
+           <li><a href="#home" value="home" class="selected">Start </a></li>
+        	<li><a href="#asg1" value="asg1">#1 </a></li>
+        	<li><a href="#asg2" value="asg2">#2 </a></li>
+        	<li><a href="#asg3" value="asg3">#3 </a></li>
+        	<li><a href="#asg4" value="asg4">#4 </a></li>
+        	<li><a href="#asg5" value="asg5">#5 </a></li>
+        	<li><a href="#proj" value="proj">Tools </a></li>
+		<li>
+		   <svg class="svg_button" id="swap_button" width="24" height="24">
+ 			<g><title>Swap</title>
+  			<rect stroke="#666666" class="svg_1" height="22.634219" width="22.129835" y="0.695501" x="0.827902" ry="4" rx="4"/>
+  			<rect class="green" height="11.789969" width="5.296029" y="8.072112" x="4.926019"/>
+  			<path class="green" d="m37.590137,23.234825l0.744999,-1.303751l0.744999,1.303751l-1.489998,0z"/>
+  			<path class="green" d="m4.716299,8.174244l2.837176,-4.539454l2.83714,4.539454l-5.674316,0z"/>
+  			<rect class="green" height="11.789969" width="5.232981" y="3.910947" x="13.689686"/>
+  			<path class="green" transform="rotate(180 16.2541 17.7569)" d="m13.416912,20.026627l2.83717,-4.539454l2.837139,4.539454l-5.674309,0z"/>
+ 			</g>
+		   </svg>
+		   <svg class="svg_button" id="size_button" width="24" height="24">
+ 			<g><title>Resize</title>
+  			<rect stroke="#666666" class="svg_1" height="22.634219" width="22.129835" y="0.695501" x="0.827902" ry="4" rx="4" />
+  			<rect class="green" height="10.970345" width="5.296029" y="3.847899" x="4.799923"/>
+  			<path class="green" d="m37.590137,23.234825l0.744999,-1.303751l0.744999,1.303751l-1.489998,0z"/>
+  			<rect class="green" height="10.655105" width="5.232981" y="10.278791" x="13.87883"/>
+  			<rect class="green" height="4.791645" width="5.296029" y="16.205299" x="4.799923"/>
+  			<rect class="green" height="4.791645" width="5.296029" y="3.721803" x="13.752733"/>
+ 			</g>
+		   </svg>	
+	      </li>
+      	</ul>
+    	<div class="clear"></div>
     </div>
-  </div>
-  <!-- Nav end --> 
+</div>
+<!-- Nav end --> 
   
- <!-- maincontent Starts -->
+<!-- maincontent Starts -->
 <div class="main">
 	<div class="main-in"> 
-
 		<div id="home" class="choose">
 			<div class="assignment">
 				<iframe src="page-home.html"></iframe>
@@ -91,66 +81,25 @@
 				<iframe src="code-home.html"></iframe>
 			</div>
 		</div>
-
-
-<!--<div id="asg1" class="choose">
-	<div class="assignment">
-		<iframe name="ast" id="astid" src="http://ast.codingthehumanities.com/"></iframe>
-	</div>
-
-	<div class="code">
-		<iframe src="code-asg1.html"></iframe>
 	</div>
 </div>
-      
-<div id="asg2" class="choose">
-	<div class="assignment">
-		<iframe></iframe>
-	</div>
-
-	<div class="code">
-		<iframe src="code-asg2.html"></iframe>
-	</div>
-</div>
-
-<div id="asg3" class="choose">
-Assignment3
-</div>
-
-<div id="asg4" class="choose">
-Assignment4
-</div>
-
-<div id="asg5" class="choose">
-Assignment5
-</div>
-
-<div id="proj" class="choose">
-Project Idea
-</div>-->
-
-   
-
-
-	    </div>
-</div>
-  <!-- aincontent ends --> 
+<!-- maincontent ends --> 
   
-  <!-- footer starts -->
-  <div class="footer">
-    <div class="footer-in">
-      <div class="copy">
-        <p>Art, Science and Technology - Portofolio #1 by Florian Kuhlewind, March 2014</p>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <!-- footer ends --> 
+<!-- footer starts -->
+<div class="footer">
+    	<div class="footer-in">
+      		<div class="copy">
+        		<p>Art, Science and Technology - Portofolio #1 by Florian Kuhlewind, March 2014</p>
+      		</div>
+      	<div class="clear"></div>
+</div>
+</div>
+<!-- footer ends --> 
   
 </div>
 <!-- wrapper ends -->
 
-<script type="text/javascript" src="navigation.js"></script>
+
 
 </body>
 </html>
