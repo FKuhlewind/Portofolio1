@@ -61,7 +61,8 @@ body
         padding: 0 0 0 0px; }
 .nav-in										
     {   width: 980px; 
-        margin: 0 auto 0px;
+        margin: 0 auto ;
+        margin-bottom: 0px !important;
         }
 .nav-in ul									
     {   /*width: 727px; */
