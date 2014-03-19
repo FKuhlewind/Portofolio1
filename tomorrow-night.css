@@ -13,6 +13,8 @@
 /* style for hovering over tooltip */
 .yell:hover { border: 2px solid orange;
               border-radius: 6px; }
+              
+.yell { border-bottom: 1px white dotted; }
 
 /* toolbar style */
 ::-webkit-scrollbar {  
