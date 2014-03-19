@@ -14,7 +14,7 @@
 .yell:hover { border: 2px solid orange;
               border-radius: 6px; }
               
-.yell { border-bottom: 2px #6CDAFF dashed; }
+.yell { border-bottom: 2px #A7E9FF dashed; }
 
 /* toolbar style */
 ::-webkit-scrollbar {  
