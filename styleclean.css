@@ -133,13 +133,13 @@ body
         
         }
         
-.left_arr { margin-left: 0; 
-            margin-right: auto; 
+.left_arr { margin: 0 auto; 
+         
            
             }
 
-.right_arr { margin-right: 0; 
-            margin-left: auto; 
+.right_arr { margin: 0 auto; 
+           
             
  
             } 
