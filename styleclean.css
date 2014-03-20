@@ -131,7 +131,13 @@ body
         padding: 5px 0 0px 0; 
         background:#ffffff; }
         
-.left_arr, .right_arr {display: inline-block}
+.left_arr {display: inline-block
+            float: left;
+            }
+
+.right_arr {display: inline-block
+            float: right;
+            }
 
 
 .main-in				
