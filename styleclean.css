@@ -130,16 +130,16 @@ body
         margin: 0 auto;
         padding: 5px 0 0px 0; 
         background:#ffffff; 
-        display: inline-block
+        
         }
         
-.left_arr {
+/*.left_arr {
             float: left;
             }
 
 .right_arr {
             float: right;
-            }
+            } */
 
 
 .main-in				
