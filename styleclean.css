@@ -133,11 +133,11 @@ body
         display: inline-block
         }
         
-.left_arr {display: inline-block
+.left_arr {
             float: left;
             }
 
-.right_arr {display: inline-block
+.right_arr {
             float: right;
             }
 
