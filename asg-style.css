@@ -13,6 +13,9 @@
 
 body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 
+#cat { border-radius: 10px; }
+
+
 table {
   display: block;
   float: left;
