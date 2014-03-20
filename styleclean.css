@@ -133,13 +133,13 @@ body
         
         }
         
-/*.left_arr {
+.left_arr { margin: 0 auto; 
             float: left;
             }
 
-.right_arr {
+.right_arr { margin: 0 auto; 
             float: right;
-            } */
+            } 
 
 
 .main-in				
