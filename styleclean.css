@@ -130,6 +130,10 @@ body
         margin: 0 auto;
         padding: 5px 0 0px 0; 
         background:#ffffff; }
+        
+.left_arr, .right_arr {display: inline-block}
+
+
 .main-in				
     {   width: 942px;
         margin: 0 auto; }
