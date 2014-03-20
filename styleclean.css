@@ -133,13 +133,15 @@ body
         
         }
         
-.left_arr { margin: 0 auto; 
+.left_arr { margin-top: auto; 
+            margin-bottom: auto; 
             float: left;
             }
 
-.right_arr { margin: 0 auto; 
+.right_arr { margin-top: auto; 
+            margin-bottom: auto; 
             float: right;
-            vertical-align: top;
+ 
             } 
 
 
