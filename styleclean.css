@@ -129,7 +129,9 @@ body
         height: 700px;
         margin: 0 auto;
         padding: 5px 0 0px 0; 
-        background:#ffffff; }
+        background:#ffffff; 
+        display: inline-block
+        }
         
 .left_arr {display: inline-block
             float: left;
