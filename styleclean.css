@@ -139,6 +139,7 @@ body
 
 .right_arr { margin: 0 auto; 
             float: right;
+            vertical-align: top;
             } 
 
 
