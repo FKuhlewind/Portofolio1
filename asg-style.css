@@ -44,6 +44,6 @@ table {
 .lastColLong {width: 12%;
 }
 tbody tr:last-child {background-color: white;
-border-color:  white;
+border:  none;
 }
 
