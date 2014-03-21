@@ -43,10 +43,8 @@ table {
 
 .lastColLong {width: 12%;
 }
-#addStudent {border-collapse: separate;
-                border-spacing: 0px;
-                background-color: white;
+#addStudent {
                 border-color:white;
-                border-width: 0;
+              
 }
 
