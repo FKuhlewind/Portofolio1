@@ -18,6 +18,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		if (hidden)
 		   { $('tr td:last-child').animate({width: 'show', opacity: 'show'}, 'slow');
 		     hidden=false; }
+		if (!hidden)
 		   { $('tr td:last-child').animate({width: 'hide', opacity: 'hide'}, 'slow'); 
 		     hidden=true;  } 
 			
