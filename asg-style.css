@@ -38,9 +38,10 @@ table {
     background-color: #073642;
     color: #fdf6e3; }
 
-.lastCol {width: 15%;
+.lastColShort {width: 5%;
 }
 
-
+.lastColLong {width: 15%;
+}
 
 
