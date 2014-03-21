@@ -15,12 +15,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	
 	$("thead").on("click", "th#showHide", function(e){
 		
-		if (!hidden)
+		$('tr td:last-child').toggle();
+		
+		/*if (!hidden)
 		   { $('tr td:last-child').animate({width: 'show', opacity: 'show'}, 'slow');
 		     hidden=false; }
 		
 		   { $('tr td:last-child').animate({width: 'hide', opacity: 'hide'}, 'slow'); 
-		     hidden=true; } 
+		     hidden=true; } */
 			
 		e.preventDefault();
 		});
