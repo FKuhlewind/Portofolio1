@@ -20,7 +20,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		     hidden=false; }
 		
 		   { $('tr td:last-child').animate({width: 'hide', opacity: 'hide'}, 'slow'); 
-		      } 
+		     hidden=true; } 
 			
 		e.preventDefault();
 		});
