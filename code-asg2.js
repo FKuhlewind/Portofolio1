@@ -1,7 +1,8 @@
 $(document).ready(function() { 
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
-	studentData = data;
+	//studentData = data;
+	studentData = $.grep(data ,function(n){ return(n) });
 
     	var studentTemplateScript = $("#students-template").html();
 
