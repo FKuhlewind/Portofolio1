@@ -38,4 +38,6 @@ table {
     background-color: #073642;
     color: #fdf6e3; }
 
-.lastCol {width: 5%;}
+.lastCol {width: 5%;
+margin: o auto;
+}
