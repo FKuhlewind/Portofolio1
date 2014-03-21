@@ -10,10 +10,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
   
     	/* append the tables */
     	$("body").append(theStudentTemplate(studentData));
-	$('tr td:last-child').animate({
-		width: 'hide',
-		opacity: 'hide'
-		}, 'fast');
+	$('tr td:last-child').hide();
 	
 	
 	$("thead").on("click", "th#showHide", function(){
