@@ -44,6 +44,6 @@ table {
 .lastColLong {width: 12%;
 }
 #addStudent {background-color: white;
-border:  none;
+border-collapse: collapse;
 }
 
