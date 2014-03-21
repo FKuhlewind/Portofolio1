@@ -22,7 +22,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('tbody tr:last-child').fadeToggle("slow");
 		
 		$('th#showHide').click(function(){
-			 $('#edit,#hide').toggle();
+			$('#edit,#hide').toggle();
+			});
 		
 		
 		e.preventDefault();
