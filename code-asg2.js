@@ -15,7 +15,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	
 	$("thead").on("click", "th#showHide", function(e){
 		
-		$('tr td:last-child').toggle();
+		$('tr td:last-child').toggle("slow");
 		
 		/*if (!hidden)
 		   { $('tr td:last-child').animate({width: 'show', opacity: 'show'}, 'slow');
