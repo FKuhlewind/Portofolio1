@@ -38,7 +38,8 @@ table {
     background-color: #073642;
     color: #fdf6e3; }
 
-.lastCol {width: 5%;
-margin-left:50%;
+.lastCol {width: 5%; }
 
-}
+.lastCol button {margin: 0 auto;}
+
+
