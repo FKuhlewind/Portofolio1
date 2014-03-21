@@ -11,10 +11,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	/* append the tables */
     	$("body").append(theStudentTemplate(studentData));
 	$('tr td:last-child').hide();
+	$('tbody:last-child').hide();
 
 	// enable toggle
 	$("thead").on("click", "th#showHide", function(e){
 		$('tr td:last-child').fadeToggle("slow");
+		$('tbody:last-child').fadeToggle("slow");
 		e.preventDefault();
 		});
 
