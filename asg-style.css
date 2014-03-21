@@ -16,7 +16,9 @@ body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 #cat { border-radius: 10px; }
 
 
-button { color: green; }
+button { color: white;
+background-color: green;
+}
 
 
 table {
