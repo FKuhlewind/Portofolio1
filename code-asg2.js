@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
+	alert (data.students.length());
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
     	var studentTemplateScript = $("#students-template").html();
