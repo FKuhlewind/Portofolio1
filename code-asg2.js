@@ -18,7 +18,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('tr td:last-child').animate({
 			width: 'show',
 			opacity: 'show'
-			}, 'fast');
+			}, 'slow');
 			
 		
 		});
