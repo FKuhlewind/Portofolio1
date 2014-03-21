@@ -55,7 +55,8 @@ $(document).ready(function() {
     function changeText() {
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
 	    quotes = data;
-            var random = Math.floor(Math.random() * 11);
+	    howMany = Object.keys(quotes).length;
+            var random = Math.floor(Math.random() * howMany);
             
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
