@@ -16,6 +16,9 @@ body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 #cat { border-radius: 10px; }
 
 
+button { color: green; }
+
+
 table {
   display: block;
   float: left;
