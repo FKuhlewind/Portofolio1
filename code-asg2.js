@@ -11,19 +11,10 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	/* append the tables */
     	$("body").append(theStudentTemplate(studentData));
 	$('tr td:last-child').hide();
-	var hidden;
-	
+
+	// enable toggle
 	$("thead").on("click", "th#showHide", function(e){
-		
 		$('tr td:last-child').fadeToggle("slow");
-		
-		/*if (!hidden)
-		   { $('tr td:last-child').animate({width: 'show', opacity: 'show'}, 'slow');
-		     hidden=false; }
-		
-		   { $('tr td:last-child').animate({width: 'hide', opacity: 'hide'}, 'slow'); 
-		     hidden=true; } */
-			
 		e.preventDefault();
 		});
 
