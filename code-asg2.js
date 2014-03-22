@@ -26,11 +26,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 
-		$("#addStud").show();
+		$("#addStud, tr td:last-child, tbody tr:last-child, #hide").show();
 
-		$('tr td:last-child, tbody tr:last-child').show();
-		$('#hide').show();
-		
 		$("#edit").hide();
 
 		e.preventDefault();
@@ -41,9 +38,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 
-		hideInput();
+		
 		$('#edit').show();
-
+		hideInput();
 
 		e.preventDefault();
 		});
