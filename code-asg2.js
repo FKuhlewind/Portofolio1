@@ -33,8 +33,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 	$("tbody").on("click", "td#addSave", function(e) {
 		
-			$('#addStud,#saveStud').toggle();
-		
+			$('#addStud').hide();
+			$('#saveStud').show();
+			
 			});
 
 
