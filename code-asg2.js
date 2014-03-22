@@ -23,6 +23,17 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	
 	hideInput();
 
+	// try to set new firebase here
+	
+	for ( var i = 0, l = appNum; i < l; i++ ) {
+		
+		myDataRef.child("students").child(i).child("first").set( studentData.students[i].first  );
+		myDataRef.child("students").child(i).child("last").set( studentData.students[i].last  );
+		myDataRef.child("students").child(i).child("uvaID").set( studentData.students[i].uvaID  );
+		myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
+		};
+	
+	
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
