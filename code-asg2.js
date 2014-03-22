@@ -38,6 +38,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 
 		hideInput();
+		$('#edit').show();
 
 		//$('tr td:last-child, tbody tr:last-child').hide();
 		//$('#edit,#hide').toggle();
