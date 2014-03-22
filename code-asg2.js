@@ -4,13 +4,13 @@ function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
 	$("#addStudent").css({"background-color":"white"});
 	};
-
-
+myDataRef = new Firebase('https://student-data.firebaseio.com/');
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
-	rawData = data;
-	//alert (data.students.length());
+	
+	myDataRef.set(studentData);
+	
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
     	var studentTemplateScript = $("#students-template").html();
