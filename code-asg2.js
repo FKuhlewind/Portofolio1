@@ -37,8 +37,10 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 
-		$('tr td:last-child, tbody tr:last-child').hide();
-		$('#edit,#hide').toggle();
+		hideInput();
+
+		//$('tr td:last-child, tbody tr:last-child').hide();
+		//$('#edit,#hide').toggle();
 
 		e.preventDefault();
 		});
