@@ -44,7 +44,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 	$("tbody").on("click", "#saveStud", function(e) {
 		
-		alert ( $("#firstin").val()+" "+$("#lastin").val()  );
+		//alert ( $("#firstin").val()+" "+$("#lastin").val()  );
+		
+		// Generate a reference to a new location with push
+		var newPushRef = listRef.push();
+
+		// Set some data to the generated location
+		newPushRef.set(first: $("#firstin").val(), last: $("#lastin").val()});
+		
 		
 		});
 
