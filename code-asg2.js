@@ -31,6 +31,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		e.preventDefault();
 		});
 
+	$("tbody").on("click", "td#addSave", function(e) {
+		
+		$('#addStud,#SaveStud').toggle();
+		
+		});
+
 
     });
 
