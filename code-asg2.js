@@ -44,7 +44,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 	$("tbody").on("click", "#saveStud", function(e) {
 		
-		alert ( $("#firstin").val()+" "+$("#firstin").val()  );
+		alert ( $("#firstin").val()+" "+$("#lastin").val()  );
 		
 		});
 
