@@ -55,9 +55,11 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 	$("tbody").on("click", ".delete", function(e) {
 		
-		alert ( $(this).val() );
-
-
+		//alert ( $(this).val() );
+		
+		myDataRef.child("students").child( $(this).val() ).set(null);
+		alert ("Student removed.");
+		window.location.reload();
 		});
 
 	});
