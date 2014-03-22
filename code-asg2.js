@@ -63,8 +63,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		//alert ( $(this).val() );
 		
-		myDataRef.child("students").child( $(this).val() ).remove(
+		myDataRef.child("students").child( $(this).val() ).remove(onComplete);
 		
+		var onComplete 0 function () {
 		
 		for ( var i = 0, l = appNum; i < l; i++ ) {
 		//for ( var i = 0, l = studentData.students.length; i < l; i++ ) {
@@ -79,7 +80,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		alert ("Student removed.");
 		window.location.reload();
 		});
-		);
+		
+		};
 	});
 
 });
