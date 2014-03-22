@@ -25,10 +25,10 @@
     <tbody>
       {{#students}}
         <tr>
-          <td> {{#if first}} </td>
-          <td> {{#if last}}  </td>
-          <td> {{#if uvaID}} </td>
-          <td> {{#if email}} </td>
+          <td> {{first}} </td>
+          <td> {{last}}  </td>
+          <td> {{uvaID}} </td>
+          <td> {{email}} </td>
           <td class="lastColShort"> <button>Edit</button><button class="delete" value="{{@index}}">Del.</button></td>
         </tr>
       {{/students}}
