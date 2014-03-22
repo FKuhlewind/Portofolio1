@@ -42,24 +42,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		hideInput();
 		$('#edit').show();
 
-		//$('tr td:last-child, tbody tr:last-child').hide();
-		//$('#edit,#hide').toggle();
 
 		e.preventDefault();
 		});
 
 
-	// enable toggle
-	//$("thead").on("click", "th#showHide", function(e){
-	//	$('tr td:last-child').fadeToggle("slow");
-	//	$('tbody tr:last-child').fadeToggle("slow");
-	//	
-	//	$('#edit,#hide').toggle();
-	//	$('tr th:last-child').toggleClass('lastColLong lastColShort');
-		
-		
-	//	e.preventDefault();
-	//	});
+
 
 	$("tbody").on("click", "td#addSave", function(e) {
 		
