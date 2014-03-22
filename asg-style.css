@@ -24,7 +24,9 @@ border-radius:2px;
 
 button:hover {background-color: #FFF6BF;}
 
-
+table td > *:empty {
+    display:none;
+}
 
 table {
   display: block;
