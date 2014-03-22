@@ -50,7 +50,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		var newPushRef = listRef.push();
 
 		// Set some data to the generated location
-		newPushRef.set(first: $("#firstin").val(), last: $("#lastin").val()});
+		newPushRef.set("first": $("#firstin").val(), "last": $("#lastin").val()});
 		
 		
 		});
