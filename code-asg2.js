@@ -5,6 +5,7 @@ function hideInput () {
 	$("#addStudent").css({"background-color":"white"});
 	};
 
+function createTable () {
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
@@ -21,7 +22,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	$("body").append(theStudentTemplate(studentData));
     	
 	hideInput();
-	
+
+	});
+};
+
+createTable();
+
 	$("thead").on("click", "#edit", function(e){
 		
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
@@ -58,6 +64,6 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			});
 
 
-    });
+
 
 });
