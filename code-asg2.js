@@ -1,5 +1,11 @@
 $(document).ready(function() { 
 
+function hideInput () {
+	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
+	$("#addStudent").css({"background-color":"white"});
+	};
+
+
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
 	rawData = data;
@@ -14,8 +20,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	/* append the tables */
     	$("body").append(theStudentTemplate(studentData));
     	
-	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
+	//$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
 	
+	hideInput();
 	
 	//$('tr td:last-child').hide();
 	//$('tbody tr:last-child').hide();
@@ -23,7 +30,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	//$('.newS').hide();
 	//$('#saveStud').hide();
 	
-	$("#addStudent").css({"background-color":"white"});
+	//$("#addStudent").css({"background-color":"white"});
 
 	// enable toggle
 	$("thead").on("click", "th#showHide", function(e){
