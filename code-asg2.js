@@ -67,19 +67,20 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		var onComplete = function () {
 		
-		for ( var i = 0, l = appNum; i < l; i++ ) {
-		//for ( var i = 0, l = studentData.students.length; i < l; i++ ) {
+			for ( var i = 0, l = appNum; i < l; i++ ) {
+			//for ( var i = 0, l = studentData.students.length; i < l; i++ ) {
 		
-			myDataRef.child("students").child(i).child("first").set( studentData.students[i].first  );
-			myDataRef.child("students").child(i).child("last").set( studentData.students[i].last  );
-			myDataRef.child("students").child(i).child("uvaID").set( studentData.students[i].uvaID  );
-			myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
-			};
+				myDataRef.child("students").child(i).child("first").set( studentData.students[i].first  );
+				myDataRef.child("students").child(i).child("last").set( studentData.students[i].last  );
+				myDataRef.child("students").child(i).child("uvaID").set( studentData.students[i].uvaID  );
+				myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
+				};
 		//myDataRef.child("students").child(studentData.students.length).set( null );
+			};
 		
 		alert ("Student removed.");
 		window.location.reload();
-		};
+		
 		});
 		
 		
