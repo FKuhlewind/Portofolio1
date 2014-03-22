@@ -36,7 +36,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			$('#addStud').hide();
 			$('#saveStud').show();
 			$('.newS').show();
-			$("#addStudent").css({"background-color":"#fdf6e3"});
+			$("#addStudent").animate({"background-color":"#fdf6e3"},1000);
 			
 			});
 
