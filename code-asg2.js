@@ -47,7 +47,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		//alert ( $("#firstin").val()+" "+$("#lastin").val()  );
 		
-		myDataRef.child(appNum).child("first").set( $("#firstin").val() );
+		myDataRef.child("students").child(appNum).child("first").set( $("#firstin").val() );
 		
 		
 		});
