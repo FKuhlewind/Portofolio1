@@ -20,7 +20,7 @@ button { color: black;
 background-color: #eee8d5;
 border: 1px solid black;
 border-radius:2px;
-box-shadow: inset 1px 1px 0 1px gray, 1px 1px 0 1px green;
+/*box-shadow: inset 1px 1px 0 1px gray, 1px 1px 0 1px green;*/
 }
 
 
