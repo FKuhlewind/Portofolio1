@@ -25,7 +25,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 	// try to set new firebase here
 	
-	for ( var i = 0, l = appNum; i < l; i++ ) {
+	for ( var i = 0, l = appNum-1; i < l; i++ ) {
 		
 		myDataRef.child("students").child(i).child("first").set( studentData.students[i].first  );
 		myDataRef.child("students").child(i).child("last").set( studentData.students[i].last  );
