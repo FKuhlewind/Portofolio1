@@ -8,7 +8,9 @@ myDataRef = new Firebase('https://student-data.firebaseio.com/');
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
-	//studentData.students = studentData.students.filter(function(e){return e}); 
+	studentData.students = studentData.students.filter(function(e){return e}); 
+
+	alert (data.students.length);
 
     	var studentTemplateScript = $("#students-template").html();
 
