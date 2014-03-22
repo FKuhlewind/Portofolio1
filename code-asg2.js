@@ -4,14 +4,12 @@ function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
 	$("#addStudent").css({"background-color":"white"});
 	};
-
+myDataRef = new Firebase('https://student-data.firebaseio.com/');
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
 	
-	myDataRef = new Firebase('https://student-data.firebaseio.com/');
-	
-	//myDataRef.set(studentData);
+	myDataRef.set(studentData);
 	
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
