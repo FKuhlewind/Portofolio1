@@ -20,17 +20,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	/* append the tables */
     	$("body").append(theStudentTemplate(studentData));
     	
-	//$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
-	
 	hideInput();
 	
-	//$('tr td:last-child').hide();
-	//$('tbody tr:last-child').hide();
-	//$('#hide').hide();
-	//$('.newS').hide();
-	//$('#saveStud').hide();
-	
-	//$("#addStudent").css({"background-color":"white"});
 
 	// enable toggle
 	$("thead").on("click", "th#showHide", function(e){
