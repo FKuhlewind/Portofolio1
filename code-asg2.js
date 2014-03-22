@@ -30,6 +30,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 		$('tr td:last-child, tbody tr:last-child').show();
 		$('#hide').show();
+		
+		$("#edit").hide();
 
 		e.preventDefault();
 		});
