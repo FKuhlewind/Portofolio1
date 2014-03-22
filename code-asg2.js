@@ -27,17 +27,15 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('#edit,#hide').toggle();
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		
-		$("tbody").on("click", "td#addSave", function(e) {
-		
-			$('#addStud,#saveStud').toggle();
-		
-			});
-		
 		
 		e.preventDefault();
 		});
 
-
+	$("tbody").on("click", "td#addSave", function(e) {
+		
+			$('#addStud,#saveStud').toggle();
+		
+			});
 
 
     });
