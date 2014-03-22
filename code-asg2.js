@@ -9,7 +9,7 @@ myDataRef = new Firebase('https://student-data.firebaseio.com/');
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
 	
-	myDataRef.set(studentData.students);
+	//myDataRef.set(studentData);
 	
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
