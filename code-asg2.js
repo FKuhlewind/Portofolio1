@@ -9,8 +9,9 @@ myDataRef = new Firebase('https://student-data.firebaseio.com/');
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	rawData = data;
 	studentData = data;
-	appNum = data.students.length;
 	howMany = studentData.students.length;
+	appNum = data.students.length;
+	
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
     	var studentTemplateScript = $("#students-template").html();
