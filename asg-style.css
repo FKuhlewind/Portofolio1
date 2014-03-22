@@ -28,6 +28,7 @@ button:hover {background-color: #FFF6BF;}
 
 table {
   display: block;
+  empty-cells: hide;
   float: left;
   margin-right: 2.35765%;
   width: 100%;
