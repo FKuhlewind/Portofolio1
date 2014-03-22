@@ -16,10 +16,10 @@ body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 #cat { border-radius: 10px; }
 
 
-button { color: white;
-background-color: green;
-border: 2px solid orange;
-border-radius:4px;
+button { color: black;
+background-color: #eee8d5;
+border: 2px solid white;
+border-radius:2px;
 }
 
 
