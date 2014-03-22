@@ -33,7 +33,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.child("students").child(i).child("uvaID").set( studentData.students[i].uvaID  );
 		myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
 		};
-	myDataRef.child("students").child(appNum).set( null );
+	myDataRef.child("students").child(appNum-1).set( null );
 	
 	
 
