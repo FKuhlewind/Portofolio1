@@ -5,7 +5,7 @@ function hideInput () {
 	$("#addStudent").css({"background-color":"white"});
 	};
 
-function createTable () {
+
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
@@ -23,10 +23,6 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	
 	hideInput();
 
-	});
-};
-
-createTable();
 
 	$("thead").on("click", "#edit", function(e){
 		
@@ -64,6 +60,6 @@ createTable();
 			});
 
 
-
+	});
 
 });
