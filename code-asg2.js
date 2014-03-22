@@ -22,18 +22,39 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	
 	hideInput();
 	
-
-	// enable toggle
-	$("thead").on("click", "th#showHide", function(e){
-		$('tr td:last-child').fadeToggle("slow");
-		$('tbody tr:last-child').fadeToggle("slow");
+	$("thead").on("click", "#edit", function(e){
 		
-		$('#edit,#hide').toggle();
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
-		
-		
+
+		$('tr td:last-child, tbody tr:last-child').show();
+		$('#edit,#hide').toggle();
+
 		e.preventDefault();
 		});
+
+
+	$("thead").on("click", "#hide", function(e){
+		
+		$('tr th:last-child').toggleClass('lastColLong lastColShort');
+
+		$('tr td:last-child, tbody tr:last-child').hide();
+		$('#edit,#hide').toggle();
+
+		e.preventDefault();
+		});
+
+
+	// enable toggle
+	//$("thead").on("click", "th#showHide", function(e){
+	//	$('tr td:last-child').fadeToggle("slow");
+	//	$('tbody tr:last-child').fadeToggle("slow");
+	//	
+	//	$('#edit,#hide').toggle();
+	//	$('tr th:last-child').toggleClass('lastColLong lastColShort');
+		
+		
+	//	e.preventDefault();
+	//	});
 
 	$("tbody").on("click", "td#addSave", function(e) {
 		
