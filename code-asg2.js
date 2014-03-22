@@ -79,9 +79,10 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		alert ("Student removed.");
 		window.location.reload();
+		};
 		});
 		
-		};
+		
 	});
 
 });
