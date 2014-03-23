@@ -17,12 +17,14 @@ svg { background-color: #eee8d5;
 }
 
 #onRight, #onLeft {/*float: right;*/
-float: left;
+
 }
 
 #onRight {padding: 30px;}
 
-#onRight button { display: inline-block; };
+#onRight button { display: inline-block; 
+float: left;
+};
 
 #background {  background-color: #eee8d5; 
 /*display: inline-block;*/
