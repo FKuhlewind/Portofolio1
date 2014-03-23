@@ -6,10 +6,21 @@ eventsTemplate1 = {
       		"rating|1-7": 0,
       		"ficticious|0-1": true, }]
   		};
+eventsTemplate2 = {
+    		"events|10-25":[{
+      		"name|1-3": "@LOREM ",
+      		"rating|10-70": 0,
+      		"ficticious|0-1": true, }]
+  		};
+eventsTemplate3 = {
+    		"events|2-15":[{
+      		"name|2-4": "@LOREM ",
+      		"rating|50-100": 0,
+      		"ficticious|0-1": true, }]
+  		};
 
 createData = function () {
-	
-  	var events = $.mockJSON.generateFromTemplate(eventsTemplate1);
+  	var events = $.mockJSON.generateFromTemplate(eventsTemplate2);
   	var eventsJSON = JSON.stringify(events);  
   	localStorage.setItem("assignment", eventsJSON);
   	
