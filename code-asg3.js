@@ -82,7 +82,7 @@ createSVG = function () {
 	//create X axis
 	mySVG.append("g")
     		.attr("transform", "translate(0," + (height - padding) + ")")
-    		.style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '2px', 'font-family':'Arial', 'font-size':'12px'})
+    		.style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px', 'font-family':'Arial', 'font-size':'12px'})
     		.call(xAxis);
 	};
 
