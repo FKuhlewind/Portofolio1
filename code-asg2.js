@@ -61,7 +61,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$(".editStud, .delete").hide();
 		$("#edit"+$(this).val()).show();
 		
-		$("#stud"+$(this).val()+":nth-child(1)").replaceWith("<td>Yo Hey</td>");
+		$("tr#stud"+$(this).val()+":nth-child(1)").replaceWith("<td>Yo Hey</td>");
 		
 		//alert ("Edit Number "+ $(this).val() );
 		 
