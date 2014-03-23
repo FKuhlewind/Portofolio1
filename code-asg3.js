@@ -6,9 +6,10 @@ createData = function () {
 	var rTo = 7;
 	
 	var rString = "rating|"+rFrom+"-"+rTo;
+	test="events|5-20";
 	
 	var eventsTemplate = {
-    		"events|5-20": [{
+    		test: [{
       		"name|1-2": "@LOREM ",
       		"rating|1-7": 0,
       		//rString: 0,
