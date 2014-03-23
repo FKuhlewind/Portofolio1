@@ -11,6 +11,9 @@
     background-color: #E89E0C;  
 }  */
 
+
+svg { background-color: #eee8d5; }
+
 body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 
 #cat { border-radius: 10px; }
