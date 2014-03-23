@@ -28,9 +28,10 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		});
 
 	$("thead").on("click", "#hide", function(e){
-		$('tr th:last-child').toggleClass('lastColLong lastColShort');
-		$('#edit, .editStud, .delete').show();
-		hideInput();
+		//$('tr th:last-child').toggleClass('lastColLong lastColShort');
+		//$('#edit, .editStud, .delete').show();
+		//hideInput();
+		window.location.reload();
 		});
 
 	$("tbody").on("click", "td#addSave", function(e) {
