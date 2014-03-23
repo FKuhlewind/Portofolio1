@@ -58,6 +58,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	
 	$("tbody").on("click", ".editStud", function(e) {
 		
+		$(".editStud, .delete").hide();
+		$(".saveChange").show();
+		
 		alert ("Edit Number "+ $(this).val() );
 		 
 		});
