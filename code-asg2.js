@@ -23,24 +23,16 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	
 	hideInput();
 
-	// try to set new firebase here
-	
-	
-	
-	
-
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		$("#addStud, tr td:last-child, tbody tr:last-child, #hide").show();
 		$("#edit").hide();
-		//e.preventDefault();
 		});
 
 	$("thead").on("click", "#hide", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		$('#edit').show();
 		hideInput();
-		//e.preventDefault();
 		});
 
 	$("tbody").on("click", "td#addSave", function(e) {
@@ -61,29 +53,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 	$("tbody").on("click", ".delete", function(e) {
 		
-		//alert ( $(this).val() );
-		
-		/*myDataRef.child("students").child( $(this).val() ).remove(onComplete);
-		
-		var onComplete = function () {
-		
-			for ( var i = 0, l = appNum; i < l; i++ ) {
-			//for ( var i = 0, l = studentData.students.length; i < l; i++ ) {
-		
-				myDataRef.child("students").child(i).child("first").set( studentData.students[i].first  );
-				myDataRef.child("students").child(i).child("last").set( studentData.students[i].last  );
-				myDataRef.child("students").child(i).child("uvaID").set( studentData.students[i].uvaID  );
-				myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
-				};
-		//myDataRef.child("students").child(studentData.students.length).set( null );
-			};*/
-		
 		studentData.students.splice(  $(this).val(),1 );
 		myDataRef.set( studentData );
 		
-		alert ("Student removed.");
-		window.location.reload();
 		
+		window.location.reload();
+		alert ("Student removed.");
 		});
 		
 		
