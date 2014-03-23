@@ -11,7 +11,7 @@ createData = function () {
 	
 	var eventsTemplate = {
     		eventFT: [{
-      		nameFT: "@LOREM ",
+      		"name|1-2": "@LOREM ",
       		"rating|1-7": 0,
       		"ficticious|0-1": true, }]
   		};
