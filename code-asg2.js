@@ -64,14 +64,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$(".editStud, .delete").hide();
 		$("#edit"+vl).show();
 		
-		//$("tr#stud"+$(this).val()+":nth-child(1)").replaceWith("<td>Yo Hey</td>");
-		
 		$("tr#stud"+vl).children(".inf1")
 			.replaceWith("<td><input type='text' value='"+studentData.students[vl].first+"'/></td>");
-			//.chidren("input")
-			//.val( "text" );
-		
-		//alert ("Edit Number "+ $(this).val() );
+		$("tr#stud"+vl).children(".inf2")
+			.replaceWith("<td><input type='text' value='"+studentData.students[vl].last+"'/></td>");
+		$("tr#stud"+vl).children(".inf4")
+			.replaceWith("<td><input type='text' value='"+studentData.students[vl].email+"'/></td>"); 
 		 
 		});
 		
