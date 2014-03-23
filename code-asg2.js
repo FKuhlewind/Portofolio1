@@ -1,10 +1,10 @@
 $(document).ready(function() { 
 
+myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
 	$("#addStudent").css({"background-color":"white"});
 	};
-myDataRef = new Firebase('https://student-data.firebaseio.com/');
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData = data;
@@ -12,8 +12,6 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
     	var studentTemplateScript = $("#students-template").html();
-
-    	/* compile the templates*/
     	var theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
     	/* append the tables */
@@ -28,9 +26,6 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		});
 
 	$("thead").on("click", "#hide", function(e){
-		//$('tr th:last-child').toggleClass('lastColLong lastColShort');
-		//$('#edit, .editStud, .delete').show();
-		//hideInput();
 		window.location.reload();
 		});
 
@@ -80,11 +75,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			myDataRef.set( studentData );
 			window.location.reload();
 			alert ("Your changes have been saved.");
-			
 			});
-		
 		});
-		
 	});
-
 });
