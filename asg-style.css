@@ -16,7 +16,9 @@ svg { background-color: #eee8d5;
 /*float: left;*/
 }
 
-#onRight {float: right;}
+#onRight, #onLeft {float: right;
+display: inline-block;
+}
 
 #background {  background-color: #eee8d5; 
 display: inline-block;
