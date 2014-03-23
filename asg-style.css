@@ -17,7 +17,7 @@ svg { background-color: #eee8d5;
 }
 
 #onRight, #onLeft {/*float: right;*/
-display: inline-block;
+float: left;
 }
 
 #onRight {padding: 30px;}
