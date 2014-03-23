@@ -62,7 +62,7 @@ createSVG = function () {
     		.attr("x", function(d) {
             		return xScale(0)+10;})
     		.attr("alignment-baseline" , "middle")
-    		.style({ 'stroke': 'Black', 'fill': 'black', 'stroke-width': '0.5px' });
+    		.style({ 'stroke': 'Black'/*, 'fill': 'black', 'stroke-width': '0.5px' */});
 	//create X axis
 	mySVG.append("g")
     		.attr("transform", "translate(0," + (height - padding) + ")")
