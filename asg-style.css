@@ -16,6 +16,8 @@ svg { background-color: #eee8d5;
 float: left;
 }
 
+#newData {float: right;}
+
 #background {  background-color: #eee8d5; 
 display: inline-block;
 };
