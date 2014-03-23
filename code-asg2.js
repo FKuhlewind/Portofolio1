@@ -15,7 +15,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	var theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
     	/* append the tables */
-    	$(".here").prepend(theStudentTemplate(studentData));
+    	$(".here").append(theStudentTemplate(studentData));
     	
 	hideInput();
 
