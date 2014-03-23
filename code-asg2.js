@@ -35,7 +35,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		});
 
 	$("tbody").on("click", "td#addSave", function(e) {
-		$('#addStud').hide();
+		$('#addStud, .editStud, .delete ').hide();
 		$('#saveStud').show();
 		$('.newS').show();
 		$("#addStudent").css({"background-color":"#fdf6e3"});
