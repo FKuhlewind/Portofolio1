@@ -9,7 +9,7 @@ eventsTemplate1 = {
 eventsTemplate2 = {
     		"events|10-25":[{
       		"name|1-3": "@LOREM ",
-      		"rating|10-70": 0,
+      		"rating|0-100": 0,
       		"ficticious|0-1": true, }]
   		};
 eventsTemplate3 = {
