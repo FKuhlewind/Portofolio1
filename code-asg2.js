@@ -65,12 +65,18 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$("#edit"+vl).show();
 		
 		$("tr#stud"+vl).children(".inf1")
-			.replaceWith("<td><input type='text' value='"+studentData.students[vl].first+"'/></td>");
+			.replaceWith("<td><input type='text' id='nFirst' value='"+studentData.students[vl].first+"'/></td>");
 		$("tr#stud"+vl).children(".inf2")
-			.replaceWith("<td><input type='text' value='"+studentData.students[vl].last+"'/></td>");
+			.replaceWith("<td><input type='text' id='nLast' value='"+studentData.students[vl].last+"'/></td>");
 		$("tr#stud"+vl).children(".inf4")
-			.replaceWith("<td><input type='text' value='"+studentData.students[vl].email+"'/></td>"); 
+			.replaceWith("<td><input type='text' id='nEmail' value='"+studentData.students[vl].email+"'/></td>"); 
 		 
+		$("#edit"+vl).on("click", function(e) {
+			
+			alert ("Should be saved now.");
+			
+			});
+		
 		});
 		
 	});
