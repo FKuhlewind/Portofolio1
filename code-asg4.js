@@ -152,21 +152,21 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
           .attr("y", padding/2 )
           .style("text-anchor", "middle")
           .text("Vibrato Analysis")
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' });
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'14px' });
 	mySVG.append("text")
 	  .attr("class", "x text")
           .attr("x", width/2 )
           .attr("y", height-(padding/3) )
           .style("text-anchor", "middle")
           .text(xLabel)
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px' });
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' });
 	mySVG.append("text")
 	  .attr("class", "y text")
 	  .text(yLabel)
           .attr("x", padding/3)
           .attr("y", height/2)
           .style("text-anchor", "middle")
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px' })
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' })
           .style("writing-mode", "tb");
 
 	// creates update form
