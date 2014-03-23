@@ -22,7 +22,7 @@ createSVG = function () {
     		.range([padding, width-(padding*2)]);
 	var yScale = d3.scale.ordinal()
     		.domain(d3.range(yMax))
-    		.rangeRoundBands([height/*-padding*/, padding], 0.1);
+    		.rangeRoundBands([height-padding, padding], 0.1);
 	//define X axis
 	var xAxis = d3.svg.axis()
     		.scale(xScale)
