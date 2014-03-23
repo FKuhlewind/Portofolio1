@@ -71,7 +71,7 @@ createSVG = function () {
 	};
 
 var width = 500;
-var height = 250;
+var height = 400;
 var padding = 30;
 
 //$("#click").on("click", function () {
