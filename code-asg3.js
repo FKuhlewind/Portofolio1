@@ -1,9 +1,11 @@
-$("body").append("<p>Click this text to update with most recent data</p>");
+$(document).ready(function() { 
+
+$(".here").append("<p id="click">Click this text to update with most recent data</p>");
 var width = 700;
 var height = 400;
 var padding = 30;
 
-$("p").on("click", function () {
+$("#click").on("click", function () {
 
   var eventsTemplate = {
     "events|5-20": [{
@@ -73,4 +75,6 @@ mySVG.append("g")
     .attr("transform", "translate(0," + (height - padding) + ")")
     .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px'})
     .call(xAxis);
+});
+
 });
