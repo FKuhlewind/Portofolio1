@@ -63,7 +63,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		//alert ( $(this).val() );
 		
-		myDataRef.child("students").child( $(this).val() ).remove(onComplete);
+		/*myDataRef.child("students").child( $(this).val() ).remove(onComplete);
 		
 		var onComplete = function () {
 		
@@ -76,7 +76,10 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 				myDataRef.child("students").child(i).child("email").set( studentData.students[i].email  );
 				};
 		//myDataRef.child("students").child(studentData.students.length).set( null );
-			};
+			};*/
+		
+		studentData.students.splice(  $(this).val(),1 );
+		myDataRef.set( studentData );
 		
 		alert ("Student removed.");
 		window.location.reload();
