@@ -106,13 +106,16 @@ function createForm () {
 //get JSON data
 d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 
+
+	$("svg").remove();
+
 	vibData = data;
 	getDisplayRange();
 	getData();
 	updateScaleDomains();
 	defineXYaxis();
 	
-	$("svg").remove();
+	
 
 	//create svg 
 	mySVG = d3.select(".here")
