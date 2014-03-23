@@ -111,6 +111,8 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	getData();
 	updateScaleDomains();
 	defineXYaxis();
+	
+	$("svg").remove();
 
 	//create svg 
 	mySVG = d3.select(".here")
