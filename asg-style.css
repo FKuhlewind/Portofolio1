@@ -21,7 +21,9 @@
 svg { background-color: #eee8d5; 
 }
 
-#onLeft {float: left;}
+#onLeft {float: left;
+height: 360px;
+}
 
 #onRight {padding: 30px;}
 
