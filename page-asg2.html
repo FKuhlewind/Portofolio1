@@ -25,10 +25,10 @@
     <tbody>
       {{#students}}
         <tr id="stud{{@index}}">
-          <td> {{first}} </td>
-          <td> {{last}}  </td>
-          <td> {{uvaID}} </td>
-          <td> {{email}} </td>
+          <td class="inf1"> {{first}} </td>
+          <td class="inf2"> {{last}}  </td>
+          <td class="inf3"> {{uvaID}} </td>
+          <td class="inf4"> {{email}} </td>
           <td class="lastColShort"> <button  class="editStud" value="{{@index}}">Edit</button><button class="delete" value="{{@index}}">Del.</button><button id="edit{{@index}}" class="saveChange">Save</button></td>
         </tr>
       {{/students}}
