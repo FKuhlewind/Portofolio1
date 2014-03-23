@@ -22,10 +22,11 @@ svg { background-color: #eee8d5;
 }
 
 #onLeft {float: left;
-height: 360px;
+
 }
 
-#onRight {padding: 30px;}
+#onRight {padding: 30px;
+height: 360px;}
 
 #background {  background-color: #eee8d5; 
 };
