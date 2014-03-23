@@ -11,7 +11,7 @@
     background-color: #E89E0C;  
 }  */
 
-#vibUpdate { margin: 10px 0;}
+#vibUpdate, #storeData { margin: 10px 0;}
 
 .clear
     {   clear: both;
