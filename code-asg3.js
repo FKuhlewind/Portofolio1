@@ -47,7 +47,7 @@ createSVG = function () {
     		.attr("width", function(d) {
                  	return xScale(d.rating)-padding;})
     		.style("fill", function (d) {
-            		if (!d.ficticious) {return "#ff6666"}
+            		if (!d.ficticious) {return "#8f9d45"}
             		else {return "#8180ff"} ;});   
 	// add labels
 	mySVG.selectAll("text")
