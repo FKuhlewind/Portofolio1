@@ -37,7 +37,7 @@ var xAxis = d3.svg.axis()
     .ticks(xMax);
 
 // create svg 
-var mySVG = d3.select(".click")
+var mySVG = d3.select("#click")
     .append("svg")
     .attr("width", width)
     .attr("height", height);    
