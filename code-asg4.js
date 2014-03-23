@@ -126,7 +126,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
                 return xScale(d[0]);})
     	  .attr("cy", function(d) {
             	return yScale(d[1]);})
-    	  .attr("r", 5);
+    	  .attr("r", 3);
 
 	//create X axis
 	mySVG.append("g")
