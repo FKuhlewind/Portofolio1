@@ -29,7 +29,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 
 	$("thead").on("click", "#hide", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
-		$('#edit').show();
+		$('#edit, .editStud, .delete').show();
 		hideInput();
 		});
 
