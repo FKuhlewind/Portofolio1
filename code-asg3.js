@@ -18,9 +18,11 @@ eventsTemplate3 = {
       		"rating|50-100": 0,
       		"ficticious|0-1": true, }]
   		};
+  		
+eventsTemplate = eventsTemplate1;
 
 createData = function () {
-  	var events = $.mockJSON.generateFromTemplate(eventsTemplate3);
+  	var events = $.mockJSON.generateFromTemplate(eventsTemplate);
   	var eventsJSON = JSON.stringify(events);  
   	localStorage.setItem("assignment", eventsJSON);
   	
@@ -92,9 +94,21 @@ createData();
 createSVG();
 
 $("#newData").on("click", function () {
+	eventsTemplate = eventsTemplate1;
 	$("svg").remove();
 	createData();
 	createSVG();
 	});
-
+$("#newData2").on("click", function () {
+	eventsTemplate = eventsTemplate2;
+	$("svg").remove();
+	createData();
+	createSVG();
+	});
+$("#newData3").on("click", function () {
+	eventsTemplate = eventsTemplate3;
+	$("svg").remove();
+	createData();
+	createSVG();
+	});
 });
