@@ -137,13 +137,13 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	mySVG.append("g")
     	  .attr("class", "x axis")	
     	  .attr("transform", "translate(0," + (height - padding) + ")")
-    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px', 'font-family':'Arial', 'font-size':'10px'})
+    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
     	  .call(xAxis);
 	//create Y axis
 	mySVG.append("g")
     	  .attr("class", "y axis")
     	  .attr("transform", "translate(" + padding + ",0)")
-    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px', 'font-family':'Arial', 'font-size':'10px'})
+    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
     	  .call(yAxis);
 
 	//create axis labels and main title
