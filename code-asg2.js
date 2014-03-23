@@ -1,7 +1,7 @@
 $(document).ready(function() { 
 
 function hideInput () {
-	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud').hide();
+	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, #saveChange').hide();
 	$("#addStudent").css({"background-color":"white"});
 	};
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
