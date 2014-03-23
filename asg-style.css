@@ -23,6 +23,7 @@ margin: 10px;
 }
 
 #onLeft {float: left;
+margin-right:10px;
 
 }
 
@@ -30,7 +31,6 @@ margin: 10px;
 height: 370px;
 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
 font-size: 14px;
-margin-left: 10px;
 
 }
 
