@@ -10,7 +10,7 @@ createData = function () {
 	nameFT="name|1-2"
 	
 	var eventsTemplate = {
-    		'"'+eventFT+'"': [{
+    		"events|5-20":[{
       		"name|1-2": "@LOREM ",
       		"rating|1-7": 0,
       		"ficticious|0-1": true, }]
