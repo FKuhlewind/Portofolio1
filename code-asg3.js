@@ -70,8 +70,8 @@ createSVG = function () {
     		.call(xAxis);
 	};
 
-var width = 500;
-var height = 400;
+var width = 540;
+var height = 360;
 var padding = 30;
 
 //$("#click").on("click", function () {
