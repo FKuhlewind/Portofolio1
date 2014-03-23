@@ -1,23 +1,18 @@
 $(document).ready(function() { 
 
-createData = function () {
-	
-	var rFrom = 1;
-	var rTo = 7;
-	
-	var rString = "rating|"+rFrom+"-"+rTo;
-	eventFT="events|5-20";
-	nameFT="name|1-2"
-	
-	var eventsTemplate = {
+eventsTemplate1 = {
     		"events|5-20":[{
       		"name|1-2": "@LOREM ",
       		"rating|1-7": 0,
       		"ficticious|0-1": true, }]
   		};
-  	var events = $.mockJSON.generateFromTemplate(eventsTemplate);
+
+createData = function () {
+	
+  	var events = $.mockJSON.generateFromTemplate(eventsTemplate1);
   	var eventsJSON = JSON.stringify(events);  
   	localStorage.setItem("assignment", eventsJSON);
+  	
   	myObject = JSON.parse(localStorage.assignment);
 	xMax = d3.max(myObject.events, function(d) { return d.rating;}); // get highest value
 	yMax = myObject.events.length; // get number of values
