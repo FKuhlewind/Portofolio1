@@ -55,7 +55,12 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		window.location.reload();
 		alert ("Student removed.");
 		});
+	
+	$("tbody").on("click", ".editStud", function(e) {
 		
+		alert ("Edit Number "+ $(this).val() );
+		 
+		});
 		
 	});
 
