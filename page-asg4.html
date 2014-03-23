@@ -18,8 +18,49 @@
   <div id="background">
     <div class="here" id="onLeft"><svg width="360" height="360"></svg></div>
     <div id="onRight">
+    
+      <h2>Select values to be displayed: </h2>
+      <form style="display:inline" id="myForm">
+        <p style="display:inline">x-Axis:</p>
+        <select id="xAxisChoice">
+          <option value="0">Vibrato Time [s]</option>
+          <option value="1">Pitch Deviation [Hz]</option>
+          <option value="2">Number of Cycles</option>
+          <option value="3">Mean Pitch [Hz]</option>
+          <option value="4">Rate [Hz]</option>
+          <option value="5">Extent [Ct]</option>
+          <option value="6">Max Extent Position [s]</option>
+          <option value="7">Duration [s]</option>
+          <option value="8">Random Numbers</option>
+          <option value="9">12324</option>
+          <option value="10"></option>
+          <option value="11">Flos Super Zahlen</option>
+          <option value="12">Manu</option>
+          <option value="13">undefined</option>
+        </select>
+        <p style="display:inline">y-Axis:   </p>
+        <select id="yAxisChoice">
+          <option value="0">Vibrato Time [s]</option>
+          <option value="1">Pitch Deviation [Hz]</option>
+          <option value="2">Number of Cycles</option>
+          <option value="3">Mean Pitch [Hz]</option>
+          <option value="4">Rate [Hz]</option>
+          <option value="5">Extent [Ct]</option>
+          <option value="6">Max Extent Position [s]</option>
+          <option value="7">Duration [s]</option>
+          <option value="8">Random Numbers</option>
+          <option value="9">12324</option>
+          <option value="10"></option>
+          <option value="11">Flos Super Zahlen</option>
+          <option value="12">Manu</option>
+          <option value="13">undefined</option>
+        </select><br>
+        <a><i id="update">Click this text to update diagram</i></a>
+      </form>
+    
+    
+    
       <h2>Enter new values to be stored:</h2>
-
       <form id="newValues">
         01: <input type="number" id="val1" class="required number" style="width: 50px;">
         02: <input type="number" id="val2" style="width: 50px;">
