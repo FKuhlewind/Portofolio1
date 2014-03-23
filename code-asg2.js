@@ -7,10 +7,8 @@ function hideInput () {
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
-
 	studentData = data;
 	appNum = data.students.length;
-	
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
     	var studentTemplateScript = $("#students-template").html();
@@ -47,16 +45,13 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.child("students").child(appNum).child("last").set( $("#lastin").val() );
 		myDataRef.child("students").child(appNum).child("email").set( $("#emailin").val() );
 		myDataRef.child("students").child(appNum).child("uvaID").set( $("#uvaIDin").val() );
-		alert ("Student added successfully.");
 		window.location.reload();
+		alert ("Student added successfully.");
 		});
 		
 	$("tbody").on("click", ".delete", function(e) {
-		
 		studentData.students.splice(  $(this).val(),1 );
 		myDataRef.set( studentData );
-		
-		
 		window.location.reload();
 		alert ("Student removed.");
 		});
