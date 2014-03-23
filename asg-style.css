@@ -20,6 +20,8 @@ svg { background-color: #eee8d5;
 display: inline-block;
 }
 
+#onRight {padding: 30px;}
+
 #background {  background-color: #eee8d5; 
 /*display: inline-block;*/
 };
