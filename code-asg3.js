@@ -31,7 +31,7 @@ createSVG = function () {
 
 	// create svg 
 	var mySVG = d3.select(".here")
-	 	.append("svg")
+	 	.prepend("svg")
 	 	.attr("width", width)
     		.attr("height", height);    
 	//Create bars
