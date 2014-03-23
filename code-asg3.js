@@ -1,6 +1,6 @@
 $(document).ready(function() { 
 
-$(".here").append("<p id='click'>Click this text to update with most recent data</p>");
+$(".here").append("<p id='click'><p>Click this text to update with most recent data</p></p>");
 var width = 500;
 var height = 250;
 var padding = 30;
