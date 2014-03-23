@@ -20,7 +20,7 @@ eventsTemplate3 = {
   		};
 
 createData = function () {
-  	var events = $.mockJSON.generateFromTemplate(eventsTemplate2);
+  	var events = $.mockJSON.generateFromTemplate(eventsTemplate3);
   	var eventsJSON = JSON.stringify(events);  
   	localStorage.setItem("assignment", eventsJSON);
   	
