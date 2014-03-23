@@ -5,13 +5,13 @@ createData = function () {
 	var rFrom = 1;
 	var rTo = 7;
 	
-	rString = "rating|"+rFrom+"-"+rTo;
+	var rString = "rating|"+rFrom+"-"+rTo;
 	
 	var eventsTemplate = {
     		"events|5-20": [{
       		"name|1-2": "@LOREM ",
       		//"rating|1-7": 0,
-      		"rString": 0,
+      		rString: 0,
       		"ficticious|0-1": true, }]
   		};
   	var events = $.mockJSON.generateFromTemplate(eventsTemplate);
