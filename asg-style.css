@@ -22,6 +22,8 @@ display: inline-block;
 
 #onRight {padding: 30px;}
 
+#onRight button { display: inline-block; };
+
 #background {  background-color: #eee8d5; 
 /*display: inline-block;*/
 };
