@@ -41,7 +41,7 @@ createSVG = function () {
 	var xAxis = d3.svg.axis()
     		.scale(xScale)
     		.orient("bottom")
-    		.ticks(20);
+    		.ticks(xMax/7);
 
 	// create svg 
 	var mySVG = d3.select(".here")
