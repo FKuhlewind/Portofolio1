@@ -18,35 +18,30 @@
   <div id="background">
     <div class="here" id="onLeft"><svg width="360" height="360"></svg></div>
     <div id="onRight">
-      <h2>Test visualisation by updating with different mockJSON templates:</h2>
-      <button id="newData">Update with Template 1</button><br>
-      <div>Template as provided for the assignment.</div><br>
-      <button id="newData2">Update with Template 2</button><br>
-      <div>More events and words, higher ratings.</div><br>
-      <button id="newData3">Update with Template 3</button><br>
-      <div>Higher variation in events, more words, lower values.</div><br>
+      <h2>Enter new values to be stored:</h2>
+
+      <form id="newValues"><br>
+        01: <input type="number" id="val1" class="required number" style="width: 50px;">
+        02: <input type="number" id="val2" style="width: 50px;">
+        03: <input type="number" id="val3" style="width: 50px;">
+        04: <input type="number" id="val4" style="width: 50px;">
+        05: <input type="number" id="val5" style="width: 50px;">
+        <br>
+        06: <input type="number" id="val6" style="width: 50px;">
+        07: <input type="number" id="val7" style="width: 50px;">
+        08: <input type="number" id="val8" style="width: 50px;">
+        09: <input type="number" id="val9" style="width: 50px;">
+        10: <input type="number" id="val10" style="width: 50px;">
+        <br>
+        Data type and unit (e.g. <i>Rate [Hz]</i>):<input type="text" id="newLabel">
+        <br>
+        <a><i id="storeData">Click this text to store new data</i></a>
+    </form>
+
     </div>
   </div>  
   
-  <form id="newValues"><br>
-    <u>Enter new Values to be stored: </u><br>
-    
-    01: <input type="number" id="val1" class="required number" style="width: 50px;">
-    02: <input type="number" id="val2" style="width: 50px;">
-    03: <input type="number" id="val3" style="width: 50px;">
-    04: <input type="number" id="val4" style="width: 50px;">
-    05: <input type="number" id="val5" style="width: 50px;">
-    <br>
-    06: <input type="number" id="val6" style="width: 50px;">
-    07: <input type="number" id="val7" style="width: 50px;">
-    08: <input type="number" id="val8" style="width: 50px;">
-    09: <input type="number" id="val9" style="width: 50px;">
-    10: <input type="number" id="val10" style="width: 50px;">
-    <br>
-    Data type and unit (e.g. <i>Rate [Hz]</i>):<input type="text" id="newLabel">
-    <br>
-    <a><i id="storeData">Click this text to store new data</i></a>
-  </form>
+
   
   
   
