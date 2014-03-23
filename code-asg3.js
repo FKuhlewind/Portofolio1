@@ -1,8 +1,8 @@
 $(document).ready(function() { 
 
 $(".here").append("<p id='click'>Click this text to update with most recent data</p>");
-var width = 100%;
-var height = 30%;
+var width = 500;
+var height = 250;
 var padding = 30;
 
 $("#click").on("click", function () {
