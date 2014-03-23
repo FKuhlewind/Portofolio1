@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 var width = 360;
 var height = 360;
-var padding = 50;
+var padding = 40;
 var addToAxis = 0.1; 
 xD = 4; yD = 5; // define values to display initially
 myDataRef = new Firebase('https://vib-data.firebaseio.com/');
