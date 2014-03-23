@@ -67,7 +67,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		//$("tr#stud"+$(this).val()+":nth-child(1)").replaceWith("<td>Yo Hey</td>");
 		
 		$("tr#stud"+vl).children(".inf1")
-			.replaceWith("<td><input type='text' value=studentData.students[val].first/></td>");
+			.replaceWith("<td><input type='text' value=""/></td>")
+			.val( studentData.students[val].first );
 		
 		//alert ("Edit Number "+ $(this).val() );
 		 
