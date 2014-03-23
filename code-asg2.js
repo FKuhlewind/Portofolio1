@@ -73,7 +73,13 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		 
 		$("#edit"+vl).on("click", function(e) {
 			
-			alert ("Should be saved now.");
+			studentData.students[vl].first = $("#nFirst").val();
+			studentData.students[vl].last = $("#nLast").val();
+			studentData.students[vl].email = $("#nEmail").val();
+			
+			myDataRef.set( studentData );
+			window.location.reload();
+			alert ("Your changes have been saved.");
 			
 			});
 		
