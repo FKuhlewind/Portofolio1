@@ -74,11 +74,13 @@ var width = 540;
 var height = 360;
 var padding = 30;
 
-//$("#click").on("click", function () {
-
 createData();
 createSVG();
 
-//});
+$("#newData").on("click", function () {
+	$("svg").remove();
+	createData();
+	createSVG();
+	});
 
 });
