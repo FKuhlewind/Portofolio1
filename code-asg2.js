@@ -59,12 +59,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	
 	$("tbody").on("click", ".editStud", function(e) {
 		
+		var vl = $(this).val();
+		
 		$(".editStud, .delete").hide();
-		$("#edit"+$(this).val()).show();
+		$("#edit"+vl).show();
 		
 		//$("tr#stud"+$(this).val()+":nth-child(1)").replaceWith("<td>Yo Hey</td>");
 		
-		$("tr#stud"+$(this).val()).children(".inf1")
+		$("tr#stud"+vl).children(".inf1")
 			.replaceWith("<td><input type='text' value='Anouk'/></td>");
 		
 		//alert ("Edit Number "+ $(this).val() );
