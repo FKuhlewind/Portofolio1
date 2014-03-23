@@ -19,6 +19,7 @@
         display: block; }
 
 svg { background-color: #eee8d5; 
+margin: 10px;
 }
 
 #onLeft {float: left;
