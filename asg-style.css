@@ -20,6 +20,9 @@ svg { background-color: #eee8d5;
 
 }
 
+
+#onLeft {float: left;}
+
 #onRight {padding: 30px;}
 
 /*#onRight button { display: inline-block; 
