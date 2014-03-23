@@ -35,6 +35,7 @@ font-size: 14px;
 }
 
 #background {  background-color: #fdf6e3; 
+border: 1px solid #eee8d5;
 };
 
 body { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
