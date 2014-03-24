@@ -167,13 +167,15 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	mySVG.append("g")
     	  .attr("class", "x axis")	
     	  .attr("transform", "translate(0," + (height - padding) + ")")
-    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
+    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px',/
+    	  	'font-family':'Arial', 'font-size':'10px'})
     	  .call(xAxis);
 	//create Y axis
 	mySVG.append("g")
     	  .attr("class", "y axis")
     	  .attr("transform", "translate(" + padding + ",0)")
-    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
+    	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px',/
+    	  	'font-family':'Arial', 'font-size':'10px'})
     	  .call(yAxis);
 
 	//create axis labels and main title
@@ -182,21 +184,24 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
           .attr("y", padding/2 )
           .style("text-anchor", "middle")
           .text("Vibrato Analysis")
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'14px' });
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial',/
+          	'font-size':'14px' });
 	mySVG.append("text")
 	  .attr("class", "x text")
           .attr("x", width/2 )
           .attr("y", height-(padding/4) )
           .style("text-anchor", "middle")
           .text(xLabel)
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' });
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial',/
+          	'font-size':'12px' });
 	mySVG.append("text")
 	  .attr("class", "y text")
 	  .text(yLabel)
           .attr("x", padding/4)
           .attr("y", height/2)
           .style("text-anchor", "middle")
-          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' })
+          .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial',/
+          	'font-size':'12px' })
           .style("writing-mode", "tb");
 
 	// creates update form
@@ -222,7 +227,8 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 
 			d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 				vibData = data; 
-				alert("New data stored successfully, you can now select it from the dropdown menu to be diplayed.");
+				alert("New data stored successfully, you can now select it from the/
+					dropdown menu to be diplayed.");
 				});
 		});
 });
