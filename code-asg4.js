@@ -67,6 +67,7 @@ function createForm () {
 		$("#vibUpdate").on("click", function(e) {
 
 			e.preventDefault();
+			e.stopPropagation();
 
 			// get info on which values to display on Axis
 			xD = $("#xAxisChoice").val();
@@ -188,6 +189,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 		.on("click", function(e) {
 			
 			e.preventDefault();
+			e.stopPropagation();
 			
 			n = vibData.length;
 
