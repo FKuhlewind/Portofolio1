@@ -85,7 +85,7 @@ body
         stroke-width: 2; }
 
 .svg_button:hover > g > .svg_1
-    {   fill: #E89E0C; }
+    {   fill: #E89E0C; cursor: pointer; cursor: hand; }
 
 .green
     {   fill: #8f9d45;
