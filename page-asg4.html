@@ -15,51 +15,23 @@
 
 <body>
   <h1>Fourth/Fifth Assignment: Firebase</h1>
+  <p>Create a data set in Firebase that is relevant for your own research. Display it in an interesting way and add a form to add extra datapoints.</p>
   <div id="background">
-    <div class="here" id="onLeft"><svg width="360" height="360"></svg></div>
-    <div id="onRight">
+    <div class="here" id="onLeft">
+      <svg width="360" height="360"></svg>
+    </div>
     
+    <div id="onRight">
       <h2>Select values to be displayed: </h2>
       <form style="display:inline" id="myForm">
         <p style="display:inline">x-Axis:</p>
         <select id="xAxisChoice">
-      <!--<option value="0">Vibrato Time [s]</option>
-          <option value="1">Pitch Deviation [Hz]</option>
-          <option value="2">Number of Cycles</option>
-          <option value="3">Mean Pitch [Hz]</option>
-          <option value="4">Rate [Hz]</option>
-          <option value="5">Extent [Ct]</option>
-          <option value="6">Max Extent Position [s]</option>
-          <option value="7">Duration [s]</option>
-          <option value="8">Random Numbers</option>
-          <option value="9">12324</option>
-          <option value="10"></option>
-          <option value="11">Flos Super Zahlen</option>
-          <option value="12">Manu</option>
-          <option value="13">undefined</option>-->
         </select>
         <p style="display:inline">y-Axis:</p>
         <select id="yAxisChoice">
-      <!--<option value="0">Vibrato Time [s]</option>
-          <option value="1">Pitch Deviation [Hz]</option>
-          <option value="2">Number of Cycles</option>
-          <option value="3">Mean Pitch [Hz]</option>
-          <option value="4">Rate [Hz]</option>
-          <option value="5">Extent [Ct]</option>
-          <option value="6">Max Extent Position [s]</option>
-          <option value="7">Duration [s]</option>
-          <option value="8">Random Numbers</option>
-          <option value="9">12324</option>
-          <option value="10"></option>
-          <option value="11">Flos Super Zahlen</option>
-          <option value="12">Manu</option>
-          <option value="13">undefined</option>-->
         </select><br>
         <button id="vibUpdate" style="width:420px; height:25px;">Display Data</button>
       </form><br>
-    
-    
-    
       <h2>Enter new values to be stored:</h2>
       <form id="newValues">
         01:<input type="number" id="val1" class="required number" style="width: 50px;">
@@ -77,23 +49,14 @@
         Data type and unit (e.g. <i>Rate [Hz]</i>):<input type="text" id="newLabel"><br>
         <button id="storeData" style="width:420px; height:25px;">Store New Data</button>
     </form>
-
-    <p class="smallF">N.B. The vibrato data is taken from my masters thesis 'Vibrato and Open Quotient in the Singing Voices of Jazz- and Classical Singers.</p>
-
-
+    <p class="smallF">N.B. The vibrato data is taken from my masters thesis 'Vibrato and Open Quotient in the Singing Voices of Jazz- and Classical Singers'.</p>
     </div>
   </div>  
-  
 
-  
-  
-  
   <div class="clear"></div>
   
-  <h2>Original Task:</h2>
-    <p>Use firebase to create a data set that is relevant for your own research. Display your data set in an interesting way and add a form that makes it possible to add extra datapoints.<a href="" target="_blank">Link</a> to Gist with the original assignment.</p>
   <h2>Extension:</h2>
-    <p>Text on extension. The Gist for the extended script can be found <a href="" target="_blank">here</a>.</p>
+  <p>Improve layout, fix font display, add validations.</p>
 
 </body>
 </html>
