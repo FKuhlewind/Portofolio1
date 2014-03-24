@@ -173,7 +173,7 @@ svg     { background-color: #eee8d5;
 
 .svg_button
         { margin: 0px; 
-          background-color: none; } 
+          background-color: transparent; } 
 
 input, select 
         { margin-right: 10px; }
