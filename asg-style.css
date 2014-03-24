@@ -13,6 +13,9 @@
 
 #vibUpdate, #storeData { margin: 10px 0;}
 
+
+input {margin-right: 10px;}
+
 .clear
     {   clear: both;
         font-size: 0px; 
