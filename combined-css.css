@@ -206,7 +206,7 @@ button:hover
 #background 
         {  background-color: #fdf6e3; 
            border: 1px solid #eee8d5; 
-           margin: 10px;
+           /*margin: 10px;*/
            }
 
 #onLeft { float: left;
