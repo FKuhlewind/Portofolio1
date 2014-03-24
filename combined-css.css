@@ -62,7 +62,8 @@ iframe  { width: 100%;
 /*navigation*/
 .nav 	{ width: 100%;
           background: #333333;
-          border: 1px solid gray;
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
           padding: 0 0 0 0px; }
           
 .nav-in	{ width: 980px; 
