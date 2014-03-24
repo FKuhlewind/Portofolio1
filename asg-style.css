@@ -14,7 +14,7 @@
 #vibUpdate, #storeData { margin: 10px 0;}
 
 
-input {margin-right: 10px;}
+input, select {margin-right: 10px;}
 
 .clear
     {   clear: both;
