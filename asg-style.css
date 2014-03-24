@@ -61,7 +61,7 @@ border: 1px solid black;
 border-radius:2px;
 }
 
-button:hover {background-color: #BAB5A7;}
+button:hover {background-color: #BAB5A7; cursor: pointer; cursor: hand; }
 
 /*table td > *:empty {
     display:none;
