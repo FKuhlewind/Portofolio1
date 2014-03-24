@@ -11,7 +11,7 @@ a       { color: #000;
           text-decoration: none;
           outline: 0 none; }
 
-iframe  { width: 95%;
+iframe  { width: 100%;
           height: 100%; }
 
 .wrapper{ color: #b1b1b1; 
@@ -204,7 +204,9 @@ button:hover
 
 #background 
         {  background-color: #fdf6e3; 
-           border: 1px solid #eee8d5; }
+           border: 1px solid #eee8d5; 
+           padding: 10px 0;
+           }
 
 #onLeft { float: left;
           margin-right: 10px; }
