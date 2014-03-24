@@ -171,6 +171,9 @@ p       { font-size: 14px; }
 svg     { background-color: #eee8d5; 
           margin: 10px; }
 
+.svg_button
+        { margin: 0px; } 
+
 input, select 
         { margin-right: 10px; }
 
