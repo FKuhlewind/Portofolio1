@@ -204,7 +204,8 @@ button:hover
 
 #background 
         {  background-color: #fdf6e3; 
-           border: 1px solid #eee8d5; }
+           border: 1px solid #eee8d5;
+           margin: 10px 0; }
 
 #onLeft { float: left;
           margin-right: 10px; }
