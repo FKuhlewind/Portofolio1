@@ -3,28 +3,19 @@
         { margin: 0; 
           padding: 0;
           outline: none; }
-
-/*MAIN*/
-/*body    { color: #b1b1b1; 
-          background: #f4f4f4; } */
          
-
-.wrapper { color: #b1b1b1; 
-          background: #f4f4f4; }
-        
-/*ASG*/
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
-
-
 
 a       { color: #000;
           text-decoration: none;
           outline: 0 none; }
 
-iframe
-        { width: 100%;
+iframe  { width: 100%;
           height: 100%; }
 
+.wrapper{ color: #b1b1b1; 
+          background: #f4f4f4; }
+        
 .assignment iframe
         { border: 0; }
 
@@ -169,7 +160,7 @@ iframe
 
 
 /* ASG COPIED IN ------------------- */
- h1      { font-size: 18px; 
+h1      { font-size: 18px; 
           margin: 12px 0; }
 
 h2      { font-size: 16px; }
