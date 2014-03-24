@@ -172,7 +172,8 @@ svg     { background-color: #eee8d5;
           margin: 10px; }
 
 .svg_button
-        { margin: 0px; } 
+        { margin: 0px; 
+          background-color: none; } 
 
 input, select 
         { margin-right: 10px; }
