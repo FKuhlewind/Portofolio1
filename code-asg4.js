@@ -44,21 +44,27 @@ function defineXYaxis () {
     		.ticks(5);
 	};
 function createForm () {
-	$("#myForm").remove();
+	//$("#myForm").remove();
+	
+	$("#xAxisChoice option, #yAxisChoice option").remove();
+	
 	d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 		vibData = data; 
 		// update dropdown menu
 		a = '';
-		f = '<form style="display:inline" id="myForm"><br/><u>Select values to be displayed: </u><br/><p style="display:inline">x-Axis:</p><select id="xAxisChoice">';
-		n = '</select><p style="display:inline">    y-Axis:   </p><select id="yAxisChoice">';
-		t = '</select><br/><a><i id="update">Click this text to update diagram</i></a></form>';
+		//f = '<form style="display:inline" id="myForm"><br/><u>Select values to be displayed: </u><br/><p style="display:inline">x-Axis:</p><select id="xAxisChoice">';
+		//n = '</select><p style="display:inline">    y-Axis:   </p><select id="yAxisChoice">';
+		//t = '</select><br/><a><i id="update">Click this text to update diagram</i></a></form>';
 		$.each( vibData , function( index, value ) {
   			a = a.concat('<option value='+index+'>'+value[10]+'</option>');
 			});
-		$('body').append(f+a+n+a+t);
+		//$('body').append(f+a+n+a+t);
+		
+		$("#xAxisChoice, #yAxisChoice").append(a);
+		
 
 		// enable update
-		$("#update").on("click", function() {
+		$("#vibUpdate").on("click", function() {
 
 			// get info on which values to display on Axis
 			xD = $("#xAxisChoice").val();
