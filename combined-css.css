@@ -5,8 +5,8 @@ body, div, dl, dt, dd ,ul ,ol ,li ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,pre ,form ,fieldset ,
           outline: none; }
 
 /*MAIN*/
-body    { color: #b1b1b1; 
-          background: #f4f4f4; }
+/*body    { color: #b1b1b1; 
+          background: #f4f4f4; } */
 /*ASG*/
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
 
