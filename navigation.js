@@ -70,6 +70,6 @@ $(document).ready(function() {
 		});
             });
         };
-    //setInterval(changeText, 15000);
+    setInterval(changeText, 15000);
    
 });  
