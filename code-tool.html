@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="tomorrow-night.css" />
+</head>
+
+<body>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="prettify.js"></script>
+
+<script type="text/javascript">
+(function(jQuery){
+        
+  jQuery( document ).ready( function() {
+                
+    prettyPrint();
+                
+  } );
+ 
+}(jQuery))
+</script>
+
+
+<pre><code class="prettyprint"><xmp>// CSS file of the page
+body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          margin: 0; }
+
+a       { color: #000;
+          text-decoration: none;
+          outline: 0 none; }
+
+iframe  { width: 100%;
+          height: 100%; }
+          
+.framepad
+        { padding: 0 10px 0 0; }
+
+.wrapper{ color: #b1b1b1; 
+          background: #f4f4f4; }
+        
+.assignment iframe
+        { border: 0; }
+
+.code iframe
+        { border: 0; }
+
+.clear
+        { clear: both;
+          font-size: 0px; 
+          line-height: 0px;
+          display: block; }
+          
+/*layout*/
+.wrapper									
+        { margin: 0 auto; 
+          min-width: 980px; }
+
+/*header*/
+.quote	{ width: 100%;
+          background: #8f9d45; }
+          
+.quote-container							
+        { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          color: #ffffff; 
+          font-weight: normal;
+          width: 980px;
+          height: 70px; 
+          margin: 0 auto;
+          padding: 10px 0; }
+          
+.quote-container .text						
+        { font-size: 20px;
+          display: inline-block;
+          float: left;
+          padding: 0 24px 0 20px; }
+          
+.quote-container .author				
+        { font-size: 12px; 
+          display: inline-block;
+          float: right;
+          padding: 0px 24px 0px 0; }
+
+/*navigation*/
+.nav 	{ width: 100%;
+          background: #333333;
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
+          padding: 0 0 0 0px; }
+          
+.nav-in	{ width: 980px; 
+          margin: 0 auto ;
+          margin-bottom: 0px !important; }
+          
+.nav-in ul li								
+        { float: left;
+          display: inline-block;
+          padding: 5px 10px 0px 0px;
+          margin: 0 10px 0 20px; }
+        
+.nav-in ul li:last-child
+        { float: right;
+          padding: 5px 10px 0 0;
+          cursor: pointer; 
+          cursor: hand; }
+
+.nav-in ul li svg
+        { padding: 0 0px 0 5px; }
+    
+.svg_1  { fill: #ffffff;
+          stroke-width: 2; }
+
+.svg_button:hover > g > .svg_1
+        { fill: #E89E0C;  }
+
+.green  { fill: #8f9d45; }
+
+.nav-in ul li a								
+        { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          font-weight: normal;
+          font-size: 14px; 
+          color: #ffffff;
+          display: inline-block; 
+          padding: 1px 4px 0px 4px;
+          font-weight: bold;
+          border-radius: 4px;
+          border: 2px solid #333333; }
+
+.nav-in ul li a.selected
+        { color : black;
+          border: 2px solid gray;
+          background: white;
+          border-radius: 4px ; }
+        
+.nav-in ul li a:hover
+        { color: #E89E0C; }
+
+/*main content*/
+.main	{ width: 980px;
+          height: 700px;
+          margin: 0 auto;
+          padding: 5px 0 0px 0; 
+          background: #ffffff; }
+
+.main-in				
+        { width: 942px;
+          margin: 0 auto; }
+          
+.assignment
+        { color: black;
+          width: 100%;
+          height: 73%;
+          margin: 0px 0 15px 0; }
+
+.code	{ background: #333333;
+          height: 22%;
+          width: 100%;
+          margin: 0px 0 0px 0;
+          padding: 0px; }
+
+.right  { display: inline-block;
+          text-align: right; }
+
+.left   { display: inline-block;
+          text-align: left; }
+
+/*footer*/
+.footer	{ width: 100%;
+          background: #333333; }
+.footer-in									
+        { width: 980px; 
+          margin: 0 auto;
+          padding: 5px 0 5px 0; }
+.copy	{ text-align: center;
+          margin: 0 auto; 
+          padding: 0 15px 0 0;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          font-weight: normal; 
+          font-size: 12px;
+          color: white; }
+
+.copy p { margin: 0}
+
+/* ASG COPIED IN ------------------- */
+h1      { font-size: 18px; 
+          margin: 12px 0; }
+
+h2      { font-size: 16px; }
+
+p       { font-size: 14px; }
+
+svg     { background-color: #eee8d5; 
+          margin: 10px; }
+
+.svg_button
+        { margin: 0px; 
+          background-color: transparent; } 
+
+input, select 
+        { margin-right: 10px; }
+
+button  { color: black;
+          background-color: #eee8d5;
+          border: 1px solid black;
+          border-radius: 2px; }
+
+button:hover 
+        { background-color: #BAB5A7;
+          cursor: pointer;
+          cursor: hand; }
+
+.lastColShort 
+        { width: 5%; }
+
+.lastColLong 
+        { width: 12%; }
+
+.clear  { clear: both;
+          font-size: 0px; 
+          line-height: 0px;
+          display: block; }
+
+.smallF { font-size: 12px;}
+
+#background 
+        {  background-color: #fdf6e3; 
+           border: 1px solid #eee8d5; 
+           /*margin: 10px;*/
+           }
+
+#onLeft { float: left;
+          margin-right: 10px; }
+
+#onRight{ padding: 10px 30px 0px 30px;
+          height: 370px;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          font-size: 14px; }
+
+#vibUpdate, #storeData 
+        { margin: 10px 0;}
+
+table   { display: block;
+          float: left;
+          margin-right: 2.35765%;
+          width: 100%;
+          display: table;
+          background-color: #eee8d5;
+          margin-bottom: 2em; }
+table:last-child 
+        { margin-right: 0; }
+@media screen and (max-width: 43.75em) {
+table   { margin-bottom: 1.5em;
+          margin-top: 0.5em; } }
+table th, table td 
+        { padding: 0.5em; }
+table tr
+        { background-color: #fdf6e3; }
+table th 
+        { background-color: #073642;
+          color: #fdf6e3; }
+
+iframe::-webkit-scrollbar         { width: 16px; }  
+iframe::-webkit-scrollbar-track   { background-color: white; }  
+iframe::-webkit-scrollbar-thumb   { background-color: #8f9d45;  
+                              border-radius: 8px;
+                              border: 3px solid white; }
+</xmp>
+</code></pre>
+</body>
+</html>
