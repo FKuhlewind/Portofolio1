@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
+mainp = window.parent.document;
+
 $("#yellC").on("click", function () {
-    $(window.parent.document).find(".author").replaceWith("Florian");
+    $(mainP).find(".author").replaceWith("Suppa");
     
     
     });
