@@ -222,23 +222,24 @@ button:hover
 #vibUpdate, #storeData 
         { margin: 10px 0;}
 
-table   { display: block;
+table#hand   { display: block;
           float: left;
           margin-right: 2.35765%;
           width: 100%;
           display: table;
           background-color: #eee8d5;
           margin-bottom: 2em; }
-table:last-child 
+table#hand:last-child 
         { margin-right: 0; }
 @media screen and (max-width: 43.75em) {
-table   { margin-bottom: 1.5em;
+table#hand
+        { margin-bottom: 1.5em;
           margin-top: 0.5em; } }
-table th, table td 
+table#hand th, table#hand td 
         { padding: 0.5em; }
-table tr
+table#hand tr
         { background-color: #fdf6e3; }
-table th 
+table#hand th 
         { background-color: #073642;
           color: #fdf6e3; }
 
