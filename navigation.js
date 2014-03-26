@@ -65,12 +65,12 @@ $(document).ready(function() {
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
    		$(this).replaceWith(div);
-   		$('.text').css({'font-family':fontE}).fadeIn("slow");
+   		$('.text').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
             $('.author').fadeOut("slow", function(){
    		var div = $("<div class='author'>"+quotes[random].author+"</div>").hide();
    		$(this).replaceWith(div);
-   		$('.author').fadeIn("slow");
+   		$('.author').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
             });
         };
