@@ -9,6 +9,10 @@ $("#yellC").on("click", function () {
     $(mainP).find(".main, iframe::-webkit-scrollbar-track").css({'background-color': 'gray'});
     });
   
+$("#techF").on("click", function () {
+    
+    $(mainP).find("body").css({'font-family': "Lucida Console" });
 
+    });
 
 });
