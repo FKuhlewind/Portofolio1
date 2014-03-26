@@ -6,7 +6,7 @@ $("#yellC").on("click", function () {
     //$(mainP).find(".author").replaceWith("Suppa");
     
     $(mainP).find(".quote, .green, .text, .author, .wrapper").css({'background-color': 'yellow', 'fill': 'yellow', 'color': 'grey'});
-    $(mainP).find(".main").css({'background-color': 'gray'});
+    $(mainP).find(".main, iframe::-webkit-scrollbar-track").css({'background-color': 'gray'});
     });
   
 
