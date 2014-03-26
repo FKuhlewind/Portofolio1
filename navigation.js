@@ -59,7 +59,7 @@ $(document).ready(function() {
             var random = Math.floor(Math.random() * howMany);
             
             var styleE =  $('.text').css('font-family', 'color');
-            alert (styleE);
+            //alert (styleE);
             
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
