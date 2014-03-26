@@ -58,13 +58,14 @@ $(document).ready(function() {
 	    howMany = Object.keys(quotes).length;
             var random = Math.floor(Math.random() * howMany);
             
-            var styleE =  $('.text').css('font-family', 'color');
+            var fontE =  $('.text').css('font-family');
+            var colorE =  $('.text').css('color');
             //alert (styleE);
             
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
    		$(this).replaceWith(div);
-   		$('.text').fadeIn("slow");
+   		$('.text').css({'font-family':fontE}).fadeIn("slow");
 		});
             $('.author').fadeOut("slow", function(){
    		var div = $("<div class='author'>"+quotes[random].author+"</div>").hide();
