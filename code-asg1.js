@@ -16,7 +16,8 @@ $("#techF").on("click", function () {
 
 $("#oceanB").on("click", function () {
 
-    $(mainP).find(".wrapper").css({'background-image':'url(http://www.earthtimes.org/nsimages/files/ocean-acidification_23412.jpg)'});
+    $(mainP).find(".wrapper").css({'background-image':'url(http://www.earthtimes.org/nsimages/files/ocean-acidification_23412.jpg)',
+                                    'background-size':'100%'});
     
     
 
