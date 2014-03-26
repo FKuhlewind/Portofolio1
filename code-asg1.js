@@ -11,7 +11,7 @@ $("#yellC").on("click", function () {
   
 $("#techF").on("click", function () {
     
-    $(mainP).find(".quote, .nav, .main, .footer").css({'font-family': "Lucida Console" });
+    $(mainP).find(".quote").css({'font-family': "Lucida Console" });
 
     });
 
