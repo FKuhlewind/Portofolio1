@@ -58,6 +58,9 @@ $(document).ready(function() {
 	    howMany = Object.keys(quotes).length;
             var random = Math.floor(Math.random() * howMany);
             
+            var styleE =  $('.text').css();
+            alert (styleE);
+            
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
    		$(this).replaceWith(div);
