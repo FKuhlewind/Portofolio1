@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("#yellc").on("click", function () {
+$("#yellC").on("click", function () {
     $(window.parent.document).find(".author").replaceWith("Florian");
     
     
