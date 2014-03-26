@@ -12,6 +12,13 @@ $("#yellC").on("click", function () {
 $("#techF").on("click", function () {
     
     $(mainP).find(".text, .author, .nav-in ul li a, .copy p").css({'font-family': "Lucida Console" });
+    });
+
+$("#oceanB").on("click", function () {
+
+    $(mainP).find(".wrapper").css({'background-image':'url(http://www.earthtimes.org/nsimages/files/ocean-acidification_23412.jpg)'});
+    
+    
 
     });
 
