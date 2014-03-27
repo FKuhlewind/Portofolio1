@@ -188,7 +188,7 @@ input, select
         { margin-right: 10px; }
 
 button  { color: black;
-          background-color: rgba(153,147,69,0.4);
+          background-color: rgba(153,147,69,0.6);
           border: 2px solid gray;
           border-radius: 2px; }
 
