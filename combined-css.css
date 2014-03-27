@@ -209,8 +209,10 @@ button:hover
 .smallF { font-size: 12px;}
 
 #background 
-        {  background-color: #fdf6e3; 
-           border: 1px solid #eee8d5; 
+        {  /*background-color: #fdf6e3; */
+           background-color: rgba(153,147,69,0.2);
+           /*border: 1px solid #eee8d5; */
+           border: 1px solid gray;
            /*margin: 10px;*/
            }
 
