@@ -178,7 +178,7 @@ p       { font-size: 14px; }
 svg     { /*background-color: #eee8d5; */
           background-color: rgba(153,147,69,0.3);
           margin: 10px; 
-          border-radius: 2px;}
+          border-radius: 4px;}
 
 .svg_button
         { margin: 0px; 
