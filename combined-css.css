@@ -246,7 +246,7 @@ table#hand
 table#hand th, table#hand td 
         { padding: 0.5em; }
 table#hand tr
-        { background-color: #fdf6e3; }
+        { background-color: rgba(153,147,69,0.2); }
 table#hand th 
         { background-color: rgba(153,147,69,0.3);
           color: #fdf6e3; }
