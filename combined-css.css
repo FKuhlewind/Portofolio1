@@ -188,12 +188,13 @@ input, select
         { margin-right: 10px; }
 
 button  { color: black;
-          background-color: #eee8d5;
+          background-color: rgba(153,147,69,0.2);
           border: 1px solid black;
           border-radius: 2px; }
 
 button:hover 
-        { background-color: #BAB5A7;
+        { /*background-color: #BAB5A7*/
+          border: 2px solid #8f9d45;
           cursor: pointer;
           cursor: hand; }
 
