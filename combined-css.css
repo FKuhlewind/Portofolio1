@@ -125,7 +125,9 @@ iframe  { width: 100%;
 
 .main-in				
         { width: 942px;
-          margin: 0 auto; }
+          margin: 0 auto; 
+          opacity: 0.4;
+          }
           
 .assignment
         { color: black;
