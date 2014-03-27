@@ -177,7 +177,8 @@ p       { font-size: 14px; }
 
 svg     { /*background-color: #eee8d5; */
           background-color: rgba(153,147,69,0.3);
-          margin: 10px; }
+          margin: 10px; 
+          border-radius: 2px;}
 
 .svg_button
         { margin: 0px; 
@@ -214,6 +215,7 @@ button:hover
            background-color: rgba(153,147,69,0.2);
            /*border: 1px solid #eee8d5; */
            border: 1px solid gray;
+           border-radius: 2px;
            /*margin: 10px;*/
            }
 
