@@ -3,7 +3,7 @@ $(document).ready(function() {
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
-	$("#addStudent").css({"background-color":"white"});
+	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
 	};
 
 d3.json('https://student-data.firebaseio.com/.json', function(data) {
@@ -33,7 +33,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('#addStud, .editStud, .delete ').hide();
 		$('#saveStud').show();
 		$('.newS').show();
-		$("#addStudent").css({"background-color":"#fdf6e3"});
+		$("#addStudent").css({"background-color":"rgba(153,147,69,0.2)"});
 		});
 
 	$("tbody").on("click", "#saveStud", function(e) {
