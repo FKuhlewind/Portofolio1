@@ -147,7 +147,10 @@ iframe  { width: 100%;
 
 /*footer*/
 .footer	{ width: 100%;
-          background: #333333; }
+          background: #333333; 
+          border-top: 1px solid gray;
+          /*border-bottom: 1px solid gray;*/
+          }
 .footer-in									
         { width: 980px; 
           margin: 0 auto;
