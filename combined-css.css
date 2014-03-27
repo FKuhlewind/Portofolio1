@@ -175,7 +175,8 @@ h2      { font-size: 16px; }
 
 p       { font-size: 14px; }
 
-svg     { background-color: #eee8d5; 
+svg     { /*background-color: #eee8d5; */
+          background-color: rgba(153,147,69,0.3);
           margin: 10px; }
 
 .svg_button
