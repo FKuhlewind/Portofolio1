@@ -58,8 +58,8 @@ $(document).ready(function() {
 	    howMany = Object.keys(quotes).length;
             var random = Math.floor(Math.random() * howMany);
             
-            var fontE =  $('.text').css('font-family');
-            var colorE =  $('.text').css('color');
+            fontE =  $('.text').css('font-family');
+            colorE =  $('.text').css('color');
             //alert (styleE);
             
             $('.text').fadeOut("slow", function(){
