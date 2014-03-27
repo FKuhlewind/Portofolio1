@@ -231,6 +231,8 @@ button:hover
         { margin: 10px 0;}
 
 table#hand   { display: block;
+          border: 0.5px solid gray;
+          border-radius: 4px;
           float: left;
           margin-right: 2.35765%;
           width: 100%;
