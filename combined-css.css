@@ -198,6 +198,10 @@ button:hover
           cursor: pointer;
           cursor: hand; }
 
+#edit, #hide, #addSave, #saveStud, .delete, .editStud
+        { display: table-cell;
+         vertical-align: middle; }
+
 .lastColShort 
         { width: 5%; }
 
