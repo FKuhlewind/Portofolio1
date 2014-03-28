@@ -1,5 +1,10 @@
 $(document).ready(function() { 
 
+// check localStorage and style accordingly
+//$("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
+//$("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
+$('body, #onRight').css({'font-family':localStorage.myFont});
+
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
