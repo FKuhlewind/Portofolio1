@@ -2,24 +2,32 @@ $(document).ready(function() {
 
 mainP = window.parent.document;
 
-myPicture = "";
 picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png)",
             "url(http://blog.robbiecooper.org/wp-content/uploads/2009/02/image.jpg)",
             "url(http://krcadinac.com/pictures/600px-Turing_machine_1.JPG)",
              ];
 
+colG = [ ["red", "green"],
+                 ["blue", "yellow"],
+                 ["orange", "purple"]
+               ];
+             
+toColor = [ ".quote, .green, .text, .author, .wrapper",
+            "" ]
+
+
 $("#applyPic").on("click", function(e) {
-   
             myPicture = picGallery[$("#selPic").val()];
             $(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});
-    
             });
 
 $("#colorScheme").on("click", ".col", function(e) {
             
-            myColor = $(this).data('value');
+            colN = $(this).data('value');
             
-            alert ("Color "+myColor);
+            //alert ("Color "+myColor);
+            
+            $(mainP).find(toColor).css({'background-color': colG[colN][0], 'fill':  colG[colN][0], 'color':  colG[colN][1]});
             
             });
 
