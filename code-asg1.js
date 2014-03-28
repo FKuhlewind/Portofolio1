@@ -12,7 +12,7 @@ colG = [ ["red", "green"],
                  ["orange", "purple"]
                ];
              
-toColor = [ ".quote, .green, .text, .author, .wrapper",
+toColor = [ ".quote, .green, .text, .author",
             "" ];
 
 
