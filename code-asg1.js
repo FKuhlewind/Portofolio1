@@ -8,7 +8,7 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
              ];
 
 // background, font, bars
-colG = [ ["#585858", "#C1E1A6", "#118C4E"],
+colG = [ ["rgba(88, 88, 88, 1)", "rgba(193, 225, 166, 1)", "rgba(17, 140, 78, 1)"],
          ["#C63D0F", "#333333", "#7E8F7C"],
          ["#8f9d45", "#FDF3E7", "#333333"] ];
              
@@ -22,16 +22,13 @@ $("#applyPic").on("click", function(e) {
             });
 
 $("#colorScheme").on("click", ".col", function(e) {
-            
             colN = $(this).data('value');
-            
-            //alert ("Color "+myColor);
-            
+
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0], 'fill':colG[colN][0], 'color':colG[colN][1]});
             $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]});
+            $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]});
             
-            $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]});	
-   
+            
             
             });
 
