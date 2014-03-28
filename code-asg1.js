@@ -17,7 +17,9 @@ toColor = [ ".quote, .green, .text, .author",
 
 fontG = [ '"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;',
           '"Lucida Bright", Georgia, serif;',
-          '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;']
+          '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;'];
+          
+toFont = ".quote-container, .nav-in ul li a, .copy";
 
 $("#applyPic").on("click", function(e) {
             myPicture = picGallery[$("#selPic").val()];
@@ -39,7 +41,7 @@ $("#fontScheme").on("click", ".col", function(e) {
             
             myFont = fontG[$(this).data('value')];
             
-            $(mainP).css({'font-family':myFont});
+            $(mainP).find(toFont).css({'font-family':myFont});
             
             });
 
