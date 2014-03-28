@@ -198,7 +198,7 @@ button:hover
           cursor: pointer;
           cursor: hand; }
 
-#edit, #hide, #addSave, #saveStud, .delete, .editStud
+.hand tbody tr td
         { display: table-cell;
          vertical-align: middle; }
 
