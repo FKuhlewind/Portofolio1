@@ -71,7 +71,7 @@ $("#factoryReset").on("click", function(e) {
             $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
             $("#styleTable").css({'background-color':colG[2][0]+'0.2)'});
             $("#styleTable div").css({'background-color':colG[2][0]+'0.3)'});
-            });
+           
             
             });
 
