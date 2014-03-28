@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
 // check localStorage and style accordingly
-$("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
-$("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
+$("#styleTable").css({'background-color':localStorage.myColor+'0.3)'});
+$("#styleTable div").css({'background-color':localStorage.myColor+'0.2)'});
 $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
