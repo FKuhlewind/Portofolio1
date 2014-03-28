@@ -102,7 +102,7 @@ $.when( createTable() ).done(function() {
 			alert ("Your changes have been saved.");
 			});
 		});
-};	
+});	
 
 
 });
