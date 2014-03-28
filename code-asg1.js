@@ -44,7 +44,7 @@ $("#fontScheme").on("click", ".col", function(e) {
             $(mainP).find(toFont).css({'font-family':myFont});
             
             // hard stuff
-            $('body').css({'font-family':myFont});
+            $('body, #onRight').css({'font-family':myFont});
             
             });
 
