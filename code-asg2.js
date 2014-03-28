@@ -30,6 +30,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		
 		$("#hand").remove();
 		$(".here").append(theStudentTemplate(studentData));
+		hideInput();
 		
 		});
 
