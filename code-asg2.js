@@ -1,8 +1,6 @@
 $(document).ready(function() { 
 
-// check localStorage and style accordingly
-$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
-$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
+// check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
@@ -23,6 +21,9 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
   
     	/* append the tables */
     	$(".here").append(theStudentTemplate(studentData));
+    	// assign styling from locaStorage
+    	$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
+	$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
 	hideInput();
 
 	$("thead").on("click", "#edit", function(e){
