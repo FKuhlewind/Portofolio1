@@ -28,7 +28,7 @@ $("#fontScheme").on("click", ".col", function(e) {
             
             myFont = $(this).data('value');
             
-            alert ("Font "+myColor);
+            alert ("Font "+myFont);
             
             });
 
