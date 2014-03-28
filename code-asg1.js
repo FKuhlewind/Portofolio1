@@ -8,7 +8,8 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 
 mainP = window.parent.document;
 
-picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png)",
+picGallery = ["none",
+            "url(http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png)",
             "url(http://blog.robbiecooper.org/wp-content/uploads/2009/02/image.jpg)",
             "url(http://krcadinac.com/pictures/600px-Turing_machine_1.JPG)",
              ];
