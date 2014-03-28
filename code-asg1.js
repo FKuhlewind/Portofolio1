@@ -62,6 +62,12 @@ $("#factoryReset").on("click", function(e) {
             //alert ("Factory Reset!");
             $(mainP).find(".wrapper").css({'background-image':'none'});
             
+            localStorage.setItem("myColor",colG[2][0]);
+
+            $(mainP).find(toColor[0]).css({'background-color':colG[2][0]+'1)', 'fill':colG[2][0]+'1)', 'color':colG[2][1]+'1)'});
+            $(mainP).find(toColor[1]).css({'background-color':colG[2][2]+'1)'});
+            $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[2][2]+'1)'});
+            
             
             });
 
