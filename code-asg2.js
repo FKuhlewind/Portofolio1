@@ -40,7 +40,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('#addStud, .editStud, .delete ').hide();
 		$('#saveStud').show();
 		$('.newS').show();
-		$("#addStudent").css({"background-color":"rgba(153,147,69,0.2)"});
+		$("#addStudent").css({"background-color":localStorage.myColor+"0.2)"});
 		});
 
 	$("tbody").on("click", "#saveStud", function(e) {
