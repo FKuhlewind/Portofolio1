@@ -1,5 +1,8 @@
 $(document).ready(function() { 
 
+// check localStorage and choose font accordingly
+$('body, #onRight').css({'font-family':localStorage.myFont});
+
 eventsTemplate1 = {
     		"events|5-20":[{
       		"name|1-2": "@LOREM ",
