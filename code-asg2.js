@@ -28,7 +28,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	$("thead").on("click", "#hide", function(e){
 		//window.location.reload();
 		
-		$(".hand").remove();
+		$("#hand").remove();
 		$(".here").append(theStudentTemplate(studentData));
 		
 		});
@@ -47,13 +47,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.child("students").child(appNum).child("uvaID").set( $("#uvaIDin").val() );
 		//window.location.reload();
 		
-		$(".hand").remove();
+		$("#hand").remove();
 		d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			studentData = data;
 			appNum = data.students.length;
 			studentData.students = studentData.students.filter(function(e){return e}); 
 		
 			$(".here").append(theStudentTemplate(studentData));
+			hideInput();
 			});
 		
 		alert ("Student added successfully.");
@@ -64,13 +65,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.set( studentData );
 		//window.location.reload();
 		
-		$(".hand").remove();
+		$("#hand").remove();
 		d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			studentData = data;
 			appNum = data.students.length;
 			studentData.students = studentData.students.filter(function(e){return e}); 
 		
 			$(".here").append(theStudentTemplate(studentData));
+			hideInput();
 			});
 		
 		alert ("Student removed.");
@@ -99,13 +101,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			myDataRef.set( studentData );
 			//window.location.reload();
 			
-			$(".hand").remove();
+			$("#hand").remove();
 				d3.json('https://student-data.firebaseio.com/.json', function(data) {
 				studentData = data;
 				appNum = data.students.length;
 				studentData.students = studentData.students.filter(function(e){return e}); 
 		
 				$(".here").append(theStudentTemplate(studentData));
+				hideInput();
 				});
 			
 			alert ("Your changes have been saved.");
