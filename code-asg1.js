@@ -59,7 +59,9 @@ $("#fontScheme").on("click", ".col", function(e) {
 
 $("#factoryReset").on("click", function(e) {
             
-            alert ("Factory Reset!");
+            //alert ("Factory Reset!");
+            $(mainP).find(".wrapper").css({'background-image':'none'});
+            
             
             });
 
