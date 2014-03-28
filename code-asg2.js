@@ -23,7 +23,7 @@ function createTable () {
 		});
 	};
 
-
+createTable;
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
