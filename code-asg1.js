@@ -11,7 +11,7 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
 $("#applyPic").on("click", function(e) {
     
     myPicture = picGallery[$("#selPic").val()];
-    $(mainP).find(".wrapper").css({'background-image':myPicture});
+    $(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});
     
     });
 
