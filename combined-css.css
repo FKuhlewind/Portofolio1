@@ -256,7 +256,7 @@ table#hand th
         { background-color: rgba(153,147,69,0.3);
           color: black; }
 
-#hand tbody tr td
+#hand tbody tr td:last-child
         { display: table-cell;
          text-align: center; }
 
