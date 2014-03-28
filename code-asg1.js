@@ -15,7 +15,7 @@ colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,"],
 toColor = [ ".quote, .green, .text, .author",
             ".nav, .footer" ];
 
-fontG = [ 'Monaco',
+fontG = [ '"Monaco"',
           '"Lucida Bright"',
           '"Trebuchet MS"'];
           
