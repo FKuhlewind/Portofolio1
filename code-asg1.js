@@ -13,7 +13,7 @@ colG = [ ["red", "green", "yellow"],
          ["#8f9d45", "white", "#333333"] ];
              
 toColor = [ ".quote, .green, .text, .author",
-            ".nav, .footer, .nav-in ul li a" ];
+            ".nav, .footer" ];
 
 
 $("#applyPic").on("click", function(e) {
@@ -28,8 +28,8 @@ $("#colorScheme").on("click", ".col", function(e) {
             //alert ("Color "+myColor);
             
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0], 'fill':colG[colN][0], 'color':colG[colN][1]});
-
-            $(mainP).find(toColor[1]).css({'background-color':colG[colN][2], 'border-color':colG[colN][2]});
+            $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]});
+            $(mainP).find(".nav-in ul li a").css({'border-color':colG[colN][2]});
             
             });
 
