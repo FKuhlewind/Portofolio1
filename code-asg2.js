@@ -1,36 +1,25 @@
 $(document).ready(function() { 
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
-//function hideInput () {
-//	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
-//	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
-//	};
+function hideInput () {
+	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
+	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
+	};
 
 // create template and hide input
-function createTable () {
-	d3.json('https://student-data.firebaseio.com/.json', function(data) {
-		studentData = data;
-		appNum = data.students.length;
-		studentData.students = studentData.students.filter(function(e){return e}); 
 
-    		studentTemplateScript = $("#students-template").html();
-    		theStudentTemplate = Handlebars.compile(studentTemplateScript);
+d3.json('https://student-data.firebaseio.com/.json', function(data) {
+	studentData = data;
+	appNum = data.students.length;
+	studentData.students = studentData.students.filter(function(e){return e}); 
+
+    	studentTemplateScript = $("#students-template").html();
+    	theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
-    		/* append the tables */
-    		$("#hand").remove();
-    		$(".here").append(theStudentTemplate(studentData));
-		//hideInput();
-		$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
-		$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
-		
-		});
-};
-createTable();
-
-$.when( createTable() ).done(function() {
-     
-
-
+    	/* append the tables */
+    	$(".here").append(theStudentTemplate(studentData));
+	hideInput();
+	});
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
@@ -39,10 +28,7 @@ $.when( createTable() ).done(function() {
 		});
 
 	$("thead").on("click", "#hide", function(e){
-		//window.location.reload();
-		
-		createTable();
-		
+		window.location.reload();
 		});
 
 	$("tbody").on("click", "td#addSave", function(e) {
@@ -57,20 +43,14 @@ $.when( createTable() ).done(function() {
 		myDataRef.child("students").child(appNum).child("last").set( $("#lastin").val() );
 		myDataRef.child("students").child(appNum).child("email").set( $("#emailin").val() );
 		myDataRef.child("students").child(appNum).child("uvaID").set( $("#uvaIDin").val() );
-		//window.location.reload();
-		
-		createTable();
-		
+		window.location.reload();
 		alert ("Student added successfully.");
 		});
 		
 	$("tbody").on("click", ".delete", function(e) {
 		studentData.students.splice(  $(this).val(),1 );
 		myDataRef.set( studentData );
-		//window.location.reload();
-		
-		createTable();
-		
+		window.location.reload();
 		alert ("Student removed.");
 		});
 	
@@ -95,14 +75,11 @@ $.when( createTable() ).done(function() {
 			studentData.students[vl].email = $("#nEmail").val();
 			
 			myDataRef.set( studentData );
-			//window.location.reload();
-			
-			createTable();
-			
+			window.location.reload();
 			alert ("Your changes have been saved.");
 			});
 		});
-});	
+	});	
 
 
 });
