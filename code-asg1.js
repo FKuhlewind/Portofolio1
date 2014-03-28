@@ -40,6 +40,7 @@ $("#colorScheme").on("click", ".col", function(e) {
 
 $("#fontScheme").on("click", ".col", function(e) {
             myFont = fontG[$(this).data('value')];
+            localStorage.setItem("font", myFont); 
             
             $(mainP).find(toFont).css({'font-family':myFont});
             
