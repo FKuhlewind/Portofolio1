@@ -9,11 +9,21 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
              ];
 
 $("#applyPic").on("click", function(e) {
+   
+            myPicture = picGallery[$("#selPic").val()];
+            $(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});
     
-    myPicture = picGallery[$("#selPic").val()];
-    $(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});
-    
-    });
+            });
+
+$("#colorScheme").on("click", "td div", function(e) {
+            
+            myColor = $(this).val();
+            
+            alert ("Color "+myColor);
+            
+            });
+
+
 
 
 $("#yellC").on("click", function () {
