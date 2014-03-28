@@ -3,6 +3,7 @@ $(document).ready(function() {
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 $("#background").css({'background-color':localStorage.myColor+'0.2)'});
+$("button").css({'background-color':localStorage.myColor+'0.6)'});
 
 var width = 360;
 var height = 360;
