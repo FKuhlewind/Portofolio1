@@ -1,5 +1,9 @@
 $(document).ready(function() { 
-	
+
+// set initial style values
+localStorage.setItem("myColor","rgba(153, 147, 69,");
+localStorage.setItem("myFont", '"Trebuchet MS"'); 
+
     //enable swapping
     function swapElements(elm1, elm2) {
         var parent1, next1,
