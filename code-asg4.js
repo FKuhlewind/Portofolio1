@@ -3,7 +3,6 @@ $(document).ready(function() {
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 $("#background").css({'background-color':localStorage.myColor+'0.2)'});
-//$("svg").css({'background-color':localStorage.myColor+'0.3)'});
 
 var width = 360;
 var height = 360;
@@ -57,9 +56,6 @@ function createForm () {
 		vibData = data; 
 		// update dropdown menu
 		a = '';
-		//f = '<form style="display:inline" id="myForm"><br/><u>Select values to be displayed: </u><br/><p style="display:inline">x-Axis:</p><select id="xAxisChoice">';
-		//n = '</select><p style="display:inline">    y-Axis:   </p><select id="yAxisChoice">';
-		//t = '</select><br/><a><i id="update">Click this text to update diagram</i></a></form>';
 		$.each( vibData , function( index, value ) {
   			a = a.concat('<option value='+index+'>'+value[10]+'</option>');
 			});
@@ -136,7 +132,6 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	  .append("svg")
 	  .attr("width", width)
 	  .attr("height", height);
-	  //.attr("fill", localStorage.myColor+'0.3)');
 	  
 	  //update color from local storage
 	  $("svg").css({'background-color':localStorage.myColor+'0.3)'});
@@ -191,9 +186,6 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	// creates update form
 	createForm();
 
-	///// var newValuesForm='<form id="newValues"><br/><u>Enter new Values to be stored: </u><br/>01: <input type="number" id="val1" class="required number" style="width: 50px;">02: <input type="number" id="val2" style="width: 50px;">03: <input type="number" id="val3" style="width: 50px;">04: <input type="number" id="val4" style="width: 50px;">05: <input type="number" id="val5" style="width: 50px;"><br/>06: <input type="number" id="val6" style="width: 50px;">07: <input type="number" id="val7" style="width: 50px;">08: <input type="number" id="val8" style="width: 50px;">09: <input type="number" id="val9" style="width: 50px;">10: <input type="number" id="val10" style="width: 50px;"><br/>Data type and unit (e.g. <i>Rate [Hz]</i>):<input type="text" id="newLabel" ><br/><a><i id="storeData">Click this text to store new data</i></a></form>';
-	///// $('body').append(newValuesForm);
-
 	// store new data
 	$("#storeData")
 		.on("click", function(e) {
@@ -218,6 +210,4 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 				});
 		});
 });
-
-
 });
