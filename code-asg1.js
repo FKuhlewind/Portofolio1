@@ -15,9 +15,9 @@ colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,"],
 toColor = [ ".quote, .green, .text, .author",
             ".nav, .footer" ];
 
-fontG = [ '"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;',
-          '"Lucida Bright", Georgia, serif;',
-          '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;'];
+fontG = [ '"Avant Garde"',
+          '"Lucida Bright"',
+          '"Trebuchet MS"'];
           
 toFont = ".quote-container, .nav-in ul li a, .copy";
 
