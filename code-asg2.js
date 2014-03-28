@@ -1,10 +1,10 @@
 $(document).ready(function() { 
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
-function hideInput () {
-	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
-	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
-	};
+//function hideInput () {
+//	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
+//	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
+//	};
 
 // create template and hide input
 function createTable () {
@@ -19,11 +19,14 @@ function createTable () {
     		/* append the tables */
     		$("#hand").remove();
     		$(".here").append(theStudentTemplate(studentData));
-		hideInput();
+		//hideInput();
+		$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
+		$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
+		
 		});
 	};
 
-createTable;
+createTable();
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
