@@ -10,7 +10,7 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
 // background, font, bars
 colG = [ ["#585858", "#C1E1A6", "#118C4E"],
          ["#C63D0F", "#333333", "#7E8F7C"],
-         ["#8f9d45", "white", "#333333"] ];
+         ["#8f9d45", "#FDF3E7", "#333333"] ];
              
 toColor = [ ".quote, .green, .text, .author",
             ".nav, .footer" ];
