@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 mainP = window.parent.document;
 
+myPicture = "";
 picGallery = ["http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png",
             "http://blog.robbiecooper.org/wp-content/uploads/2009/02/image.jpg",
             "http://krcadinac.com/pictures/600px-Turing_machine_1.JPG",
