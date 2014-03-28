@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+// check localStorage and style
+$("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
+$("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
+
+
 mainP = window.parent.document;
 
 picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png)",
