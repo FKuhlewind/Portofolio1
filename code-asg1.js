@@ -58,7 +58,7 @@ $("#fontScheme").on("click", ".col", function(e) {
 
 $("#factoryReset").on("click", function(e) {
             
-            
+            alert ("Factory Reset!");
             
             });
 
