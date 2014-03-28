@@ -8,7 +8,7 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
              ];
 
 // background, font, bars
-colG = [ ["#FFF056", "#191919", "#191919"],
+colG = [ ["#585858", "#C1E1A6", "#118C4E"],
          ["#C63D0F", "black", "#7E8F7C"],
          ["#8f9d45", "white", "#333333"] ];
              
