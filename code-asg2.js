@@ -6,7 +6,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
-	$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
+	$("#addStudent").css({"background-color":localStorage.myColor+"0)"});
 	};
 
 // create template and hide input
