@@ -14,12 +14,12 @@ picGallery = ["none",
             "url(http://krcadinac.com/pictures/600px-Turing_machine_1.JPG)",
              ];
 
-// content, font, bars
-colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,"],
-         ["rgba(198, 61, 15,", "rgba(51, 51, 51,", "rgba(126, 143, 124,"],
-         ["rgba(153, 147, 69,", "rgba(253, 243, 231,", "rgba(51, 51, 51,"] ];
+// content, font, bars, quote
+colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,","rgba(88, 88, 88,"],
+         ["rgba(198, 61, 15,", "rgba(51, 51, 51,", "rgba(126, 143, 124,","rgba(198, 61, 15,"],
+         ["rgba(153, 147, 69,", "rgba(253, 243, 231,", "rgba(51, 51, 51,","rgba(143, 157, 69,"] ];
              
-toColor = [ ".quote, .green, .text, .author",
+toColor = [ ".green, .text, .author",
             ".nav, .footer" ];
 
 fontG = [ '"Century Gothic"',
@@ -39,6 +39,9 @@ $("#colorScheme").on("click", ".col", function(e) {
 
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0]+'1)', 'fill':colG[colN][0]+'1)', 'color':colG[colN][1]+'1)'});
             $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]+'1)'});
+            
+             $(mainP).find(".quote").css({'background-color':colG[colN][3]+'1)'});
+            
             $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]+'1)'});
             
             // hard stuff
