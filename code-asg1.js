@@ -12,7 +12,7 @@ colG = [ ["red", "green"],
                  ["orange", "purple"]
                ];
              
-toColor = [ ".quote, .green, .text, .author, iframe::-webkit-scrollbar-thumb",
+toColor = [ ".quote, .green, .text, .author, ::-webkit-scrollbar-thumb",
             "" ];
 
 
