@@ -19,7 +19,7 @@ fontG = [ '"Lucide Grande"',
           '"Lucida Bright"',
           '"Trebuchet MS"'];
           
-toFont = ".quote-container, .nav-in ul li a, .copy";
+toFont = ".text, .author, .nav-in ul li a, .copy";
 
 $("#applyPic").on("click", function(e) {
             myPicture = picGallery[$("#selPic").val()];
