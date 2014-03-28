@@ -7,13 +7,13 @@ picGallery = ["url(http://www.geometrian.com/data/programming/projects/Game%20of
             "url(http://krcadinac.com/pictures/600px-Turing_machine_1.JPG)",
              ];
 
-colG = [ ["red", "green"],
-                 ["blue", "yellow"],
-                 ["orange", "purple"]
-               ];
+// background, font, bars
+colG = [ ["red", "green", "yellow"],
+         ["blue", "yellow", "black"],
+         ["orange", "purple", "white"] ];
              
 toColor = [ ".quote, .green, .text, .author",
-            "" ];
+            ".nav, .footer" ];
 
 
 $("#applyPic").on("click", function(e) {
@@ -28,8 +28,8 @@ $("#colorScheme").on("click", ".col", function(e) {
             //alert ("Color "+myColor);
             
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0], 'fill':colG[colN][0], 'color':colG[colN][1]});
-            $("body::-webkit-scrollbar-thumb").css({'background-color':colG[colN][0]});
-            
+
+            $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]});
             
             });
 
