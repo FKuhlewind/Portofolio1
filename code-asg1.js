@@ -46,8 +46,8 @@ $("#colorScheme").on("click", ".col", function(e) {
             
             // hard stuff
             $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
-            $("#styleTable").css({'background-color':colG[colN][0]+'0.2)'});
-            $("#styleTable div").css({'background-color':colG[colN][0]+'0.3)'});
+            $("#styleTable").css({'background-color':colG[colN][3]+'0.2)'});  ///
+            $("#styleTable div").css({'background-color':colG[colN][3]+'0.3)'}); ///
             });
 
 $("#fontScheme").on("click", ".col", function(e) {
