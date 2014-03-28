@@ -15,7 +15,7 @@ $("#applyPic").on("click", function(e) {
     
             });
 
-$("#colorScheme").on("click", "td div", function(e) {
+$("#colorScheme").on("click", "div", function(e) {
             
             myColor = $(this).val();
             
