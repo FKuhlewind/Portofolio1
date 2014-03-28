@@ -194,7 +194,7 @@ button  { color: black;
 
 button:hover 
         { /*background-color: #BAB5A7*/
-          border: 1px solid #8f9d45;
+          border: 1px solid #E89E0C;
           cursor: pointer;
           cursor: hand; }
 
