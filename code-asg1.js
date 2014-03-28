@@ -15,6 +15,9 @@ colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,"],
 toColor = [ ".quote, .green, .text, .author",
             ".nav, .footer" ];
 
+fontG = [ '"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;',
+          '"Lucida Bright", Georgia, serif;',
+          '"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;']
 
 $("#applyPic").on("click", function(e) {
             myPicture = picGallery[$("#selPic").val()];
@@ -28,16 +31,13 @@ $("#colorScheme").on("click", ".col", function(e) {
             $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]+'1)'});
             $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]+'1)'});
             
-            //change later!!!
             $("#styleTable").css({'background-color':colG[colN][0]+'0.2)'});
             $("#styleTable div").css({'background-color':colG[colN][0]+'0.3)'});
-            
             });
-
 
 $("#fontScheme").on("click", ".col", function(e) {
             
-            myFont = $(this).data('value');
+            myFont = fontG[$(this).data('value')];
             
             alert ("Font "+myFont);
             
