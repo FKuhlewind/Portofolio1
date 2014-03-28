@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-// check localStorage and style
+// check localStorage and style accordingly
 $("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
 $("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
-
+$('body, #onRight').css({'font-family':localStorage.myFont});
 
 mainP = window.parent.document;
 
