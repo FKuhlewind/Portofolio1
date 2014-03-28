@@ -71,6 +71,8 @@ $("#factoryReset").on("click", function(e) {
             $(mainP).find(toColor[1]).css({'background-color':colG[2][2]+'1)'});
             $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[2][2]+'1)'});
             
+            $(mainP).find(".quote, .text, .author").css({'background-color':colG[colN][3]+'1)'});
+            
             $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
             $("#styleTable").css({'background-color':colG[2][0]+'0.2)'});
             $("#styleTable div").css({'background-color':colG[2][0]+'0.3)'});
