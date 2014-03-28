@@ -27,6 +27,11 @@ function createTable () {
 };
 createTable();
 
+$.when( createTable() ).done(function() {
+     
+
+
+
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		$("#addStud, tr td:last-child, tbody tr:last-child, #hide").show();
@@ -97,7 +102,7 @@ createTable();
 			alert ("Your changes have been saved.");
 			});
 		});
-		
+	});	
 
 
 });
