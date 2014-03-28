@@ -29,8 +29,8 @@ $("#colorScheme").on("click", ".col", function(e) {
             $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]+'1)'});
             
             //change later!!!
-            $("#styleTable").css({'background-color':'rgba(88, 88, 88, 0.2)'});
-            $("#styleTable div").css({'background-color':'rgba(88, 88, 88, 0.3)'});
+            $("#styleTable").css({'background-color':colG[colN][0]+'0.2)'});
+            $("#styleTable div").css({'background-color':colG[colN][0]+'0.3)'});
             
             });
 
