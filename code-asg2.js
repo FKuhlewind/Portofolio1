@@ -24,9 +24,7 @@ function createTable () {
 		$("#addStudent").css({"background-color":"rgba(255,255,255,0)"});
 		
 		});
-	};
 
-createTable();
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
@@ -98,5 +96,8 @@ createTable();
 			alert ("Your changes have been saved.");
 			});
 		});
-	
+		
+};
+createTable();
+
 });
