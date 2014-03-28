@@ -39,7 +39,7 @@ $("#fontScheme").on("click", ".col", function(e) {
             
             myFont = fontG[$(this).data('value')];
             
-            alert ("Font "+myFont);
+            $(mainP).css({'font-family':myFont});
             
             });
 
