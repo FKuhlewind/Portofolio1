@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
+$("#background").css({'background-color':localStorage.myColor+'0.2)'});
+$("svg").css({'background-color':localStorage.myColor+'0.3)'});
 
 eventsTemplate1 = {
     		"events|5-20":[{
