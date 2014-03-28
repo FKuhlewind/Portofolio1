@@ -19,7 +19,6 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	/* append the tables */
     	$(".here").append(theStudentTemplate(studentData));
 	hideInput();
-	});
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
