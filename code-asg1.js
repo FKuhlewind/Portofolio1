@@ -24,6 +24,14 @@ $("#colorScheme").on("click", ".col", function(e) {
             });
 
 
+$("#fontScheme").on("click", ".col", function(e) {
+            
+            myFont = $(this).data('value');
+            
+            alert ("Font "+myColor);
+            
+            });
+
 
 
 $("#yellC").on("click", function () {
