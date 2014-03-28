@@ -9,7 +9,7 @@ picGallery = ["http://www.geometrian.com/data/programming/projects/Game%20of%20L
 
 $("#applyPic").on("click", function(e) {
     
-    myPicture = picGallery[$("#xselPic").val();
+    myPicture = picGallery[$("#selPic").val()];
     $(mainP).find(".wrapper").css({'background-image':myPicture});
     
     });
