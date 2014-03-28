@@ -135,11 +135,11 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	mySVG = d3.select(".here")
 	  .append("svg")
 	  .attr("width", width)
-	  .attr("height", height)
-	  .attr("fill", localStorage.myColor+'0.3)');
+	  .attr("height", height);
+	  //.attr("fill", localStorage.myColor+'0.3)');
 	  
 	  //update color from local storage
-	  //$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+	  $("svg").css({'background-color':localStorage.myColor+'0.3)'});
 	  
 	//create circles
 	mySVG.selectAll("circle")
