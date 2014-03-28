@@ -13,7 +13,7 @@ colG = [ ["red", "green"],
                ];
              
 toColor = [ ".quote, .green, .text, .author, .wrapper",
-            "" ]
+            "" ];
 
 
 $("#applyPic").on("click", function(e) {
@@ -27,7 +27,7 @@ $("#colorScheme").on("click", ".col", function(e) {
             
             //alert ("Color "+myColor);
             
-            $(mainP).find(toColor).css({'background-color': colG[colN][0], 'fill':  colG[colN][0], 'color':  colG[colN][1]});
+            $(mainP).find(toColor).css({'background-color':colG[colN][0], 'fill':colG[colN][0], 'color':colG[colN][1]});
             
             });
 
