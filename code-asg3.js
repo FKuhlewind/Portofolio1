@@ -3,7 +3,7 @@ $(document).ready(function() {
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 $("#background").css({'background-color':localStorage.myColor+'0.2)'});
-$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+//$("svg").css({'background-color':localStorage.myColor+'0.3)'});
 
 eventsTemplate1 = {
     		"events|5-20":[{
@@ -54,7 +54,11 @@ createSVG = function () {
 	var mySVG = d3.select(".here")
 	 	.append("svg")
 	 	.attr("width", width)
-    		.attr("height", height);    
+    		.attr("height", height);
+    	
+    	// define color from localStorage	
+    	$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+    	
 	//Create bars
 	mySVG.selectAll("rect")
     		.data(myObject.events)
