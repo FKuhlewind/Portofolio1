@@ -12,7 +12,7 @@ colG = [ ["red", "green"],
                  ["orange", "purple"]
                ];
              
-toColor = [ ".quote, .green, .text, .author, ::-webkit-scrollbar-thumb",
+toColor = [ ".quote, .green, .text, .author",
             "" ];
 
 
@@ -28,6 +28,8 @@ $("#colorScheme").on("click", ".col", function(e) {
             //alert ("Color "+myColor);
             
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0], 'fill':colG[colN][0], 'color':colG[colN][1]});
+            $("::-webkit-scrollbar-thumb").css({'background-color':colG[colN][0]});
+            
             
             });
 
