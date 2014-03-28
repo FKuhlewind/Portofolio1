@@ -58,8 +58,7 @@ $("#fontScheme").on("click", ".col", function(e) {
             });
 
 $("#factoryReset").on("click", function(e) {
-            
-            //alert ("Factory Reset!");
+
             $(mainP).find(".wrapper").css({'background-image':'none'});
             
             localStorage.setItem("myColor",colG[2][0]);
@@ -75,8 +74,5 @@ $("#factoryReset").on("click", function(e) {
             
             $(mainP).find(toFont).css({'font-family':fontG[2]});
             $('body, #onRight').css({'font-family':fontG[2]});
-           
             });
-
-
 });
