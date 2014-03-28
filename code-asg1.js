@@ -3,7 +3,7 @@ $(document).ready(function() {
 // check localStorage and style accordingly
 $("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
 $("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
-$("button").css({'background-color':localStorage.myColor+'0.6)'});
+$("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 mainP = window.parent.document;
