@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
-$("button").css({'background-color':localStorage.myColor+'0.6)'});
+
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
@@ -25,6 +25,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	// assign styling from locaStorage
     	$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
 	$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
+	$("button").css({'background-color':localStorage.myColor+'0.6)'});
 	hideInput();
 
 	$("thead").on("click", "#edit", function(e){
