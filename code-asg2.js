@@ -11,8 +11,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 	appNum = data.students.length;
 	studentData.students = studentData.students.filter(function(e){return e}); 
 
-    	var studentTemplateScript = $("#students-template").html();
-    	var theStudentTemplate = Handlebars.compile(studentTemplateScript);
+    	studentTemplateScript = $("#students-template").html();
+    	theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
     	/* append the tables */
     	$(".here").append(theStudentTemplate(studentData));
@@ -26,7 +26,11 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		});
 
 	$("thead").on("click", "#hide", function(e){
-		window.location.reload();
+		//window.location.reload();
+		
+		$(".hand").remove();
+		$(".here").append(theStudentTemplate(studentData));
+		
 		});
 
 	$("tbody").on("click", "td#addSave", function(e) {
@@ -41,14 +45,34 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.child("students").child(appNum).child("last").set( $("#lastin").val() );
 		myDataRef.child("students").child(appNum).child("email").set( $("#emailin").val() );
 		myDataRef.child("students").child(appNum).child("uvaID").set( $("#uvaIDin").val() );
-		window.location.reload();
+		//window.location.reload();
+		
+		$(".hand").remove();
+		d3.json('https://student-data.firebaseio.com/.json', function(data) {
+			studentData = data;
+			appNum = data.students.length;
+			studentData.students = studentData.students.filter(function(e){return e}); 
+		
+			$(".here").append(theStudentTemplate(studentData));
+			});
+		
 		alert ("Student added successfully.");
 		});
 		
 	$("tbody").on("click", ".delete", function(e) {
 		studentData.students.splice(  $(this).val(),1 );
 		myDataRef.set( studentData );
-		window.location.reload();
+		//window.location.reload();
+		
+		$(".hand").remove();
+		d3.json('https://student-data.firebaseio.com/.json', function(data) {
+			studentData = data;
+			appNum = data.students.length;
+			studentData.students = studentData.students.filter(function(e){return e}); 
+		
+			$(".here").append(theStudentTemplate(studentData));
+			});
+		
 		alert ("Student removed.");
 		});
 	
@@ -73,7 +97,17 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			studentData.students[vl].email = $("#nEmail").val();
 			
 			myDataRef.set( studentData );
-			window.location.reload();
+			//window.location.reload();
+			
+			$(".hand").remove();
+				d3.json('https://student-data.firebaseio.com/.json', function(data) {
+				studentData = data;
+				appNum = data.students.length;
+				studentData.students = studentData.students.filter(function(e){return e}); 
+		
+				$(".here").append(theStudentTemplate(studentData));
+				});
+			
 			alert ("Your changes have been saved.");
 			});
 		});
