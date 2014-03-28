@@ -104,5 +104,5 @@ $.when( createTable() ).done(function() {
 		});
 	});	
 
-
+};
 });
