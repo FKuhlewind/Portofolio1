@@ -54,6 +54,13 @@ $("#fontScheme").on("click", ".col", function(e) {
             
             // hard stuff
             $('body, #onRight').css({'font-family':myFont});
+            });
+
+$("#factoryReset").on("click", function(e) {
+            
+            
             
             });
+
+
 });
