@@ -1,5 +1,10 @@
 $(document).ready(function() { 
 
+// check localStorage and choose font accordingly
+$('body, #onRight').css({'font-family':localStorage.myFont});
+$("#background").css({'background-color':localStorage.myColor+'0.2)'});
+$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+
 var width = 360;
 var height = 360;
 var padding = 45;
