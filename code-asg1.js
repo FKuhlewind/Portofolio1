@@ -33,15 +33,18 @@ $("#colorScheme").on("click", ".col", function(e) {
             $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]+'1)'});
             $(mainP).find(".nav-in ul li a").css({'border':'2px solid '+colG[colN][2]+'1)'});
             
+            // hard stuff
             $("#styleTable").css({'background-color':colG[colN][0]+'0.2)'});
             $("#styleTable div").css({'background-color':colG[colN][0]+'0.3)'});
             });
 
 $("#fontScheme").on("click", ".col", function(e) {
-            
             myFont = fontG[$(this).data('value')];
             
             $(mainP).find(toFont).css({'font-family':myFont});
+            
+            // hard stuff
+            $('body').css({'font-family':myFont});
             
             });
 
