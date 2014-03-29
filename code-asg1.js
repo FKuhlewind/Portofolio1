@@ -13,7 +13,7 @@ picGallery = ["none",
             "url(http://2.bp.blogspot.com/_3KKJETFsdkI/TNN8FfzziYI/AAAAAAAAJa8/GPLnrwii4UU/s1600/cern.jpeg)",
             "url(http://www.mediahosting.at/cpg15x/albums/userpics/10001/HD_Space_Wallpapers_-_Star_field_-_hubble_deep_3.jpg)",
             "url(http://i1.ytimg.com/vi/G3h1QTe9XIE/maxresdefault.jpg)",
-            "url(http://www.npl.co.uk/upload/img/turing-5.jpg)"
+            "url(http://www.npl.co.uk/upload/img/turing-5.jpg)",
             "url(http://www.geekwithenvy.com/wp-content/uploads/2014/01/Aurora-.jpg)"
             
             
