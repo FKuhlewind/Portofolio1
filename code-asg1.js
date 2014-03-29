@@ -16,7 +16,7 @@ picGallery = ["none",
 
 // content, font, bars, quote
 colG = [ ["rgba(88, 88, 88,", "rgba(193, 225, 166,", "rgba(17, 140, 78,","rgba(88, 88, 88,"],
-         ["rgba(133, 105, 65,", "rgba(182, 182, 182,", "rgba(184, 29, 24,","rgba(32, 32, 32,"], /// DARK rgba(118, 97, 81,
+         ["rgba(115, 93, 65,", "rgba(182, 182, 182,", "rgba(184, 29, 24,","rgba(32, 32, 32,"], /// DARK rgba(118, 97, 81,  rgba(133, 105, 65,
          ["rgba(153, 147, 69,", "rgba(253, 243, 231,", "rgba(51, 51, 51,","rgba(143, 157, 69,"] ]; /// STANDARD
              
 toColor = [ ".green, .text, .author",
