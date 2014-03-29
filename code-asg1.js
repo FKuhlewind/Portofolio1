@@ -12,6 +12,7 @@ picGallery = ["none",
             "url(http://www.marekfiser.com/Img/1024/768/Img/Projects/GameOfLifeCuda/Zoom03.140211.png)",
             "url(http://2.bp.blogspot.com/_3KKJETFsdkI/TNN8FfzziYI/AAAAAAAAJa8/GPLnrwii4UU/s1600/cern.jpeg)",
             "url(http://www.mediahosting.at/cpg15x/albums/userpics/10001/HD_Space_Wallpapers_-_Star_field_-_hubble_deep_3.jpg)",
+            "url(http://i1.ytimg.com/vi/G3h1QTe9XIE/maxresdefault.jpg)"
              ];
 
 // content, font, bars, quote
