@@ -36,6 +36,8 @@ $("#applyPic").on("click", function(e) {
 $("#colorScheme").on("click", ".col", function(e) {
             colN = $(this).data('value');
             localStorage.setItem("myColor",colG[colN][0]);
+            
+            alert ($(this).data('value'));
 
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0]+'1)', 'fill':colG[colN][0]+'1)', 'color':colG[colN][1]+'1)'});
             $(mainP).find(toColor[1]).css({'background-color':colG[colN][2]+'1)'});
