@@ -215,7 +215,7 @@ $.mockJSON.data = {
         return pad(randomDate().getSeconds());
     },
     LOREM : function() {
-        var words = 'lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum'.split(' ');
+        var words = 'du entfernst dich von mir du Stunde Wunden schlägt mir dein Flügelschlag allein was soll ich mit meinem Munde mit meiner Nacht mit meinem Tag ich habe keine Geliebte kein Haus keine Stelle auf der ich lebe alle Dinge an die ich mich gebe werden reich und geben mich aus'.split(' ');
         var index = Math.floor(rand() * words.length);
         return words[index];
     },
