@@ -10,7 +10,7 @@ mainP = window.parent.document;
 
 picGallery = ["none",
             "url(http://www.geometrian.com/data/programming/projects/Game%20of%20Life/2/GameOfLife2.png)",
-            "url(http://blog.robbiecooper.org/wp-content/uploads/2009/02/image.jpg)",
+            "url(http://2.bp.blogspot.com/_3KKJETFsdkI/TNN8FfzziYI/AAAAAAAAJa8/GPLnrwii4UU/s1600/cern.jpeg)",
             "url(http://www.mediahosting.at/cpg15x/albums/userpics/10001/HD_Space_Wallpapers_-_Star_field_-_hubble_deep_3.jpg)",
              ];
 
