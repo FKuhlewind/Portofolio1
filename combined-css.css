@@ -155,14 +155,14 @@ iframe  { width: 100%;
           display: inline-block}
 
 .codeLeft
-        { float: left;
+        { padding: 5px
         
         }
 
 .codeRight
-        { float: right;
-          padding: 5px 5px 0 0;
-        
+        { position: absolute;
+          right: 5px;
+          top: 5px;
         }
 
 
