@@ -30,7 +30,6 @@
           top: 15px;
           width: 170px;
           border: 2px solid #969896;
-          padding: 0 auto;
         }
 
 .codeButton2
@@ -42,6 +41,7 @@
           padding: 0 auto;
           }
 
+.dIn    { margin: 0 auto; }
 
 /* style for hovering over tooltip */
 .yell:hover { border: 2px solid orange;
