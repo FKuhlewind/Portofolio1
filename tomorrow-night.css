@@ -12,6 +12,8 @@
 
 .codeTop
         { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
+          color: #969896;
+          font-size: 20px;
           display: inline-block}
 
 .codeLeft
@@ -20,7 +22,7 @@
         }
 
 .codeRight
-        { font-size: 12px ; }
+        {  }
 
 .codeButton1
         { position: fixed;
