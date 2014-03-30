@@ -27,13 +27,13 @@
 .codeButton1
         { position: fixed;
           right: 10px;
-          top: 10px;
+          top: 15px;
         }
 
 .codeButton2
         { position: fixed;
           right: 10px;
-          top: 36px; }
+          top: 41px; }
 
 
 /* style for hovering over tooltip */
