@@ -46,7 +46,9 @@
           }
 
 .codeButton1:hover, .codeButton2:hover
-        { border: 2px solid orange; }
+        { border: 2px solid orange; 
+        cursor: pointer;
+          cursor: hand; }
 
 /* style for hovering over tooltip */
 .yell:hover { border: 2px solid orange;
