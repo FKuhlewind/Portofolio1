@@ -35,6 +35,7 @@
 
 .codeButton2
         { top: 41px; 
+        position: absolute;
           
           /*position: fixed;
           right: 10px;
