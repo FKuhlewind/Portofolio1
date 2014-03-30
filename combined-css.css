@@ -159,10 +159,16 @@ iframe  { width: 100%;
         
         }
 
-.codeRight
-        { position: absolute;
+.codeButton1
+        { position: fixed;
           right: 5px;
           top: 5px;
+        }
+
+.codeButton2
+        { position: fixed;
+          right: 5px;
+          top: 15px;
         }
 
 
