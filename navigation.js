@@ -16,7 +16,6 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
         parent2.insertBefore(elm1, next2);
         };
     $("#swap_button").on("click", function () {
-    	
         swapElements($(".main-in .code")[0], $(".main-in .assignment")[0]);
         });
    
@@ -32,12 +31,9 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
         });
         
     //enable navigation  
-    
     $(".tabs").on("click", "a", function (e) {
     	
     	if ( !$(this).hasClass('selected') ) {
-    		
-    		//$.stop();
     	 
     		sel = ($(this).attr("value"));
     	
@@ -54,7 +50,7 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
     		} { e.preventDefault() }
     	});
    
-   //create random quotes
+   //display random quotes
    myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
     function changeText() {
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
@@ -64,7 +60,6 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
             
             fontE =  $('.text').css('font-family');
             colorE =  $('.text').css('color');
-            //alert (styleE);
             
             $('.text').fadeOut("slow", function(){
    		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
@@ -79,5 +74,4 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
             });
         };
     setInterval(changeText, 15000);
-   
-});  
+});
