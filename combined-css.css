@@ -148,28 +148,8 @@ iframe  { width: 100%;
 .left   { display: inline-block;
           text-align: left; }
 
-/*code*/
 
-.codeTop
-        { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
-          display: inline-block}
-
-.codeLeft
-        { padding: 5px
         
-        }
-
-.codeButton1
-        { position: fixed;
-          right: 5px;
-          top: 5px;
-        }
-
-.codeButton2
-        { position: fixed;
-          right: 5px;
-          top: 25px;
-        }
 
 
 /*footer*/
