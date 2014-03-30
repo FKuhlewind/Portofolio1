@@ -24,7 +24,7 @@
 .codeRight
         {  }
 
-.codeButton1
+.codeButton1, .codeButton2
         { position: fixed;
           right: 10px;
           top: 15px;
@@ -34,16 +34,19 @@
         }
 
 .codeButton2
-        { position: fixed;
+        { top: 41px; 
+          
+          /*position: fixed;
           right: 10px;
-          top: 41px; 
+          
           width: 170px;
           border: 2px solid #969896;
           padding: 0 auto;
-          text-align: center;
+          text-align: center;*/
           }
 
-
+.codeButton1:hover, .codeButton2:hover
+        { border: 2px solid orange; }
 
 /* style for hovering over tooltip */
 .yell:hover { border: 2px solid orange;
