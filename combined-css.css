@@ -161,6 +161,7 @@ iframe  { width: 100%;
 
 .codeRight
         { float: right;
+          padding: 5px 5px 0 0;
         
         }
 
