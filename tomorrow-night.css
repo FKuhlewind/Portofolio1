@@ -17,7 +17,7 @@
           display: inline-block}
 
 .codeLeft
-        { margin: 10px
+        { margin: 10px 0 0 0;
         
         }
 
@@ -28,12 +28,17 @@
         { position: fixed;
           right: 10px;
           top: 15px;
+          width: 160px;
+          border: 1px solid #969896;
         }
 
 .codeButton2
         { position: fixed;
           right: 10px;
-          top: 41px; }
+          top: 41px; 
+          width: 160px;
+          border: 1px solid #969896;
+          }
 
 
 /* style for hovering over tooltip */
