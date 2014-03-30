@@ -13,7 +13,7 @@
 .codeTop
         { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
           color: #969896;
-          font-size: 20px;
+          font-size: 16px;
           display: inline-block}
 
 .codeLeft
@@ -26,14 +26,14 @@
 
 .codeButton1
         { position: fixed;
-          right: 5px;
-          top: 5px;
+          right: 10px;
+          top: 10px;
         }
 
 .codeButton2
         { position: fixed;
-          right: 5px;
-          top: 25px; }
+          right: 10px;
+          top: 36px; }
 
 
 /* style for hovering over tooltip */
