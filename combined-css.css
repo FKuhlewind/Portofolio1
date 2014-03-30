@@ -148,6 +148,23 @@ iframe  { width: 100%;
 .left   { display: inline-block;
           text-align: left; }
 
+/*code*/
+
+.codeTop
+        { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
+          display: inline-block}
+
+.codeLeft
+        { float: left;
+        
+        }
+
+.codeRight
+        { float: right;
+        
+        }
+
+
 /*footer*/
 .footer	{ width: 100%;
           background: #333333; 
