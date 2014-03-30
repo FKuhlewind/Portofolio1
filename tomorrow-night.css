@@ -9,6 +9,31 @@
   padding: 10px;*/
 }
 
+*code*/
+
+.codeTop
+        { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
+          display: inline-block}
+
+.codeLeft
+        { padding: 5px
+        
+        }
+
+.codeRight
+        { font-size: 5px ; }
+
+.codeButton1
+        { position: fixed;
+          right: 5px;
+          top: 5px;
+        }
+
+.codeButton2
+        { position: fixed;
+          right: 5px;
+          top: 25px;
+
 
 /* style for hovering over tooltip */
 .yell:hover { border: 2px solid orange;
