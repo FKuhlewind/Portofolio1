@@ -27,14 +27,14 @@
 .codeButton1, .codeButton2
         { position: absolute;
           right: 10px;
-          top: 15px;
+          top: 41px;
           width: 170px;
           border: 2px solid #969896;
           text-align: center;
         }
 
 .codeButton2
-        { top: 41px; 
+        { top: 15px; 
         position: fixed;
           
           /*position: fixed;
