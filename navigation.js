@@ -31,8 +31,8 @@ assgH = "73%";
             height: codeH
             }, 1000 ); 
         
-        codeH = 73%;
-	assgH = 22%;
+        codeH = "73%";
+	assgH = "22%";
 	
         e.preventDefault();
         });
