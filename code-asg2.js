@@ -3,17 +3,6 @@ $(document).ready(function() {
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
-// validate
-/*$('#newStud').validate({
-	rules: {
-		firstN: 'required'
-		},
-	
-	 messages: {
-            firstN: "Please enter your first name"
-	 	}
-	
-	});*/
 	
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
