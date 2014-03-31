@@ -19,6 +19,7 @@ iframe  { width: 100%;
 .carousel:hover 
         { border: 2px solid blue;
           border-right: none;
+          background-color: white;
         }
           
 
@@ -29,7 +30,7 @@ iframe  { width: 100%;
           /*border: 2px solid blue;*/
           border-radius: 4px;
           background-color: white;
-          z-index: 15;
+          z-index: 5;
      
           
         }
@@ -42,7 +43,7 @@ iframe  { width: 100%;
           top: 10px;
           border: 2px solid blue;
           border-radius: 4px;
-          z-index: 5;
+          z-index: 15;
      
         }
 
