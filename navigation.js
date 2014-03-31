@@ -58,7 +58,7 @@ assgH = "73%";
     	});
    
    //enable and disable tooltipster
-    //prettyPrint();
+    prettyPrint();
     $('.yell').tooltipster();
     $('.yell').tooltipster('disable');
        
@@ -67,7 +67,7 @@ assgH = "73%";
        		$('.yell').tooltipster('enable');
        		$('.codeButton2').replaceWith('<div class="codeButton3"><div class="dIn">Disable Tooltips</div></div>');
        		}); 	
-      $('.codeRight').on("click", ".codeButton3", function () {
+    $('.codeRight').on("click", ".codeButton3", function () {
        		$('.yell').removeClass('tt');
        		$('.yell').tooltipster('disable');
        		$('.codeButton3').replaceWith('<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>');
