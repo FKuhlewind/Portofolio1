@@ -38,7 +38,7 @@
         <fieldset>
           <td>
             <label for="firstin">First</label>
-            <input type="text" id="firstin" name="firstin" class="newS" value="" aria-describedby="name-format" required/>
+            <input type="text" id="firstin" name="firstin" class="newS" value="" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname"/>
             <span id="name-format" class="help">Format: firstname lastname</span>
           </td>
           <td><input type="text" id="lastin" class="newS"/></td>
