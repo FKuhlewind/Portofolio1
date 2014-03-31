@@ -39,7 +39,7 @@ iframe  { width: 100%;
         { float: right;
           width: 500px;
           height: 490px /*490px*/;
-         
+         background-color: blue;
           border: 2px solid blue;
           border-radius: 4px;
           z-index: 1;
