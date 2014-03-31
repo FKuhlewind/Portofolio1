@@ -34,12 +34,14 @@
         </tr>
       {{/students}}
         <tr id="addStudent">
-        <form class="newS" id="newStud">
+        <form class="newS" id="newStud" method="post">
+        <fieldset>
           <td><label for="firstin">First</label><input type="text" id="firstin" class="newS" required/></td>
           <td><input type="text" id="lastin" class="newS"/></td>
           <td><input type="text" id="uvaIDin" class="newS"/></td>
           <td><input type="text" id="emailin" class="newS"/></td>
           <td id="addSave"><button id="addStud">Add Student</button><button id="saveStud" type="submit" value="Submit">Save</button></td>
+        </fieldset>
         </form>
         </tr>
     </tbody>
