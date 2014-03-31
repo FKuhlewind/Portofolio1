@@ -4,7 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title></title>
   
-  <!--<link href="asg-style.css" rel="stylesheet" type="text/css" media="all" />-->
   <link href="combined-css.css" rel="stylesheet" type="text/css" media="all" />
 
   <script type="text/javascript" src="jquery.js"></script>
@@ -34,18 +33,12 @@
         </tr>
       {{/students}}
         <tr id="addStudent">
-        <form class="newS" id="newStud" method="post">
-        <fieldset>
-          <td>
-            <label for="firstin">First</label>
-            <input type="text" id="firstin" name="firstin" class="newS" value="" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="firstname lastname"/>
-            <span id="name-format" class="help">Format: firstname lastname</span>
-          </td>
+        <form class="newS" id="newStud">
+          <td><input type="text" id="firstin" class="newS"/></td>
           <td><input type="text" id="lastin" class="newS"/></td>
           <td><input type="text" id="uvaIDin" class="newS"/></td>
           <td><input type="text" id="emailin" class="newS"/></td>
-          <td id="addSave"><button id="addStud">Add Student</button><button id="saveStud" type="submit" value="Submit">Save</button></td>
-        </fieldset>
+          <td id="addSave"><button id="addStud">Add Student</button><button id="saveStud">Save</button></td>
         </form>
         </tr>
     </tbody>
