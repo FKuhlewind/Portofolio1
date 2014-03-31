@@ -27,12 +27,9 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
         $( ".assignment" ).animate({
             height: $(".code").css("height")
             }, 1000 ); 
-        var $this=$(this);
-        $this
-            .attr('disabled','disabled');
-             setTimeout(function() {
-             $this.removeAttr('disabled');
-             }, 1500);
+        
+        $("#size_button").off("click").delay(1500).on("click");
+        
         e.preventDefault();
         });
         
