@@ -21,16 +21,20 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
    
     //enable resizing
     $("#size_button").on("click", function (e) {
+    	
+    	if ( !$(this).hasClass('pause') ) {
+    	
         $( ".code" ).animate({
             height: $(".assignment").css("height")
             }, 1000 );
         $( ".assignment" ).animate({
             height: $(".code").css("height")
             }, 1000 ); 
-        
-        $("#size_button").off("click").delay(1500).on("click");
+        $("#size_button").addClass("pause").delay(1200).removeClass("pause");
         
         e.preventDefault();
+    	} { e.preventDefault() }
+        
         });
         
     //enable navigation  
