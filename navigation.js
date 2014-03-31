@@ -22,7 +22,7 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
     //enable resizing
     $("#size_button").on("click", function (e) {
     	
-    	if ( !$(this).hasClass('pause') ) {
+    	if ( !$("#size_button").hasClass('pause') ) {
     	
         $( ".code" ).animate({
             height: $(".assignment").css("height")
