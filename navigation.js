@@ -31,8 +31,12 @@ assgH = "73%";
             height: codeH
             }, 1000 ); 
         
-        codeH = "95%"-assgH;
-	assgH = "95%"-codeH;
+        tmp = codeH;
+        codeH = assgH;
+        assgH = tmp;
+        
+        //codeH = "95%"-assgH;
+	//assgH = "95%"-codeH;
 	
         e.preventDefault();
         });
