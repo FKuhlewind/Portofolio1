@@ -53,13 +53,13 @@
           cursor: hand; }
 
 /* style for hovering over tooltip */
+
+.tt {border-bottom: 2px #A7E9FF dashed; }
+
 .tt:hover { border: 2px solid orange;
               border-radius: 6px; }
 
-.tt {border-bottom: 2px #A7E9FF dashed; }
-           
-.yell { border: 2px solid #333333;
-  }
+.yell { border: 2px solid #333333;  }
 
 /* toolbar style */
 ::-webkit-scrollbar {  
