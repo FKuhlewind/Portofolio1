@@ -4,8 +4,6 @@ $(document).ready(function() {
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 
-//$("form").validarium();
-	
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
