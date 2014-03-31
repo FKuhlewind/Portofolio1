@@ -12,7 +12,7 @@
   <script type="text/javascript" src="d3.js"></script>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   
-  <script src="jquery.simpleValidate.js"></script>
+  <script src="jquery.validarium.js"></script>
   
   
   
@@ -39,8 +39,8 @@
         </tr>
       {{/students}}
         <tr id="addStudent">
-        <form class="newS required-form" id="newStud" method="post">
-          <td><input type="text" id="firstin" class="newS required"/></td>
+        <form class="newS" id="newStud">
+          <td><input type="text" id="firstin" class="newS" data-rules-required="true"/></td>
           <td><input type="text" id="lastin" class="newS"/></td>
           <td><input type="text" id="uvaIDin" class="newS"/></td>
           <td><input type="text" id="emailin" class="newS"/></td>
