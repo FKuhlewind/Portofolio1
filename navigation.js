@@ -3,6 +3,8 @@ $(document).ready(function() {
 // set initial style values
 localStorage.setItem("myColor","rgba(153, 147, 69,");
 localStorage.setItem("myFont", '"Trebuchet MS"'); 
+codeH = 22%;
+assgH = 73%;
 
     //enable swapping
     function swapElements(elm1, elm2) {
@@ -22,19 +24,19 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
     //enable resizing
     $("#size_button").on("click", function (e) {
     	
-    	if ( !$("#size_button").hasClass('pause') ) {
+    	
     	
         $( ".code" ).animate({
-            height: $(".assignment").css("height")
+            height: assgH //$(".assignment").css("height")
             }, 1000 );
         $( ".assignment" ).animate({
-            height: $(".code").css("height")
+            height: codeH //$(".code").css("height")
             }, 1000 ); 
-        $("#size_button").addClass("pause").delay(1200).removeClass("pause");
         
+        codeH = 73%;
+	assgH = 22%;
+	
         e.preventDefault();
-    	} { e.preventDefault() }
-        
         });
         
     //enable navigation  
