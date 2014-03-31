@@ -63,7 +63,7 @@
     		$(".assignment").append("&lt;iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
     	
     		$(".code iframe").remove(); 
-    		<xmp>$(".code").append("<iframe src='code-"+sel+".html'></iframe>).fadeTo(1,0).fadeTo(700,1);</xmp>
+    		$(".code").append("&lt;iframe src='code-"+sel+".html'></iframe>).fadeTo(1,0).fadeTo(700,1);
     	
     		e.preventDefault();
     		} { e.preventDefault() }
@@ -81,12 +81,12 @@
             colorE =  $('.text').css('color');
             
             $('.text').fadeOut("slow", function(){
-   		var div = $("<xmp><div class='text'>"+quotes[random].quote+"</div></xmp>").hide();
+   		var div = $("&lt;div class='text'>"+quotes[random].quote+"</div>").hide();
    		$(this).replaceWith(div);
    		$('.text').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
             $('.author').fadeOut("slow", function(){
-   		var div = $("<xmp><div class='author'>"+quotes[random].author+"</div></xmp>").hide();
+   		var div = $("&lt;div class='author'>"+quotes[random].author+"</div>").hide();
    		$(this).replaceWith(div);
    		$('.author').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
