@@ -30,20 +30,13 @@ assgH = "73%";
         $( ".assignment" ).animate({
             height: codeH
             }, 1000 ); 
-        
         tmp = codeH;
         codeH = assgH;
         assgH = tmp;
         
-        //codeH = "95%"-assgH;
-	//assgH = "95%"-codeH;
-	
         e.preventDefault();
         });
-        
-
-        
-        
+       
     //enable navigation  
     $(".tabs").on("click", "a", function (e) {
     	
