@@ -27,7 +27,7 @@ iframe  { width: 100%;
 .explanations
         { position: absolute;
           width: 500px;
-          height: 100% /*490px*/;
+          height: 490px /*490px*/;
           right: 10px;
           top: 10px;
           border 2px solid red;
