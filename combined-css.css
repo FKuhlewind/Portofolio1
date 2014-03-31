@@ -27,10 +27,11 @@ iframe  { width: 100%;
 .explanations
         { position: fixed;
           width: 500px;
-          height: 490px;
+          height: 100% /*490px*/;
           right: 10px;
           top: 10px;
-          border: 2px solid red;
+          border-left: 2px solid red;
+          border-right: 2px solid red;
         }
 
 
