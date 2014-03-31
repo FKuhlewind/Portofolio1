@@ -9,6 +9,7 @@
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="prettify.js"></script>
+<script type="text/javascript" src="tooltipster.js"></script>
 
 <script type="text/javascript">
 	(function(jQuery){
@@ -30,7 +31,7 @@
 <pre><code class="prettyprint"><xmp>$(document).ready(function() { 
     
     //enable swapping
-    function swapElements(elm1, elm2) {
+    <span class="yell" title="I found this oure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
         var parent1, next1,
         parent2, next2;
         parent1 = elm1.parentNode;
@@ -44,7 +45,7 @@
         swapElements($(".main-in .code")[0], $(".main-in .assignment")[0]);
         });
    
-    //enable resizing
+    <span class="yell" title="The beauty of jQuery: in pure Javascript, the following would probably take a lot more lines of code">//enable resizing</span>
     $("#size_button").on("click", function (e) {
         $( ".code" ).animate({
             height: $(".assignment").css("height")
