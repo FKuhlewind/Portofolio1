@@ -28,7 +28,7 @@
 </div>
 
 
-<pre><code class="prettyprint"><xmp>$(document).ready(function() { 
+<pre><code class="prettyprint">$(document).ready(function() { 
     
     //enable swapping
     <span class="yell" title="I found this oure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
@@ -67,10 +67,10 @@
     		$(this).addClass("selected");
     	
     		$(".assignment iframe").remove(); 
-    		$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
+    		$(".assignment").append("<xmp><iframe src='page-"+sel+".html'></iframe></xmp>").fadeTo(1,0).fadeTo(700,1);
     	
     		$(".code iframe").remove(); 
-    		$(".code").append("<iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
+    		$(".code").append("<xmp><iframe src='code-"+sel+".html'></iframe></xmp>").fadeTo(1,0).fadeTo(700,1);
     	
     		e.preventDefault();
     		} { e.preventDefault() }
@@ -88,12 +88,12 @@
             colorE =  $('.text').css('color');
             
             $('.text').fadeOut("slow", function(){
-   		var div = $("<div class='text'>"+quotes[random].quote+"</div>").hide();
+   		var div = $("<xmp><div class='text'>"+quotes[random].quote+"</div></xmp>").hide();
    		$(this).replaceWith(div);
    		$('.text').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
             $('.author').fadeOut("slow", function(){
-   		var div = $("<div class='author'>"+quotes[random].author+"</div>").hide();
+   		var div = $("<xmp><div class='author'>"+quotes[random].author+"</div></xmp>").hide();
    		$(this).replaceWith(div);
    		$('.author').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
 		});
@@ -101,7 +101,6 @@
         };
     setInterval(changeText, 15000);
 });
-</xmp>
 </code></pre>
 </body>
 </html>
