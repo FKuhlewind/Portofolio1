@@ -25,10 +25,10 @@ assgH = 73%;
     $("#size_button").on("click", function (e) {
     	
         $( ".code" ).animate({
-            height: assgH //$(".assignment").css("height")
+            height: assgH
             }, 1000 );
         $( ".assignment" ).animate({
-            height: codeH //$(".code").css("height")
+            height: codeH
             }, 1000 ); 
         
         codeH = 73%;
@@ -36,6 +36,9 @@ assgH = 73%;
 	
         e.preventDefault();
         });
+        
+
+        
         
     //enable navigation  
     $(".tabs").on("click", "a", function (e) {
