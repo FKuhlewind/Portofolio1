@@ -4,7 +4,7 @@ $(document).ready(function() {
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 // validate
-$('#firstin').validate({
+$('#newStud').validate({
 	rules: {
 		name: 'required'
 		}
