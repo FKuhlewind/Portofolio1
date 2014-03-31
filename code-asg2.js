@@ -6,7 +6,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 // validate
 $('#newStud').validate({
 	rules: {
-		name: 'required'
+		firstN: 'required'
 		}
 	});
 	
