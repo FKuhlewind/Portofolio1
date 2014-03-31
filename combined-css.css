@@ -13,7 +13,21 @@ a       { color: #000;
 
 iframe  { width: 100%;
           height: 100%; }
-          
+
+/*stuff for tool page*/
+
+.carousel 
+        { width: 500px;
+          height: 100px;
+          margin: 20px;
+          border: 2px solid blue;
+        }
+
+
+
+
+/*stuff for tool page*/
+
 .framepad
         { padding: 0 10px 0 0; }
 
