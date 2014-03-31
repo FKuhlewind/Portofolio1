@@ -24,8 +24,6 @@ assgH = 73%;
     //enable resizing
     $("#size_button").on("click", function (e) {
     	
-    	
-    	
         $( ".code" ).animate({
             height: assgH //$(".assignment").css("height")
             }, 1000 );
