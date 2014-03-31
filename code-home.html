@@ -10,39 +10,7 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="prettify.js"></script>
 <script type="text/javascript" src="tooltipster.js"></script>
-
 <script type="text/javascript" src="navigation.js"></script>
-
-<!--<script type="text/javascript">
-  (function(jQuery){
-     jQuery( document ).ready( function() {
-       prettyPrint();
-     });
-  }(jQuery))
-</script>-->
-
-<!--<script type="text/javascript">
-  (function(jQuery){
-     jQuery( document ).ready( function() {
-       prettyPrint();
-       $('.yell').tooltipster();
-       $('.yell').tooltipster('disable');
-       
-       // code to enable and disable tooltips 	
-       $('.codeRight').on("click", ".codeButton2", function () {
-       		$('.yell').addClass('tt');
-       		$('.yell').tooltipster('enable');
-       		$('.codeButton2').replaceWith('<div class="codeButton3"><div class="dIn">Disable Tooltips</div></div>');
-       		}); 	
-      $('.codeRight').on("click", ".codeButton3", function () {
-       		$('.yell').removeClass('tt');
-       		$('.yell').tooltipster('disable');
-       		$('.codeButton3').replaceWith('<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>');
-       		}); 
-        	
-     });
-  }(jQuery))
-</script>-->
 
 <div class="codeTop">
 	<div class="codeLeft">// Assignment Code</div>
@@ -92,10 +60,10 @@
     		$(this).addClass("selected");
     	
     		$(".assignment iframe").remove(); 
-    		$(".assignment").append("<xmp><iframe src='page-"+sel+".html'></iframe></xmp>").fadeTo(1,0).fadeTo(700,1);
+    		<xmp>$(".assignment").append("<iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);</xmp>
     	
     		$(".code iframe").remove(); 
-    		$(".code").append("<xmp><iframe src='code-"+sel+".html'></iframe></xmp>").fadeTo(1,0).fadeTo(700,1);
+    		<xmp>$(".code").append("<iframe src='code-"+sel+".html'></iframe>).fadeTo(1,0).fadeTo(700,1);</xmp>
     	
     		e.preventDefault();
     		} { e.preventDefault() }
