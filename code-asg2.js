@@ -4,7 +4,7 @@ $(document).ready(function() {
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 // validate
-$('#newStud').validate({
+/*$('#newStud').validate({
 	rules: {
 		firstN: 'required'
 		},
@@ -13,7 +13,7 @@ $('#newStud').validate({
             firstN: "Please enter your first name"
 	 	}
 	
-	});
+	});*/
 	
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
