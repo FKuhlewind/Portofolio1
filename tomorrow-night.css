@@ -24,7 +24,7 @@
 .codeRight
         {  }
 
-.codeButton1, .codeButton2
+.codeButton1, .codeButton2, .codeButton3
         { position: absolute;
           right: 10px;
           top: 41px;
