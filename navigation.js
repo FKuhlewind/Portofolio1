@@ -58,7 +58,7 @@ assgH = "73%";
     	});
    
    //enable and disable tooltipster
-    prettyPrint();
+    //prettyPrint();
     $('.yell').tooltipster();
     $('.yell').tooltipster('disable');
        
