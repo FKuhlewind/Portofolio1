@@ -11,7 +11,22 @@
   <script type="text/javascript" src="handlebars.js"></script>
   <script type="text/javascript" src="d3.js"></script>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  
   <script src="jquery.validate.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $('#newStud').validate({
+	        rules: {
+		        firstN: 'required'
+		        },
+
+	         messages: {
+            firstN: "Please enter your first name"
+	 	      }
+	  });
+  </script>
+  
+  
   
   <script type="text/javascript" src="code-asg2.js"></script>
   
