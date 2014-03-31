@@ -52,8 +52,8 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		myDataRef.child("students").child(appNum).child("last").set( $("#lastin").val() );
 		myDataRef.child("students").child(appNum).child("email").set( $("#emailin").val() );
 		myDataRef.child("students").child(appNum).child("uvaID").set( $("#uvaIDin").val() );
-		window.location.reload();
-		alert ("Student added successfully.");
+		//window.location.reload();
+		//alert ("Student added successfully.");
 		});
 		
 	$("tbody").on("click", ".delete", function(e) {
