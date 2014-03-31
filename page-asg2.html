@@ -12,23 +12,8 @@
   <script type="text/javascript" src="d3.js"></script>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   
-  <script src="jquery.validate.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-       $('#newStud').validate({
-	        rules: {
-		        firstN: 'required'
-		        },
-
-	         messages: {
-            		firstN: "Please enter your first name"
-	 	      	},
-	 	 submitHandler: function(form) {
-                    form.submit();
-	 	 	}
-	});
-    });
-  </script>
+  <script src="jquery.simpleValidate.js"></script>
+  
   
   
   
@@ -54,12 +39,12 @@
         </tr>
       {{/students}}
         <tr id="addStudent">
-        <form class="newS" method="post" action="validate.php" id="newStud">
-          <td><input name="firstN" class="required" type="text" id="firstin" class="newS"/></td>
+        <form class="newS" id="newStud">
+          <td><input type="text" id="firstin" class="newS"/></td>
           <td><input type="text" id="lastin" class="newS"/></td>
           <td><input type="text" id="uvaIDin" class="newS"/></td>
           <td><input type="text" id="emailin" class="newS"/></td>
-          <td id="addSave"><button id="addStud" class="submitbutton" type="submit" name="submit" value="Submit">Add Student</button><button id="saveStud">Save</button></td>
+          <td id="addSave"><button id="addStud">Add Student</button><button id="saveStud">Save</button></td>
         </form>
         </tr>
     </tbody>
