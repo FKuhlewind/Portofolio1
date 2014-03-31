@@ -3,8 +3,8 @@ $(document).ready(function() {
 // set initial style values
 localStorage.setItem("myColor","rgba(153, 147, 69,");
 localStorage.setItem("myFont", '"Trebuchet MS"'); 
-codeH = 22%;
-assgH = 73%;
+codeH = "22%";
+assgH = "73%";
 
     //enable swapping
     function swapElements(elm1, elm2) {
