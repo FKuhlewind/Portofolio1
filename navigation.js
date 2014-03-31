@@ -32,7 +32,7 @@ localStorage.setItem("myFont", '"Trebuchet MS"');
             .attr('disabled','disabled');
              setTimeout(function() {
              $this.removeAttr('disabled');
-             }, 1000);
+             }, 1500);
         e.preventDefault();
         });
         
