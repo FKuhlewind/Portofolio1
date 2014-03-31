@@ -23,7 +23,14 @@ iframe  { width: 100%;
           border: 2px solid blue;
         }
 
-
+.explanations
+        { position: absolute;
+          width: 500px;
+          height: 700px;
+          right: 10px;
+          top: 10px;
+          border: 2px solid red;
+        }
 
 
 /*stuff for tool page*/
