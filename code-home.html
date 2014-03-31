@@ -18,7 +18,9 @@
        $('.yell').tooltipster();
        
        // code to enable and disable tooltips 	
-        	
+       $('.codeButton2').on("click", function () {
+       		$('span').toggleClass('.yell');
+       		}); 	
         	
         	
      });
@@ -37,7 +39,7 @@
 <pre><code class="prettyprint">$(document).ready(function() { 
     
     //enable swapping
-    <span class="yell" title="I found this oure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
+    <span title="I found this pure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
         var parent1, next1,
         parent2, next2;
         parent1 = elm1.parentNode;
