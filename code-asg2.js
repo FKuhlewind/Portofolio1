@@ -46,7 +46,7 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 		$('#saveStud').show();
 		$('.newS').show();
 		$("#addStudent").css({"background-color":localStorage.myColor+"0.2)"});
-		//e.preventDefault();
+		e.preventDefault();
 		});
 
 	$("tbody").on("click", "#saveStud", function(e) {
