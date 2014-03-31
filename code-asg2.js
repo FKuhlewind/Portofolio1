@@ -4,7 +4,12 @@ $(document).ready(function() {
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 // validate
-$('#firstin').validate();
+$('#firstin').validate({
+	rules: {
+		name: 'required'
+		}
+	});
+	
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
