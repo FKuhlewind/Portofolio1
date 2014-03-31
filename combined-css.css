@@ -19,7 +19,7 @@ iframe  { width: 100%;
 .carousel:hover 
         { border: 2px solid blue;
           border-right: none;
-          background-color: white;
+          background-color: red;
         }
           
 
