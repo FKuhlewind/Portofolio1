@@ -7,7 +7,12 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 $('#newStud').validate({
 	rules: {
 		firstN: 'required'
-		}
+		},
+	
+	 messages: {
+            firstN: "Please enter your first name"
+	 	}
+	
 	});
 	
 
