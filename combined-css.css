@@ -36,11 +36,10 @@ iframe  { width: 100%;
         }
 
 .explanations
-        { position: relative;
+        { float: right;
           width: 500px;
           height: 490px /*490px*/;
-          right: 10px;
-          top: 10px;
+         
           border: 2px solid blue;
           border-radius: 4px;
           z-index: 1;
