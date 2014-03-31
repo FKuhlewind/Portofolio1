@@ -19,7 +19,7 @@
        
        // code to enable and disable tooltips 	
        $('.codeButton2').on("click", function () {
-       		$('span.t').toggleClass('.yell');
+       		$('.yell').tooltipster('hide');
        		}); 	
         	
         	
@@ -39,7 +39,7 @@
 <pre><code class="prettyprint">$(document).ready(function() { 
     
     //enable swapping
-    <span class="t" title="I found this pure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
+    <span class="yell" title="I found this pure JavaScript function at this address.">function swapElements(elm1, elm2)</span> {
         var parent1, next1,
         parent2, next2;
         parent1 = elm1.parentNode;
@@ -53,7 +53,7 @@
         swapElements($(".main-in .code")[0], $(".main-in .assignment")[0]);
         });
    
-    <span class="yell t" title="The beauty of jQuery: in pure Javascript, the following would probably take a lot more lines of code">//enable resizing</span>
+    <span class="yell" title="The beauty of jQuery: in pure Javascript, the following would probably take a lot more lines of code">//enable resizing</span>
     $("#size_button").on("click", function (e) {
         $( ".code" ).animate({
             height: $(".assignment").css("height")
