@@ -4,7 +4,7 @@ $(document).ready(function() {
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
 
-$("form").validarium();
+//$("form").validarium();
 	
 
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
