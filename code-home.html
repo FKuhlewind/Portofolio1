@@ -16,10 +16,12 @@
      jQuery( document ).ready( function() {
        prettyPrint();
        $('.yell').tooltipster();
+       $('.yell').tooltipster('disable');
        
        // code to enable and disable tooltips 	
        $('.codeButton2').on("click", function () {
-       		$('.yell').tooltipster('disable');
+       		$('.yell').tooltipster('enable');
+       		$('.yell').addClass('tt');
        		}); 	
         	
         	
