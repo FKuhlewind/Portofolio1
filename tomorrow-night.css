@@ -54,7 +54,7 @@
 
 /* style for hovering over tooltip */
 
-.tt {border-bottom: 2px #A7E9FF dashed !important; }
+.tt {border-bottom: 2px #A7E9FF dashed /*!important*/; }
 
 .tt:hover { border: 2px solid orange;
               border-radius: 6px; }
