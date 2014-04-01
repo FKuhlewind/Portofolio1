@@ -20,16 +20,16 @@
 	</div>
 </div>
 
-<!--    <span class="yell" title="">   </span>    -->
+<!--    <span class="yell" title="">   </span>   -->
 <pre><code class="prettyprint">$(document).ready(function() {
 
-<span class="yell" title="This section checks localStorage for page style information and applies it accorgingly (more on that matter below).">// check localStorage and style accordingly</span>
+<span class="yell" title="This section checks localStorage for page style information and applies it accordingly (more on that matter below).">// check localStorage and style accordingly</span>
 $("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
 $("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
 $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
-mainP = window.parent.document;
+<span class="yell" title="The variable stores a pointer to the parent window as we later need to traverse up and beyond the DOM to the parent document.">mainP = window.parent.document;</span>
 
 picGallery = [
        "none",
