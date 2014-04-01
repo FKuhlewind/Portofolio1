@@ -29,7 +29,7 @@ $("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
 $("#applyPic").css({'background-color':localStorage.myColor+'0.6)'});
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
-<span class="yell" title="The variable stores a pointer to the parent window as we later need to traverse up and beyond the DOM to the parent document.">mainP = indow.parent.document</span>;
+<span class="yell" title="The variable stores a pointer to the parent window as we later need to traverse up and beyond the DOM to the parent document.">mainP = window.parent.document</span>;
 
 <span class="yell" title="This array stores the location of the pictures that can be selected as a background.">picGallery</span> = [
        "none",
@@ -43,7 +43,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
         ];
 
 // content, font, bars, quote
-colG = [ ["rgba(5, 25, 70,", "rgba(211, 213, 247,", "rgba(127, 178, 240,","rgba(78, 122, 199,"],
+<span class="yell" title="This array stores the RGBA color combinations for the different styles that can be applied to the page. Note how the information on the alpha channel is missing; it will be added later on.">colG</span> = [ ["rgba(5, 25, 70,", "rgba(211, 213, 247,", "rgba(127, 178, 240,","rgba(78, 122, 199,"],
          ["rgba(133, 105, 65,", "rgba(182, 182, 182,", "rgba(184, 29, 24,","rgba(32, 32, 32,"], /// DARK 
          ["rgba(153, 147, 69,", "rgba(253, 243, 231,", "rgba(51, 51, 51,","rgba(143, 157, 69,"] ]; /// STANDARD
              
