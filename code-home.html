@@ -13,14 +13,14 @@
 <script type="text/javascript" src="codecode.js"></script>
 
 <div class="codeTop">
-	<div class="codeLeft">// Assignment Code</div>
+	<div class="codeLeft">// Main code for this Page</div>
 	<div class="codeRight">
 		<div class="codeButton1"><div class="dIn">Initial Assignment</div></div>
 		<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>
 	</div>
 </div>
 
-<!--    <span class="yell" title="">   </span>    -->
+
 
 <pre><code class="prettyprint"><span class="yell" title="Waits until the DOM has loaded and then executes all following code. Quite important as jQuery can only operate on elements that have loaded, i.e. when the document is 'ready'.">$(document).ready(function()</span> { 
     
@@ -80,11 +80,11 @@
     	});
    
    // display random quotes
-   function changeText() {
-        d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
+   <span class="yell" title="This function loads quotes from texts covered in the AST seminar.">function changeText()</span> {
+        <span class="yell" title="Load the JSON object from Firebase and execute the following code once the object has been loaded:">d3.json('https://ast-quotes.firebaseio.com/.json', function(data)</span> {
 	    quotes = data;
-	    howMany = Object.keys(quotes).length;
-            var random = Math.floor(Math.random() * howMany);
+	    <span class="yell" title="Check how many quotes are stored in Firebase...">howMany = Object.keys(quotes).length;</span> 
+            <span class="yell" title="... and pick a random number from that amount.">var random = Math.floor(Math.random() * howMany);</span> 
             
             fontE =  $('.text').css('font-family');
             colorE =  $('.text').css('color');
@@ -103,6 +103,10 @@
         };
     setInterval(changeText, 15000);
 });
+<div class="codeLeft">// Code to enable interaction with the displayed code</div>
 </code></pre>
 </body>
 </html>
+<!--    <span class="yell" title="">   </span>    -->
+
+
