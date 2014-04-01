@@ -58,7 +58,7 @@ assgH = "73%";
     	});
    
    //enable and disable tooltipster
-    prettyPrint();
+    /*prettyPrint();
     $('.yell').tooltipster();
     $('.yell').tooltipster('disable');
        
@@ -71,7 +71,7 @@ assgH = "73%";
        		$('.yell').removeClass('tt');
        		$('.yell').tooltipster('disable');
        		$('.codeButton3').replaceWith('<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>');
-       		}); 
+       		}); */
    
    
    //display random quotes
