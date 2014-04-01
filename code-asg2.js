@@ -3,8 +3,6 @@ $(document).ready(function() {
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
-
-
 myDataRef = new Firebase('https://student-data.firebaseio.com/');
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
@@ -21,12 +19,14 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
     	studentTemplateScript = $("#students-template").html();
     	theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
-    	/* append the tables */
+    	// append the table
     	$(".here").append(theStudentTemplate(studentData));
-    	// assign styling from locaStorage
+    	
+    	// assign styling from localStorage
     	$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
 	$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
 	$("button").css({'background-color':localStorage.myColor+'0.6)'});
+	
 	hideInput();
 
 	$("thead").on("click", "#edit", function(e){
@@ -89,6 +89,4 @@ d3.json('https://student-data.firebaseio.com/.json', function(data) {
 			});
 		});
 	});	
-
-
 });
