@@ -1,8 +1,10 @@
 $(document).ready(function() { 
 
-prettyPrint();
+    prettyPrint();
+    
     $('.yell').tooltipster({
-        offsetX : 20
+        offsetX : 20,
+        position: 'right'
         
         });
     
