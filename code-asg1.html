@@ -20,7 +20,7 @@
 	</div>
 </div>
 
-<!--    <span class="yell" title="">   </span>   -->
+
 <pre><code class="prettyprint">$(document).ready(function() {
 
 <span class="yell" title="This section checks localStorage for page style information and applies it accordingly (more on that matter below).">// check localStorage and style accordingly</span>
@@ -55,10 +55,10 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
           '"Trebuchet MS"'];
           
 <span class="yell" title="Stores which elements are affected by a font change.">toFont</span> = ".text, .author, .nav-in ul li a, .copy";
-
-$("#applyPic").on("click", function(e) {
+<!--    <span class="yell" title="">   </span>   -->
+<span class="yell" title="On click, read the value of the picture selected from the dropdown menu and store it in a variable...">$("#applyPic")</span>.on("click", function(e) {
             myPicture = picGallery[$("#selPic").val()];
-            $(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});
+            <span class="yell" title="...to then traverse up to the parent document to apply the picture as a background.">$(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});</span> 
             });
 
 $("#colorScheme").on("click", ".col", function(e) {
