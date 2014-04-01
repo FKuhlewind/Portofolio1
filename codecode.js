@@ -3,8 +3,7 @@ $(document).ready(function() {
     prettyPrint();
     
     $('.yell').tooltipster({
-        offsetX : 20,
-        position: 'top'
+
         
         });
     
