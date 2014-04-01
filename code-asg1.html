@@ -61,9 +61,10 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
             <span class="yell" title="...to then traverse up to the parent document to apply the picture as a background.">$(mainP).find(".wrapper").css({'background-image':myPicture,'background-size':'100%'});</span> 
             });
 
-$("#colorScheme").on("click", ".col", function(e) {
+<span class="yell" title="When the user clicks on a certain color scheme...">$("#colorScheme").on("click", ".col", function(e)</span>  {
+
             colN = $(this).data('value');
-            localStorage.setItem("myColor",colG[colN][0]);
+            <span class="yell" title="...the scheme will first be saved to localStorage. I spend quite some time thinking how the information on the color scheme can affect all other iFrames and pages involved. I then decided to write it to localStorage so that every page/frame can check localStorage and apply the correct colors.">localStorage.setItem("myColor",colG[colN][0]);</span>
             
             $(mainP).find(toColor[0]).css({'background-color':colG[colN][0]+'1)', 
             	'fill':colG[colN][0]+'1)', 'color':colG[colN][1]+'1)'});
