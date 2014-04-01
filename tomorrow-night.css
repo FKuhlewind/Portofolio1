@@ -10,7 +10,7 @@
 }
 
 
-.codeTop
+.codeTop, a
         { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
           color: #969896;
           font-size: 14px;
