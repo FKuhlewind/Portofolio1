@@ -23,6 +23,12 @@
 
 <pre><code class="prettyprint">$(document).ready(function() { 
     
+    // set initial style values
+    localStorage.setItem("myColor","rgba(153, 147, 69,");
+    localStorage.setItem("myFont", '"Trebuchet MS"'); 
+    codeH = "22%";
+    assgH = "73%";
+    
     //enable swapping
     <span class="yell" title="I found this pure <a href='http://google.com'>JavaScript</a> function at this address.">function swapElements(elm1, elm2)</span> {
         var parent1, next1,
@@ -40,18 +46,20 @@
    
     <span class="yell" title="The beauty of jQuery: in pure Javascript, the following would probably take a lot more lines of code">//enable resizing</span>
     $("#size_button").on("click", function (e) {
-        $( ".code" ).animate({
-            height: $(".assignment").css("height")
-            }, 1000 );
+    	$( ".code" ).animate({
+            height: assgH }, 1000 );
         $( ".assignment" ).animate({
-            height: $(".code").css("height")
-            }, 1000 );    
+            height: codeH }, 1000 ); 
+            
+        tmp = codeH;
+        codeH = assgH;
+        assgH = tmp;
+        
         e.preventDefault();
         });
         
     //enable navigation  
     $(".tabs").on("click", "a", function (e) {
-    	
     	if ( !$(this).hasClass('selected') ) {
     	 
     		sel = ($(this).attr("value"));
@@ -70,8 +78,7 @@
     	});
    
    //display random quotes
-   myDataRef = new Firebase('https://ast-quotes.firebaseio.com/');
-    function changeText() {
+   function changeText() {
         d3.json('https://ast-quotes.firebaseio.com/.json', function(data) {
 	    quotes = data;
 	    howMany = Object.keys(quotes).length;
