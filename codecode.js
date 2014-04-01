@@ -1,7 +1,12 @@
 $(document).ready(function() { 
 
 prettyPrint();
-    $('.yell').tooltipster();
+    $('.yell').tooltipster({
+        offsetX : 20
+        
+        });
+    
+    
     $('.yell').tooltipster('disable');
        
     $('.codeRight').on("click", ".codeButton2", function () {
