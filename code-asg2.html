@@ -20,7 +20,7 @@
 	</div>
 </div>
 
-<!--   <span class="yell" title="">   </span>    -->
+
 <pre><code class="prettyprint">$(document).ready(function() { 
 
 // check localStorage and choose font accordingly
@@ -28,24 +28,25 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 
 <span class="yell" title="Set a pointer to the location in Firebase where the data is stored.">myDataRef = new Firebase('https://student-data.firebaseio.com/');</span> 
 
-function hideInput () {
+<span class="yell" title="This function hides the input elements that should not be seen initially.">function hideInput</span> () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
 	$("#addStudent").css({"background-color":localStorage.myColor+"0)"});
 	};
 
 // create template and hide input
 
-d3.json('https://student-data.firebaseio.com/.json', function(data) {
+<span class="yell" title="Load the student data from Firebase and execute the following code once the data has been loaded.">d3.json('https://student-data.firebaseio.com/.json', function(data)</span> {
 	studentData = data;
-	appNum = data.students.length;
-	studentData.students = studentData.students.filter(function(e){return e}); 
+	<span class="yell" title="Count the number of students saved in Firebase...">appNum = data.students.length;</span> 
+	
+	<span class="yell" title="...and as a security measure filter out all empty elements.">studentData.students = studentData.students.filter(function(e){return e});</span> 
 
     	studentTemplateScript = $("#students-template").html();
     	theStudentTemplate = Handlebars.compile(studentTemplateScript);
   
     	// append the table
     	$(".here").append(theStudentTemplate(studentData));
-    	
+<!--   <span class="yell" title="">   </span>    -->    	
     	// assign styling from localStorage
     	$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
 	$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
