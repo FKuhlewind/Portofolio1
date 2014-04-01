@@ -89,10 +89,10 @@
             fontE =  $('.text').css('font-family');
             <span class="yell" title="Read color and font information of the displayed quote to reapply it later (again, see #1).">colorE =  $('.text').css('color');</span>
             
-            $('.text').fadeOut("slow", function(){
+            <span class="yell" title="Fade out the quote that is currently displayed. Once the animation has completed...">$('.text').fadeOut("slow", function()</span>{
    		var div = $("&lt;div class='text'>"+quotes[random].quote+"</div>").hide();
    		$(this).replaceWith(div);
-   		$('.text').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");
+   		<span class="yell" title="... replace it with the new randomly selected quote, apply the the same CSS atributes and fade it in.">$('.text').css({'font-family':fontE, 'color':colorE}).fadeIn("slow");</span> 
 		});
             $('.author').fadeOut("slow", function(){
    		var div = $("&lt;div class='author'>"+quotes[random].author+"</div>").hide();
