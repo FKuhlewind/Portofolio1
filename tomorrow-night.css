@@ -54,12 +54,14 @@
 
 /* style for hovering over tooltip */
 
+.yell { border: 2px solid #333333;  }
+
 .tt {border-bottom: 2px #A7E9FF dashed !important; }
 
 .tt:hover { border: 2px solid orange !important;
               border-radius: 6px;}
 
-.yell { border: 2px solid #333333;  }
+
 
 /* toolbar style */
 ::-webkit-scrollbar {  
