@@ -28,11 +28,11 @@
     localStorage.setItem("myColor","rgba(153, 147, 69,");
     localStorage.setItem("myFont", '"Trebuchet MS"'); 
     
-    <span class="yell" title="Set variables to heights of the 'assignment' and 'code' iFrames">codeH = "22%";</span>
+    <span class="yell" title="Set variables to heights of the 'assignment' and 'code' iFrames.">codeH = "22%";</span>
     assgH = "73%";
     
     //enable swapping
-    <span class="yell" title="Looking for options to swap two elements, this JavaScript function found on 'http://bit.ly/1omiKZb' seemed to work best.">function swapElements(elm1, elm2)</span> {
+    <span class="yell" title="Looking for options to swap two elements, this JavaScript function found on 'http://bit.ly/1omiKZb' seemed to work best (the function itself is called with jQuery below.">function swapElements(elm1, elm2)</span> {
         var parent1, next1,
         parent2, next2;
         parent1 = elm1.parentNode;
@@ -46,7 +46,7 @@
         swapElements($(".main-in .code")[0], $(".main-in .assignment")[0]);
         });
    
-    <span class="yell" title="The beauty of jQuery: in pure Javascript, the following would probably take a lot more lines of code">//enable resizing</span>
+    <span class="yell" title="The nice example of the advanages of jQuery: in pure Javascript, I can only guess how much code would be needed to achieve the following without jQuery...">//enable resizing</span>
     $("#size_button").on("click", function (e) {
     	$( ".code" ).animate({
             height: assgH }, 1000 );
