@@ -17,7 +17,7 @@
           text-decoration: none;
           display: inline-block}
 
-a:hover {color: orange;}
+a:hover, .codelink:hover {color: orange;}
 
 .codeLeft
         { margin: 10px 0 0 0;
