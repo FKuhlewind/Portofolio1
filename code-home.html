@@ -62,18 +62,18 @@
         
     <span class="yell" title="The following code enables navigating through the site.">// enable navigation</span>   
     $(".tabs").on("click", "a", function (e) {
-    	<span class="yell" title="When clicking on a '.tab' element, only execute the following if the element is not selected already:">if ( !$(this).hasClass('selected')</span> ) {
+    	<span class="yell" title="When clicking on a '.tab' element, only execute the following if the element has not been selected already:">if ( !$(this).hasClass('selected')</span> ) {
     	 
-    		sel = ($(this).attr("value"));
+    		<span class="yell" title="Get the value of the clicked element, i.e. 'asg1' or 'home'...">sel = ($(this).attr("value"));</span>
     	
     	    	$("a").removeClass("selected");
-    		$(this).addClass("selected");
+    		<span class="yell" title="... and remove the 'selected' class from all elements and only reapply it to the clicked one.">$(this).addClass("selected");</span>
     	
-    		$(".assignment iframe").remove(); 
+    		<span class="yell" title="Then, remove the iFrame and fade in the newly selected one.">$(".assignment iframe").remove();</span> 
     		$(".assignment").append("&lt;iframe src='page-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
     	
     		$(".code iframe").remove(); 
-    		$(".code").append("&lt;iframe src='code-"+sel+".html'></iframe>").fadeTo(1,0).fadeTo(700,1);
+    		$(".code").append("&lt;iframe <span class="yell" title="The value of the clicked element defines which iFrame to load.">src='code-"+sel+".html'</span> ></iframe>")<span class="yell" title="Immediately hide iFrame to fade it in in 700ms.">.fadeTo(1,0).fadeTo(700,1);</span>
     	
     		e.preventDefault();
     		} { e.preventDefault() }
