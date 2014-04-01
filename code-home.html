@@ -104,21 +104,21 @@
     <span class="yell" title="Finally, call the function to replace the quote with a new one every 15 seconds.">setInterval(changeText, 15000);</span>
 });
 <div class="codeTop">
-   <div class="codeLeft">// Code to enable styling of interaction with the code you are looking at (codecode.js)</div>
+   <div class="codeLeft">// Code to enable styling of and interaction with the code you are looking at (codecode.js)</div>
 </div>
 $(document).ready(function() { 
 
-    prettyPrint();
+    <span class="yell" title="Call the prettyPrint plugin which applies proper coloring to the code.">prettyPrint();</span>
     
     $('.yell').tooltipster({});
-    $('.yell').tooltipster('disable');
+    <span class="yell" title="Call the toolTipster plugin and disable it for the time being.">$('.yell').tooltipster('disable');</span> 
        
-    $('.codeRight').on("click", ".codeButton2", function () {
+    <span class="yell" title="On click, add a class to all .yell elements (.tt creates the dotted lines) and enable tooltips for those...">$('.codeRight').on("click", ".codeButton2", function ()</span> {
       		$('.yell').addClass('tt');
        		$('.yell').tooltipster('enable');
-       		$('.codeButton2').replaceWith('&lt;div class="codeButton3">&lt;div class="dIn">Disable Tooltips</div></div>');
+       		<span class="yell" title="...then replace the button with the one that disables the tooltips again.">$('.codeButton2').replaceWith('&lt;div class="codeButton3"></span>&lt;div class="dIn">Disable Tooltips</div></div>');
        		}); 	
-    $('.codeRight').on("click", ".codeButton3", function () {
+    <span class="yell" title="Same as above, just vice versa!">$('.codeRight').on("click", ".codeButton3", function ()</span> {
        		$('.yell').removeClass('tt');
        		$('.yell').tooltipster('disable');
        		$('.codeButton3').replaceWith('&lt;div class="codeButton2">&lt;div class="dIn">Enable Tooltips</div></div>');
