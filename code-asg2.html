@@ -41,18 +41,18 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 	
 	<span class="yell" title="...and as a security measure filter out all empty elements.">studentData.students = studentData.students.filter(function(e){return e});</span> 
 
-    	studentTemplateScript = $("#students-template").html();
-    	theStudentTemplate = Handlebars.compile(studentTemplateScript);
+    	<span class="yell" title="Reference the template script...">studentTemplateScript</span> = $("#students-template").html();
+    	theStudentTemplate = <span class="yell" title="...and compile it.">Handlebars.compile(studentTemplateScript);</span>
   
     	// append the table
-    	$(".here").append(theStudentTemplate(studentData));
-<!--   <span class="yell" title="">   </span>    -->    	
+    	<span class="yell" title="Then, append the table filled with student data to the correct location...">$(".here").append(theStudentTemplate(studentData));</span> 
+ 	
     	// assign styling from localStorage
-    	$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});
+    	<span class="yell" title="...and apply the correct styling according to localStorage, ...">$("table#hand, table#hand tr").css({'background-color':localStorage.myColor+'0.2)'});</span>
 	$("table#hand th").css({'background-color':localStorage.myColor+'0.3)'});
 	$("button").css({'background-color':localStorage.myColor+'0.6)'});
 
-	hideInput();
+	<span class="yell" title="...and hide the input elements.">hideInput();</span>
 
 	$("thead").on("click", "#edit", function(e){
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
@@ -63,7 +63,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 	$("thead").on("click", "#hide", function(e){
 		window.location.reload();
 		});
-
+<!--   <span class="yell" title="">   </span>    -->   
 	$("tbody").on("click", "td#addSave", function(e) {
 		$('#addStud, .editStud, .delete ').hide();
 		$('#saveStud').show();
