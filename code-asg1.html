@@ -50,7 +50,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 <span class="yell" title="Defines the elements to be affected by the color themes.">toColor</span> = [ ".green, .text, .author",
             ".nav, .footer" ];
 
-<span class="yell" title="Stores the font that can be selected.">fontG</span> = [ '"Century Gothic"',
+<span class="yell" title="Stores the fonts that can be selected.">fontG</span> = [ '"Century Gothic"',
           '"Lucida Bright"',
           '"Trebuchet MS"'];
           
@@ -64,7 +64,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 <span class="yell" title="When the user clicks on a certain color scheme...">$("#colorScheme").on("click", ".col", function(e)</span>  {
 
             colN = $(this).data('value');
-            <span class="yell" title="...the scheme will first be saved to localStorage. I spend quite some time thinking how the information on the color scheme can affect all other iFrames and pages involved. I then decided to write it to localStorage so that every page/frame can check localStorage and apply the correct colors.">localStorage.setItem("myColor",colG[colN][0]);</span>
+            <span class="yell" title="...the scheme will first be saved to localStorage. I spent quite some time thinking how the information on the color scheme can affect all other iFrames and pages involved. I then decided to write it to localStorage so that every page/frame can check localStorage and apply the correct colors.">localStorage.setItem("myColor",colG[colN][0]);</span>
             
             <span class="yell" title="The following lines apply the color scheme to the different elements of the parent page and the page itself.">$(mainP).find(toColor[0]).css({'background-color':colG[colN][0]+'1)',</span> 
             	'fill':colG[colN][0]+'1)', 'color':colG[colN][1]+'1)'});
