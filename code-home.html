@@ -106,7 +106,7 @@
 
 // Code to enable interaction with the code you are looking at (codecode.js)
 
-<!--$(document).ready(function() { 
+$(document).ready(function() { 
 
     prettyPrint();
     
@@ -116,14 +116,14 @@
     $('.codeRight').on("click", ".codeButton2", function () {
       		$('.yell').addClass('tt');
        		$('.yell').tooltipster('enable');
-       		$('.codeButton2').replaceWith('<div class="codeButton3"><div class="dIn">Disable Tooltips</div></div>');
+       		$('.codeButton2').replaceWith('&lt;div class="codeButton3">&lt;div class="dIn">Disable Tooltips</div></div>');
        		}); 	
     $('.codeRight').on("click", ".codeButton3", function () {
        		$('.yell').removeClass('tt');
        		$('.yell').tooltipster('disable');
-       		$('.codeButton3').replaceWith('<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>');
+       		$('.codeButton3').replaceWith('&lt;div class="codeButton2">&lt;div class="dIn">Enable Tooltips</div></div>');
        		}); 
-});-->
+});
 </code></pre>
 </body>
 </html>
