@@ -52,6 +52,7 @@ a:hover, .codelink:hover {color: orange;}
 
 .codeButton1:hover, .codeButton2:hover, .codeButton3:hover
         { border: 2px solid orange; 
+        color: orange;
         cursor: pointer;
           cursor: hand; }
 
