@@ -54,14 +54,14 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 
 	<span class="yell" title="...and hide the input elements.">hideInput();</span>
 
-	<span class="yell" title="If the 'edit' button gets clicked, enlarge the last column with toggleClass and show the buttons that enable editing, removing and adding a student.">$("thead").on("click", "#edit", function(e)</span> {
+	<span class="yell" title="If the 'edit' button gets clicked, enlarge the last column with toggleClass and show the buttons that enable editing, removing and adding a student.">$("thead")</span>.on("click", <span class="yell" title="Event delegation is extremely important here as the table get created anew later and otherwise the events would not be bound to the target elements anymore.">"#edit"</span>, function(e) {
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		$("#addStud, tr td:last-child, tbody tr:last-child, #hide").show();
 		$("#edit, .saveChange").hide();
 		});
 
 	$("thead").on("click", "#hide", function(e){
-		window.location.reload();
+		<span class="yell" title="When the user clicks the 'cancel' button, the page is forced to reload and this way jumps back to its initial state. This may not be the most elegant solution, but it was the simplest way to reload or update the table. Using iFrames makes this approach possible.">window.location.reload();</span> 
 		});
 <!--   <span class="yell" title="">   </span>    -->   
 	$("tbody").on("click", "td#addSave", function(e) {
