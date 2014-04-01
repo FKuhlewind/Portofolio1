@@ -20,15 +20,16 @@
 	</div>
 </div>
 
-<!--    <span class="yell" title="">   </span>     -->
+<!--    <span class="yell" title="">   <span class="yell" title="">     -->
 
 <pre><code class="prettyprint"><span class="yell" title="Waits until the DOM has loaded and then executes all following code. Quite important as jQuery can only operate on elements that have loaded, i.e. when the document is 'ready'.">$(document).ready(function()</span> { 
     
-    // set initial style values
+    <span class="yell" title="The following writes the initial style information of the page to localStorage, have a look at the code for #1 for more information.">// set initial style values</span> 
     localStorage.setItem("myColor","rgba(153, 147, 69,");
     localStorage.setItem("myFont", '"Trebuchet MS"'); 
-    codeH = "22%";
-    assgH = "73%";
+    
+    <span class="yell" title="Set variables to heights of the 'assignment' and 'code' iFrames">codeH = "22%";
+    assgH = "73%";<span class="yell" title="">
     
     //enable swapping
     <span class="yell" title="Looking for options to swap two elements, this JavaScript function found on 'http://bit.ly/1omiKZb' seemed to work best.">function swapElements(elm1, elm2)</span> {
