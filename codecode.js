@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     prettyPrint();
     
-    $('.yell').tooltipster({});
+    $('.yell').tooltipster();
     $('.yell').tooltipster('disable');
        
     $('.codeRight').on("click", ".codeButton2", function () {
