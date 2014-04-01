@@ -47,14 +47,14 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
          ["rgba(133, 105, 65,", "rgba(182, 182, 182,", "rgba(184, 29, 24,","rgba(32, 32, 32,"], /// DARK 
          ["rgba(153, 147, 69,", "rgba(253, 243, 231,", "rgba(51, 51, 51,","rgba(143, 157, 69,"] ]; /// STANDARD
              
-toColor = [ ".green, .text, .author",
+<span class="yell" title="Defines the elements to be affected by the color themes.">toColor</span> = [ ".green, .text, .author",
             ".nav, .footer" ];
 
-fontG = [ '"Century Gothic"',
+<span class="yell" title="Stores the font that can be selected.">fontG</span> = [ '"Century Gothic"',
           '"Lucida Bright"',
           '"Trebuchet MS"'];
           
-toFont = ".text, .author, .nav-in ul li a, .copy";
+<span class="yell" title="Stores which elements are affected by a font change.">toFont</span> = ".text, .author, .nav-in ul li a, .copy";
 
 $("#applyPic").on("click", function(e) {
             myPicture = picGallery[$("#selPic").val()];
