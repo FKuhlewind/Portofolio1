@@ -87,7 +87,7 @@
             <span class="yell" title="... and pick a random number from that amount.">var random = Math.floor(Math.random() * howMany);</span> 
             
             fontE =  $('.text').css('font-family');
-            <span class="yell" title="Read color and fint information of the displayed quote to reapply it later (again, see #1).">colorE =  $('.text').css('color');</span>
+            <span class="yell" title="Read color and font information of the displayed quote to reapply it later (again, see #1).">colorE =  $('.text').css('color');</span>
             
             $('.text').fadeOut("slow", function(){
    		var div = $("&lt;div class='text'>"+quotes[random].quote+"</div>").hide();
@@ -103,7 +103,9 @@
         };
     setInterval(changeText, 15000);
 });
-<div class="codeLeft">// Code to enable interaction with the displayed code</div>
+<div class="codeTop">
+	<div class="codeLeft">// Code to enable interaction with the code you are looking at</div>
+</div>
 </code></pre>
 </body>
 </html>
