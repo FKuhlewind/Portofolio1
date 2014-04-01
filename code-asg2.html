@@ -20,13 +20,14 @@
 	</div>
 </div>
 
-
+<!--   <span class="yell" title="">   </span>    -->
 <pre><code class="prettyprint">$(document).ready(function() { 
 
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
-myDataRef = new Firebase('https://student-data.firebaseio.com/');
+<span class="yell" title="Set a pointer to the location in Firebase where the data is stored.">myDataRef = new Firebase('https://student-data.firebaseio.com/');</span> 
+
 function hideInput () {
 	$('tr td:last-child, tbody tr:last-child, #hide, .newS, #saveStud, .saveChange').hide();
 	$("#addStudent").css({"background-color":localStorage.myColor+"0)"});
