@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     $('.yell').tooltipster({
         offsetX : 20,
-        position: 'right'
+        position: 'top'
         
         });
     
