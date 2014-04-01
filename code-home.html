@@ -50,14 +50,14 @@
     $("#size_button").on("click", function (e) {
     	$( ".code" ).animate({
             height: assgH }, 1000 );
-        $( ".assignment" ).animate({
+        <span class="yell" title="On click, animate the 'assignment' and 'code' iFrames to swap sizes...">$( ".assignment" ).animate</span>({
             height: codeH }, 1000 ); 
             
         tmp = codeH;
-        codeH = assgH;
+        <span class="yell" title="... then swap target values for the next click event...">codeH = assgH;</span>
         assgH = tmp;
         
-        e.preventDefault();
+        <span class="yell" title="... and prevent the default behaviour so the page doesn't refresh automatically.">e.preventDefault();</span>
         });
         
     //enable navigation  
