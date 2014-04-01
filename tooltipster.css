@@ -2,7 +2,7 @@
 .tooltipster-default {
 	border-radius: 5px; 
 	border: 2px solid orange;
-	background: rgba(255, 255, 255, 1);
+	background: #b1b1b1;
 	color: black;
 	margin: 0 0 0 5px;
 }
