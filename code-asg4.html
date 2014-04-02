@@ -76,8 +76,6 @@ function defineXYaxis () {
 	};
 	
 function createForm () {
-	//$("#myForm").remove();
-
 	$("#xAxisChoice option, #yAxisChoice option").remove();
 
 	d3.json('https://vib-data.firebaseio.com/.json', function(data) {
@@ -87,10 +85,7 @@ function createForm () {
 		$.each( vibData , function( index, value ) {
   			a = a.concat('<option value='+index+'>'+value[10]+'</option>');
 			});
-		//$('body').append(f+a+n+a+t);
-
 		$("#xAxisChoice, #yAxisChoice").append(a);
-
 
 		// enable update
 		$("#vibUpdate").on("click", function(e) {
@@ -232,7 +227,8 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 
 			d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 				vibData = data; 
-				alert("New data stored successfully, you can now select it from the dropdown menu to be diplayed.");
+				alert("New data stored successfully, you can now select it from the dropdown menu/
+				       above to be displayed");
 				});
 		});
 });
