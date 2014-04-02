@@ -37,14 +37,14 @@ createData = function () {
 	};
 
 createSVG = function () {
-	//create scale functions
+	// create scale functions
 	var xScale = d3.scale.linear()
     		.domain([0, xMax])
     		.range([padding, width-(padding*2)]);
 	var yScale = d3.scale.ordinal()
     		.domain(d3.range(yMax))
     		.rangeRoundBands([height-padding, padding], 0.1);
-	//define X axis
+	// define X axis
 	var xAxis = d3.svg.axis()
     		.scale(xScale)
     		.orient("bottom")
@@ -59,7 +59,7 @@ createSVG = function () {
     	// define color from localStorage	
     	$("svg").css({'background-color':localStorage.myColor+'0.3)'});
     	
-	//Create bars
+	// rreate bars
 	mySVG.selectAll("rect")
     		.data(myObject.events)
     		.enter()
