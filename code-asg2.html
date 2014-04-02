@@ -96,11 +96,11 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 		<span class="yell" title="...then the correct 'Save' button (indicated by the value above is displayed...">$("#edit"+vl).show();</span> 
 
 		$("tr#stud"+vl).children(".inf1")
-			.replaceWith("&lttd>&ltinput type='text' id='nFirst' value='"+studentData.students[vl].first+"'/>&lt/td>");
+		    .replaceWith("&lttd>&ltinput type='text' id='nFirst' value='"+studentData.students[vl].first+"'/>&lt/td>");
 		<span class="yell" title="...and finally the fields are replaced with text input fields that already contain the initial student data.">$("tr#stud"+vl).children(".inf2")</span> 
-			.replaceWith("&lttd>&ltinput type='text' id='nLast' value='"+studentData.students[vl].last+"'/>&lt/td>");
+		    .replaceWith("&lttd>&ltinput type='text' id='nLast' value='"+studentData.students[vl].last+"'/>&lt/td>");
 		$("tr#stud"+vl).children(".inf4")
-			.replaceWith("&lttd>&ltinput type='text' id='nEmail' <span class="yell" title="This is how the correct value of the field gets added.">value='"+studentData.students[vl].email+</span>"'/>&lt/td>"); 
+		    .replaceWith("&lttd>&ltinput type='text' id='nEmail' <span class="yell" title="This is how the correct value of the field gets added.">value='"+studentData.students[vl].email+</span>"'/>&lt/td>"); 
 
 		<span class="yell" title="When the 'Save' button gets clicked in the end...">$("#edit"+vl).on("click", function(e)</span> {
 
