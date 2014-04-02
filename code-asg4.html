@@ -106,15 +106,15 @@ function defineXYaxis () {
 			//update circles
 			<span class="yell" title="...and the SVG is updated with new values.">mySVG.selectAll("circle")</span>
 		    		.data(xyData)
-		    		.transition()
+		    		<span class="yell" title="These lines call a transition to the new data values..."> .transition()</span>
 		    		.duration(1000)
 		    		.attr("cx", function(d) {
 		                	return xScale(d[0]);})
-		    		.attr("cy", function(d) {
+		    		<span class="yell" title="...along with the transition duration and assigning the values to which the transition should be applied."> .attr("cy", function(d)</span> {
 		            		return yScale(d[1]);});
 
 			//update x and y axis
-			mySVG.select(".x.axis")
+			<span class="yell" title="We also need to update the axis...">mySVG.select(".x.axis")</span>
 		    		.transition()
 		    		.duration(500)
 		    		.call(xAxis);
@@ -122,10 +122,10 @@ function defineXYaxis () {
 		    		.transition()
 		    		.duration(500)
 		    		.call(yAxis);
-<!--    <span class="yell" title="">       </span>   -->
+
 			//update text labels
 			mySVG.select(".x.text")
-				.text(xLabel)
+				<span class="yell" title="...and add the new axis labels.">.text(xLabel)</span>
 		    		.transition()
 		    		.duration(1000);
 
@@ -148,7 +148,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	getData();
 	updateScaleDomains();
 	defineXYaxis();
-
+<!--    <span class="yell" title="">       </span>   -->
 	// create svg 
 	mySVG = d3.select(".here")
 	  .append("svg")
