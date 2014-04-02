@@ -14,13 +14,10 @@
   
 <script type="text/javascript">
   $(document).ready(function(){
-    b = $(document).height();
-    a = 0;
     $('.pc').hide();
     $('.hc').on('click', function () {
       $('.pc').slideToggle("slow");
       $('html, body').animate({scrollTop:b}, 'slow');
-      tmp=a; a=b; b=tmp;
     });
   });
   </script>
