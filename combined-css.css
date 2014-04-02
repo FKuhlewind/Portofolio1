@@ -28,7 +28,9 @@ background-color: rgba(143,157,69,0.2);
 padding: 20px;
 }
 
-#toolRight h1 {font-size: 22px;}
+#toolRight h1 {font-size: 22px;
+margin-bottom:10px;
+}
 #toolRight p {font-size: 18px;}
 #toolRight a {text-decoration: underline;}
 #toolRight a:hover {color: black;}
