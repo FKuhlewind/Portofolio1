@@ -82,35 +82,35 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 		});
 
 	$("tbody").on("click", ".delete", function(e) {
-		studentData.students.splice(  $(this).val(),1 );
+		<span class="yell" title="A click on the 'Delete' button and the student is removed from from the studentData array and the new array is written to Firebase.">studentData.students.splice</span>(  <span class="yell" title="Have a look at the Handlebars template below to see how a value is added to each student so the information can be targeted/referenced correctly."> $(this).val()</span>,1 );
 		myDataRef.set( studentData );
-		window.location.reload();
+		<span class="yell" title="Again, forcing the iFrame to reload causes the student table to be generated anew with the most up to date information from Firebase.">window.location.reload();</span>
 		alert ("Student removed.");
 		});
-<!--   <span class="yell" title="">   </span>    -->   
-	$("tbody").on("click", ".editStud", function(e) {
+ 
+	<span class="yell" title="It took quite some time to figure out the below:">$("tbody").on("click", ".editStud", function(e)</span> {
 
-		var vl = $(this).val();
+		<span class="yell" title="When the 'Edit Student' button is clicked, at first the value of that student (see template) is stored in a variable,...">var vl = $(this).val();</span>
 
 		$(".editStud, .delete, #addStudent").hide();
-		$("#edit"+vl).show();
+		<span class="yell" title="...then the correct 'Save' button (indicated by the value above is displayed...">$("#edit"+vl).show();</span> 
 
 		$("tr#stud"+vl).children(".inf1")
 			.replaceWith("&lttd>&ltinput type='text' id='nFirst' value='"+studentData.students[vl].first+"'/></td>");
-		$("tr#stud"+vl).children(".inf2")
+		<span class="yell" title="...and finally the fields are replaced with text input fields that already contain the initial student data.">$("tr#stud"+vl).children(".inf2")</span> 
 			.replaceWith("&lttd>&ltinput type='text' id='nLast' value='"+studentData.students[vl].last+"'/></td>");
 		$("tr#stud"+vl).children(".inf4")
-			.replaceWith("&lttd>&ltinput type='text' id='nEmail' value='"+studentData.students[vl].email+"'/></td>"); 
+			.replaceWith("&lttd>&ltinput type='text' id='nEmail' <span class="yell" title="This is how the correct value of the field gets added.">value='"+studentData.students[vl].email+</span>"'/></td>"); 
 
-		$("#edit"+vl).on("click", function(e) {
+		<span class="yell" title="When the 'Save' button gets clicked in the end...">$("#edit"+vl).on("click", function(e)</span> {
 
 			studentData.students[vl].first = $("#nFirst").val();
-			studentData.students[vl].last = $("#nLast").val();
+			<span class="yell" title="... the updated student data is first updated in the array...">studentData.students[vl].last = $("#nLast").val();</span>
 			studentData.students[vl].email = $("#nEmail").val();
-
-			myDataRef.set( studentData );
+<!--   <span class="yell" title="">   </span>    -->  
+			<span class="yell" title="... and then the array is written to Firebase.">myDataRef.set( studentData );</span>
 			window.location.reload();
-			alert ("Your changes have been saved.");
+			<span class="yell" title="Confirmed.">alert ("Your changes have been saved.");</span> 
 			});
 		});
 	});	
