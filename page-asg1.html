@@ -11,10 +11,10 @@
   
   <script type="text/javascript">
   $(document).ready(function(){
-    //$('body p:last-child').hide();
-    $('body h2:last-child').on('click', function () {
-      $('body p:last-child').slideToggle("slow");
-    })
+    $('.pc').hide();
+    $('.hc').on('click', function () {
+      $('.pc').slideToggle("slow");
+    });
   });
   </script>
 
@@ -67,8 +67,8 @@
   <h2>Extension:</h2>
     <p>I have rewritten the code so that the user can choose a font, color scheme and background picture to customize this page to his or her own liking.</p>
 
-  <h2>Thoughts on jQuery...</h2>
-    <p>I understand how using jQuery saved me from writing a lot of code. Once I got used to it I found it very readable and in addition it proved to be a good introduction to JavaScript itself. Searching the internet for solutions to some of the problems I encountered, I sometimes came across JavaScript code which initially I had not recognised as such. I appreciate the jQuery library most for enabling beautiful user interaction and animations with very little code and not much previous knowledge of JavaScript.</p>
+  <h2 class="hc">Thoughts on jQuery...</h2>
+    <p class="pc">I understand how using jQuery saved me from writing a lot of code. Once I got used to it I found it very readable and in addition it proved to be a good introduction to JavaScript itself. Searching the internet for solutions to some of the problems I encountered, I sometimes came across JavaScript code which initially I had not recognised as such. I appreciate the jQuery library most for enabling beautiful user interaction and animations with very little code and not much previous knowledge of JavaScript.</p>
 
 
 </body>
