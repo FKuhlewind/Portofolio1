@@ -139,7 +139,7 @@ function defineXYaxis () {
 	
 // start of script
 
-<span class="yell" title="Now that we have defined all functions and basic velues, this is where the script starts. Once the data has been loaded...">d3.json('https://vib-data.firebaseio.com/.json', function(data)</span> {
+<span class="yell" title="Now that we have defined all functions and basic values, this is where the script starts. Once the data has been loaded...">d3.json('https://vib-data.firebaseio.com/.json', function(data)</span> {
 
 	<span class="yell" title="...we first remove the existing SVG which has been there as a placeholder.">$("svg").remove();</span>
 
@@ -150,13 +150,13 @@ function defineXYaxis () {
 	defineXYaxis();
 
 	// create svg 
-	<span class="yell" title="...and append the SVG to the DOM.">mySVG = d3.select(".here")</span>
+	<span class="yell" title="...and append the new SVG to the DOM.">mySVG = d3.select(".here")</span>
 	  .append("svg")
 	  .attr("width", width)
 	  .attr("height", height);
 
 	// update color from local storage
-	<span class="yell" title="(Again, we need to apply coloring depending on the users slection made in #1)">$("svg").css({'background-color':localStorage.myColor+'0.3)'});</span>
+	<span class="yell" title="(Again, we need to apply coloring depending on the users selection made in #1)">$("svg").css({'background-color':localStorage.myColor+'0.3)'});</span>
 
 	// create circles
 	<span class="yell" title="Append the circles to the SVG, bind the data and apply data attributes.">mySVG.selectAll("circle")</span>
@@ -221,9 +221,9 @@ function defineXYaxis () {
 				p = i + 1;
     				<span class="yell" title="Get the value of each input field and store it at the correct location in Firebase.">myDataRef.child(n).child(i).set( parseInt( $("#val"+p).val()) );</span>
     				};
-			<span class="yell" title="Sore the new label information...">myDataRef.child(n).child(10).set( $("#newLabel").val() );</span>
+			<span class="yell" title="Store the new label information...">myDataRef.child(n).child(10).set( $("#newLabel").val() );</span>
 
-			<span class="yell" title="...and update the above dropdown menu with the new values.">createForm();</span>
+			<span class="yell" title="...and update the dropdown menu with the new values.">createForm();</span>
 			
 			<span class="yell" title="Remove values from input fields.">$('#newValues :input').val('');</span>
 
