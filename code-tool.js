@@ -6,10 +6,10 @@ $('.carousel').on('click', function() {
   
   val = $(this).data('value');
   
-  $(".toolContent").hide()
+  $(".toolContent").slideUp()
   
   
-  $('#'+val).fadeIn("slow");
+  $('#'+val).slideDown();
   
   });
 
