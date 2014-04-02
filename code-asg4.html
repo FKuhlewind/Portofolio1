@@ -28,35 +28,35 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 $("#background").css({'background-color':localStorage.myColor+'0.2)'});
 $("button").css({'background-color':localStorage.myColor+'0.6)'});
 
-var width = 360;
+<span class="yell" title="Define size and padding of the diagram.">var width = 360;</span> 
 var height = 360;
 var padding = 45;
-var addToAxis = 0.1; 
+<span class="yell" title="This value adds some additional space to the axis to avoid datapoints to overlap with the axis ('0.1' means: add 10%).">var addToAxis = 0.1;</span>  
 xD = 4; yD = 5; // define values to display initially
 myDataRef = new Firebase('https://vib-data.firebaseio.com/');
 
 // define functions
-function getDisplayRange () {
+<span class="yell" title="This defines the display range of the axis...">function getDisplayRange</span> () {
 	// calculate display range for axis
 	xExt = d3.extent(vibData[xD], function(d) { return d;});
-	yExt = d3.extent(vibData[yD], function(d) { return d;});
+	<span class="yell" title="...based on min and max values of the data object...">yExt = d3.extent(vibData[yD], function(d)</span> { return d;});
 	fromX = xExt[0] - ( (xExt[1]-xExt[0]) * addToAxis );
 	toX = xExt[1] + ( (xExt[1]-xExt[0]) * addToAxis );
-	fromY = yExt[0] - ( (yExt[1]-yExt[0]) * addToAxis );
+	<span class="yell" title="...and adding some additional axis space on top.">fromY = yExt[0] - ( (yExt[1]-yExt[0]) * addToAxis );</span> 
 	toY = yExt[1] + ( (yExt[1]-yExt[0]) * addToAxis );
 	};
 	
 function getData () {
 	// get data and label variables
 	xyData = [];
-	for ( var i = 0, l = 10; i < l; i++ ) {
+	<span class="yell" title="Here we sort our data by iterating over the original array and storing it in xyData so it can be bound to the objects easier.">for ( var i = 0, l = 10; i < l; i++ )</span> {
     		xyData[i]= [vibData[xD][i], vibData[yD][i]] };
 	xLabel = vibData[xD][10];
-	yLabel = vibData[yD][10];
+	<span class="yell" title="This stores the label information attached to the data values.">yLabel = vibData[yD][10];
 	};
 	
 function updateScaleDomains () {
-	xScale = d3.scale.linear()
+	<span class="yell" title="Scale domains are defined...">xScale = d3.scale.linear()</span> 
     		.domain([fromX, toX])
     		.range([padding, width-(padding)]);
 	yScale = d3.scale.linear()
@@ -69,41 +69,42 @@ function defineXYaxis () {
     		.scale(xScale)
     		.orient("bottom")
     		.ticks(5);
-	yAxis = d3.svg.axis()
+	<span class="yell" title="...and applied to the axis.">yAxis = d3.svg.axis()</span> 
     		.scale(yScale)
     		.orient("left")
     		.ticks(5);
 	};
 	
-function createForm () {
-	$("#xAxisChoice option, #yAxisChoice option").remove();
+<span class="yell" title="This function creates the dropdown menu needed to display different data based on information stored in Firebase.">function createForm ()</span> {
 
-	d3.json('https://vib-data.firebaseio.com/.json', function(data) {
+	<span class="yell" title="First, we remove the existing dropdown menus.">$("#xAxisChoice option, #yAxisChoice option").remove();</span>
+
+	<span class="yell" title="Once the data has been loaded from Firebase...">d3.json('https://vib-data.firebaseio.com/.json', function(data)</span>  {
 		vibData = data; 
 		// update dropdown menu
 		a = '';
-		$.each( vibData , function( index, value ) {
+		<span class="yell" title="...we iterate over each entry and concatenate the option tags for the dropdown menu and apply the respective index and value to the elements.">$.each( vibData , function( index, value )</span>  {
   			a = a.concat('<option value='+index+'>'+value[10]+'</option>');
 			});
-		$("#xAxisChoice, #yAxisChoice").append(a);
+		<span class="yell" title="Finally we append the option tags to both the x and y axis dropdown menus.">$("#xAxisChoice, #yAxisChoice").append(a);</span>
 
 		// enable update
-		$("#vibUpdate").on("click", function(e) {
+		<span class="yell" title="If the user clicks on 'Update',...">$("#vibUpdate").on("click", function(e)</span> {
 
 			e.preventDefault();
 			e.stopPropagation();
 
 			// get info on which values to display on Axis
-			xD = $("#xAxisChoice").val();
+			<span class="yell" title="... the selected values of the menu are referenced to display the correct data,...">xD = $("#xAxisChoice").val();</span>
 			yD = $("#yAxisChoice").val();
 
 			getDisplayRange();
 			getData();
 			updateScaleDomains();
-			defineXYaxis();
+			<span class="yell" title="...new display ranges and scale domains get defined...">defineXYaxis();</span>
 
 			//update circles
-			mySVG.selectAll("circle")
+			<span class="yell" title="...and the SVG is updated with new values.">mySVG.selectAll("circle")</span>
 		    		.data(xyData)
 		    		.transition()
 		    		.duration(1000)
@@ -121,7 +122,7 @@ function createForm () {
 		    		.transition()
 		    		.duration(500)
 		    		.call(yAxis);
-
+<!--    <span class="yell" title="">       </span>   -->
 			//update text labels
 			mySVG.select(".x.text")
 				.text(xLabel)
