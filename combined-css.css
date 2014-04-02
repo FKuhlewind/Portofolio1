@@ -53,6 +53,11 @@ cursor: pointer;
 
 .rr {text-align: right; }
 
+.toolImage { width: 30%;
+height: 30%;
+float: right;
+}
+
 /*stuff for tool page*/
 
 .framepad
