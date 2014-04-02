@@ -31,6 +31,7 @@ padding: 20px;
 #toolRight h1 {font-size: 22px;}
 #toolRight p {font-size: 18px;}
 #toolRight a {text-decoration: underline;}
+#toolRight a:hover {color: black;}
 
 #toolLeft { padding: 10px;
           height: 450px;
@@ -60,6 +61,7 @@ cursor: pointer;
 .toolImage { width: 40%;
 margin: 0 0 0 10px;
 float: right;
+border-radius: 4px;
 }
 
 
