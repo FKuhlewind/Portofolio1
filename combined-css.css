@@ -25,7 +25,7 @@ width : 410px;
 height : 448px; 
 border-radius: 4px;
 background-color: rgba(143,157,69,0.2);
-padding: 0 20px;
+padding: 20px;
 }
 
 #toolLeft { padding: 10px;
@@ -54,7 +54,7 @@ cursor: pointer;
 .rr {text-align: right; }
 
 .toolImage { width: 50%;
-margin: 10px 0;
+margin: 0 10px 0 10px;
 float: right;
 }
 
