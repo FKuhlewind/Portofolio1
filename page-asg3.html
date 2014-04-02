@@ -12,6 +12,16 @@
   <script type="text/javascript" src="jquery.mockjson.js"></script>
   
   <script type="text/javascript" src="code-asg3.js"></script>
+  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('body p:last-child').hide();
+    $('body h2:last-child').on('click', function () {
+      $('body p:last-child').slideToggle("slow");
+    })
+  });
+</script>
+  
 </head>
 
 <body class="framepad">
