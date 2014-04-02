@@ -40,6 +40,7 @@ background-color: rgba(143,157,69,0.2);
         border-radius: 4px;
         background-color: rgba(143,157,69,0.2);
         margin: 0 0 10px 0;
+        padding: 0 auto;
 }
 
 /*stuff for tool page*/
