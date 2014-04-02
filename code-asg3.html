@@ -98,52 +98,52 @@ createData = function () {
     		.style("fill", function (d) {
             		<span class="yell" title="If the event is fictitious, color it orange, otherwise make it green.">if (!d.ficticious) {return "#8f9d45"}</span> 
             		else {return "#E89E0C"} ;});   
- <!-- <span class="yell" title="">       </span>   -->	
+	
 	// add labels
 	mySVG.selectAll("text")
    		.data(myObject.events)
    		.enter()
-		.append("text")
+		<span class="yell" title="Now add a text element to the SVG for each value...">.append("text")</span>
    		.text ( function name(d) {
   			return d.name;
 			})
-    		.attr("y", function(d, i) {
+    		<span class="yell" title="...and position it on its repsective bar,">.attr("y", function(d, i)</span>  {
                  	return yScale(i) + yScale.rangeBand() / 2;})
     		.attr("x", function(d) {
-            		return xScale(0)+10;})
+            		return xScale(0)<span class="yell" title="(only a little bit to the right)">+10</span>;})
     		.attr("alignment-baseline" , "middle")
     		.style({'fill': 'black','font-family':'Arial'})
 		.style("font-size", function(d) { 
 			if (yMax < 11) { return "18px" }
-			else { return yScale.rangeBand()-3+"px" }
+			<span class="yell" title="...and make the font size dependant on the number of events so that it always fits.">else { return yScale.rangeBand()-3+"px" }</span>
 			});
     	
 	//create X axis
-	mySVG.append("g")
+	<span class="yell" title="This adds the x axis to our diagram.">mySVG.append("g")</span>
     		.attr("transform", "translate(0," + (height - padding) + ")")
     		.style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px',/
     			'font-family':'Arial', 'font-size':'12px'})
-    		.call(xAxis);
+    		<span class="yell" title="After style and position have been defined, the axis gets created by callind the axis' function."> .call(xAxis);</span>
 	};
 
-var width = 540;
+<span class="yell" title="So this is where the actual script starts: First basic values such as size and padding are defined,..."> var width = 540;</span> 
 var height = 360;
 var padding = 30;
 
-createData();
+<span class="yell" title="... then the data gets generated via mockJSON and the SVG is created.">createData();</span> 
 createSVG();
-
-$("#newData").on("click", function () {
+ <!-- <span class="yell" title="">       </span>   -->
+<span class="yell" title="With the click of a button...">$("#newData").on("click", function ()</span> {
 	eventsTemplate = eventsTemplate1;
 	$("svg").remove();
 	createData();
 	createSVG();
 	});
 $("#newData2").on("click", function () {
-	eventsTemplate = eventsTemplate2;
+	<span class="yell" title="...the chosen template will be selected...">eventsTemplate = eventsTemplate2;</span>
 	$("svg").remove();
 	createData();
-	createSVG();
+	<span class="yell" title="...and the SVG gets replaced with a new one containing fresh data.">createSVG();</span>
 	});
 $("#newData3").on("click", function () {
 	eventsTemplate = eventsTemplate3;
