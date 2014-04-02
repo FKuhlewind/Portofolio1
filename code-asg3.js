@@ -92,7 +92,7 @@ createSVG = function () {
     			/*if (yMax < 11) {return "17px"}
     			else if (yMax < 21) {return "14px"}
     			else {return "11px"}*/
-    			return yMax/2+"px"
+    			return yMax*2+"px"
     			});
     	
 	//create X axis
