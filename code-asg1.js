@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-  //$('body p:last-child').hide();
-    $('body h2:last-child').on('click', function () {
-      $('body p:last-child').slideToggle("slow");
-    });
-
 // check localStorage and style accordingly
 $("#styleTable").css({'background-color':localStorage.myColor+'0.2)'});
 $("#styleTable div").css({'background-color':localStorage.myColor+'0.3)'});
