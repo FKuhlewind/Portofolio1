@@ -27,7 +27,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 $("#background").css({'background-color':localStorage.myColor+'0.2)'});
 $("button").css({'background-color':localStorage.myColor+'0.6)'});
 
-eventsTemplate1 = {
+<span class="yell" title="The following three objects store different mockJSON templates which I have created so the script can be tested with a bigger variation of values.">eventsTemplate1</span> = {
     		"events|5-20":[{
       		"name|1-2": "@LOREM ",
       		"rating|1-7": 0,
@@ -36,7 +36,7 @@ eventsTemplate1 = {
 eventsTemplate2 = {
     		"events|10-25":[{
       		"name|1-3": "@LOREM ",
-      		"rating|0-100": 0,
+      		"rating|<span class="yell" title="Right, I wanted to see what it looks like if the input values differ more.">0-100</span>": 0,
       		"ficticious|0-1": true, }]
   		};
 eventsTemplate3 = {
@@ -46,12 +46,12 @@ eventsTemplate3 = {
       		"ficticious|0-1": true, }]
   		};
   		
-eventsTemplate = eventsTemplate1;
+<span class="yell" title="On load, the template will be set to the initial template as provided for the assignment.">eventsTemplate = eventsTemplate1;</span> 
 
 createData = function () {
-  	var events = $.mockJSON.generateFromTemplate(eventsTemplate);
+  	<span class="yell" title="A new object is created by calling the mockJSON function which generates a random object based on the given template...">var events = $.mockJSON.generateFromTemplate(eventsTemplate);</span>
   	var eventsJSON = JSON.stringify(events);  
-  	localStorage.setItem("assignment", eventsJSON);
+  	<span class="yell" title="...and then the object is turned into a string and saved in localStorage for later usage (code copied from the AST page.)">localStorage.setItem("assignment", eventsJSON);</span>
   	
   	myObject = JSON.parse(localStorage.assignment);
 	xMax = d3.max(myObject.events, function(d) { return d.rating;}); // get highest value
@@ -59,7 +59,7 @@ createData = function () {
 	};
 
 createSVG = function () {
-	
+<!-- <span class="yell" title="">       </span>   -->	
 	// create scale functions
 	var xScale = d3.scale.linear()
     		.domain([0, xMax])
