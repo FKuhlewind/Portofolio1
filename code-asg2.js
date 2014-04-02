@@ -1,5 +1,7 @@
 $(document).ready(function() { 
 
+&('.pc').hide();
+
 // check localStorage and choose font accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
 
