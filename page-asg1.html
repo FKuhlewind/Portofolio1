@@ -4,13 +4,19 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title></title>
   
-  <!--<link href="asg-style.css" rel="stylesheet" type="text/css" media="all" />-->
   <link href="combined-css.css" rel="stylesheet" type="text/css" media="all" />
 
   <script type="text/javascript" src="jquery.js"></script>
-
   <script type="text/javascript" src="code-asg1.js"></script>
   
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('body p:last-child').hide();
+    $('body h2:last-child').on('click', function () {
+      $('body p:last-child').slideToggle("slow");
+    })
+  });
+  </script>
 
 </head>
 
