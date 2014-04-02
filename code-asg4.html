@@ -139,27 +139,27 @@ function defineXYaxis () {
 	
 // start of script
 
-d3.json('https://vib-data.firebaseio.com/.json', function(data) {
+<span class="yell" title="Now that we have defined all functions and basic velues, this is where the script starts. Once the data has been loaded...">d3.json('https://vib-data.firebaseio.com/.json', function(data)</span> {
 
-	$("svg").remove();
+	<span class="yell" title="...we first remove the existing SVG which has been there as a placeholder.">$("svg").remove();</span>
 
 	vibData = data;
 	getDisplayRange();
-	getData();
+	<span class="yell" title="We define range, domain and the axis...">getData();</span>
 	updateScaleDomains();
 	defineXYaxis();
-<!--    <span class="yell" title="">       </span>   -->
+
 	// create svg 
-	mySVG = d3.select(".here")
+	<span class="yell" title="...and append the SVG to the DOM.">mySVG = d3.select(".here")</span>
 	  .append("svg")
 	  .attr("width", width)
 	  .attr("height", height);
 
 	// update color from local storage
-	$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+	<span class="yell" title="(Again, we need to apply coloring depending on the users slection made in #1)">$("svg").css({'background-color':localStorage.myColor+'0.3)'});</span>
 
 	// create circles
-	mySVG.selectAll("circle")
+	<span class="yell" title="Append the circles to the SVG, bind the data and apply data attributes.">mySVG.selectAll("circle")</span>
 	  .data(xyData)
 	  .enter()
 	  .append("circle")
@@ -168,7 +168,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
     	  .attr("cy", function(d) {
             	return yScale(d[1]);})
     	  .attr("r", 3);
-
+<!--    <span class="yell" title="">       </span>  -->
 	// create X axis
 	mySVG.append("g")
     	  .attr("class", "x axis")	
@@ -176,14 +176,14 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
     	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
     	  .call(xAxis);
 	// create Y axis
-	mySVG.append("g")
+	<span class="yell" title="Create and style x and y axis...">mySVG.append("g")</span>
     	  .attr("class", "y axis")
     	  .attr("transform", "translate(" + padding + ",0)")
     	  .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'10px'})
     	  .call(yAxis);
 
 	// create axis labels and main title
-	mySVG.append("text")
+	<span class="yell" title="...and append the axis labels and the diagram title.">mySVG.append("text")</span>
           .attr("x", width/2 )
           .attr("y", padding/2 )
           .style("text-anchor", "middle")
@@ -192,7 +192,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	mySVG.append("text")
 	  .attr("class", "x text")
           .attr("x", width/2 )
-          .attr("y", height-(padding/4) )
+          <span class="yell" title="Correct positioning is important..."> .attr("y", height-(padding/4) )</span>
           .style("text-anchor", "middle")
           .text(xLabel)
           .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' });
@@ -203,31 +203,32 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
           .attr("y", height/2)
           .style("text-anchor", "middle")
           .style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1px', 'font-family':'Arial', 'font-size':'12px' })
-          .style("writing-mode", "tb");
+          <span class="yell" title="...and this defines that the y axis label should be written top to bottom.">.style("writing-mode", "tb");</span>
 
 	// creates update form
-	createForm();
+	<span class="yell" title="Now the update form is created along with the event listener defined in the same function.">createForm();</span>
 
 	// store new data
-	$("#storeData")
+	<span class="yell" title="If a user clicks on 'Store New Data',...">$("#storeData")</span>
 		.on("click", function(e) {
 
 			e.preventDefault();
 			e.stopPropagation();
 
-			n = vibData.length;
+			<span class="yell" title="...we need to find out how many datasets have already been stored in Firebase...">n = vibData.length;</span>
 
-			for ( var i = 0, l = 10; i < l; i++ ) {
+			<span class="yell" title="...to then iterate over each value that was entered in the input fields:">for ( var i = 0, l = 10; i < l; i++ )</span> {
 				p = i + 1;
-    				myDataRef.child(n).child(i).set( parseInt( $("#val"+p).val()) );
+    				<span class="yell" title="Get the value of each input field and store it at the correct location in Firebase.">myDataRef.child(n).child(i).set( parseInt( $("#val"+p).val()) );</span>
     				};
-			myDataRef.child(n).child(10).set( $("#newLabel").val() );
+			<span class="yell" title="Sore the new label information...">myDataRef.child(n).child(10).set( $("#newLabel").val() );</span>
 
-			createForm();
-			$('#newValues :input').val('');
+			<span class="yell" title="...and update the above dropdown menu with the new values.">createForm();</span>
+			
+			<span class="yell" title="Remove values from input fields.">$('#newValues :input').val('');</span>
 
 			d3.json('https://vib-data.firebaseio.com/.json', function(data) {
-				vibData = data; 
+				<span class="yell" title="Once the dataset containing the newly added data has been loaded, inform the user that it can now be selected and displayed.">vibData = data;</span> 
 				alert("New data stored successfully, you can now select it from the dropdown menu/
 				       above to be displayed");
 				});
