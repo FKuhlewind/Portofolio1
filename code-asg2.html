@@ -54,7 +54,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 
 	<span class="yell" title="...and hide the input elements.">hideInput();</span>
 
-	<span class="yell" title="If the 'edit' button gets clicked, enlarge the last column with toggleClass and show the buttons that enable editing, removing and adding a student.">$("thead")</span>.on("click", <span class="yell" title="Event delegation is extremely important here as the table get created anew later and otherwise the events would not be bound to the target elements anymore.">"#edit"</span>, function(e) {
+	<span class="yell" title="If the 'edit' button gets clicked, enlarge the last column with toggleClass and show the buttons that enable editing, removing and adding a student.">$("thead")</span>.on("click", <span class="yell" title="Event delegation is extremely important here as the table gets created anew later and otherwise the events would not be bound to the target elements anymore.">"#edit"</span>, function(e) {
 		$('tr th:last-child').toggleClass('lastColLong lastColShort');
 		$("#addStud, tr td:last-child, tbody tr:last-child, #hide").show();
 		$("#edit, .saveChange").hide();
@@ -118,9 +118,6 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 <div class="codeTop">
    <div class="codeLeft">// The Handlebars template as used in the page for this assignment <a href="https://github.com/FKuhlewind/Portofolio1/blob/gh-pages/page-asg2.html" target="_blank" class="codelink">(page-asg2.html)</a></div>
 </div>
-
-<!--   <span class="yell" title="">   </span>    -->  
-
 <span class="yell" title="This is the Handlebars template based on which the student table is generated.">&ltscript id="students-template" type="text/x-handlebars-template"></span>
   &lttable id="hand">
     <span class="yell" title="The table head is fixed and thus contains no reference to any variable.">&ltthead></span>
@@ -128,7 +125,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
       &ltth>Last&lt/th>
       &ltth>UvA ID&lt/th>
       &ltth>Email&lt/th>
-      <span class="yell" title="The last row of the table head contained buttons along with IDs that indicate which ones to hide/show for later reference.">&ltth class="lastColShort" id="showHide"></span>
+      <span class="yell" title="The last row of the table head contains buttons along with IDs that indicate which ones to hide/show for later reference.">&ltth class="lastColShort" id="showHide"></span>
       	&ltbutton id="edit">Edit&lt/button>
       	&ltbutton id="hide">Cancel&lt/button>
       &lt/th>
