@@ -88,7 +88,7 @@ createSVG = function () {
             		return xScale(0)+10;})
     		.attr("alignment-baseline" , "middle")
     		.style({ /*'stroke': 'Black',*/ 'fill': 'black','font-family':'Arial' /*'stroke-width': '0.5px'*/ })
-		.style("font-size", function(d) { return (yMax/2)*3+"px" });
+		.style("font-size", function(d) { return yScale.rangeBand()-2+"px" });
     	
 	//create X axis
 	mySVG.append("g")
