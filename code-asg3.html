@@ -2,28 +2,30 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="tomorrow-night.css" />
+    <link rel="stylesheet" type="text/css" href="tooltipster.css" />
 </head>
 
 <body>
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="prettify.js"></script>
+<script type="text/javascript" src="tooltipster.js"></script>
+<script type="text/javascript" src="codecode.js"></script>
 
-<script type="text/javascript">
-(function(jQuery){
-        
-  jQuery( document ).ready( function() {
-                
-    prettyPrint();
-                
-  } );
- 
-}(jQuery))
-</script>
+<div class="codeTop">
+	<div class="codeLeft">// Code for the extended Assignment #3 <a href="https://github.com/FKuhlewind/Portofolio1/blob/gh-pages/code-asg3.js" target="_blank">(code-asg3.js)</a></div>
+	<div class="codeRight">
+		<div class="codeButton1"><div class="dIn"><a href="https://gist.github.com/FKuhlewind/9724093" target="_blank">Initial Assignment</a></div></div>
+		<div class="codeButton2"><div class="dIn">Enable Tooltips</div></div>
+	</div>
+</div>
 
+<pre><code class="prettyprint">$(document).ready(function() { 
 
-<pre><code class="prettyprint"><xmp>// CODE Assignment 3
-$(document).ready(function() { 
+// check localStorage and choose font accordingly
+$('body, #onRight').css({'font-family':localStorage.myFont});
+$("#background").css({'background-color':localStorage.myColor+'0.2)'});
+$("button").css({'background-color':localStorage.myColor+'0.6)'});
 
 eventsTemplate1 = {
     		"events|5-20":[{
@@ -57,14 +59,16 @@ createData = function () {
 	};
 
 createSVG = function () {
-	//create scale functions
+	
+	// create scale functions
 	var xScale = d3.scale.linear()
     		.domain([0, xMax])
     		.range([padding, width-(padding*2)]);
 	var yScale = d3.scale.ordinal()
     		.domain(d3.range(yMax))
     		.rangeRoundBands([height-padding, padding], 0.1);
-	//define X axis
+	
+	// define X axis
 	var xAxis = d3.svg.axis()
     		.scale(xScale)
     		.orient("bottom")
@@ -74,8 +78,12 @@ createSVG = function () {
 	var mySVG = d3.select(".here")
 	 	.append("svg")
 	 	.attr("width", width)
-    		.attr("height", height);    
-	//Create bars
+    		.attr("height", height);
+    	
+    	// define color from localStorage	
+    	$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+    	
+	// create bars
 	mySVG.selectAll("rect")
     		.data(myObject.events)
     		.enter()
@@ -90,6 +98,7 @@ createSVG = function () {
     		.style("fill", function (d) {
             		if (!d.ficticious) {return "#8f9d45"}
             		else {return "#E89E0C"} ;});   
+	
 	// add labels
 	mySVG.selectAll("text")
    		.data(myObject.events)
@@ -103,11 +112,16 @@ createSVG = function () {
     		.attr("x", function(d) {
             		return xScale(0)+10;})
     		.attr("alignment-baseline" , "middle")
-    		.style({ 'stroke': 'Black', 'fill': 'black', /*'stroke-width': '0.5px'*/ });
+    		.style({'fill': 'black','font-family':'Arial'})
+		.style("font-size", function(d) { 
+			if (yMax < 11) { return "18px" }
+			else { return yScale.rangeBand()-3+"px" }
+			});
+    	
 	//create X axis
 	mySVG.append("g")
     		.attr("transform", "translate(0," + (height - padding) + ")")
-    		.style({ 'stroke': 'Black', 'fill': 'none', /*'stroke-width': '1px'*/})
+    		.style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px', 'font-family':'Arial', 'font-size':'12px'})
     		.call(xAxis);
 	};
 
@@ -137,7 +151,6 @@ $("#newData3").on("click", function () {
 	createSVG();
 	});
 });
-</xmp>
 </code></pre>
 </body>
 </html>
