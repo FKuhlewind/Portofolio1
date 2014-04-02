@@ -121,44 +121,44 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 &ltscript id="students-template" type="text/x-handlebars-template">
   &lttable id="hand">
     &ltthead>
-      &ltth>First</th>
-      &ltth>Last</th>
-      &ltth>UvA ID</th>
-      &ltth>Email</th>
+      &ltth>First&lt/th>
+      &ltth>Last&lt/th>
+      &ltth>UvA ID&lt/th>
+      &ltth>Email&lt/th>
       &ltth class="lastColShort" id="showHide">
-      	&ltbutton id="edit">Edit</button>
-      	&ltbutton id="hide">Cancel</button>
-      </th>
-    </thead>
+      	&ltbutton id="edit">Edit&lt/button>
+      	&ltbutton id="hide">Cancel&lt/button>
+      &lt/th>
+    &lt/thead>
     &lttbody>
       {{#students}}
         &lttr id="stud{{@index}}">
-          &lttd class="inf1"> {{first}} </td>
-          &lttd class="inf2"> {{last}}  </td>
-          &lttd class="inf3"> {{uvaID}} </td>
-          &lttd class="inf4"> {{email}} </td>
+          &lttd class="inf1"> {{first}} &lt/td>
+          &lttd class="inf2"> {{last}}  &lt/td>
+          &lttd class="inf3"> {{uvaID}} &lt/td>
+          &lttd class="inf4"> {{email}} &lt/td>
           &lttd class="lastColShort"> 
-            &ltbutton  class="editStud" value="{{@index}}">Edit</button>
-            &ltbutton class="delete" value="{{@index}}">Del.</button>
-            &ltbutton id="edit{{@index}}" class="saveChange">Save</button>
+            &ltbutton  class="editStud" value="{{@index}}">Edit&lt/button>
+            &ltbutton class="delete" value="{{@index}}">Del.&lt/button>
+            &ltbutton id="edit{{@index}}" class="saveChange">Save&lt/button>
           </td>
         </tr>
       {{/students}}
         &lttr id="addStudent">
         &ltform class="newS" id="newStud">
-          &lttd><input type="text" id="firstin" class="newS"/></td>
-          &lttd><input type="text" id="lastin" class="newS"/></td>
-          &lttd><input type="text" id="uvaIDin" class="newS"/></td>
-          &lttd><input type="text" id="emailin" class="newS"/></td>
+          &lttd>&ltinput type="text" id="firstin" class="newS"/>&lt/td>
+          &lttd>&ltinput type="text" id="lastin" class="newS"/>&lt/td>
+          &lttd>&ltinput type="text" id="uvaIDin" class="newS"/>&lt/td>
+          &lttd>&ltinput type="text" id="emailin" class="newS"/>&lt/td>
           &lttd id="addSave">
-            &ltbutton id="addStud">Add Student</button>
-            &ltbutton id="saveStud">Save</button>
-          </td>
-        </form>
-        </tr>
-    </tbody>
-  </table>
-</script>
+            &ltbutton id="addStud">Add Student&lt/button>
+            &ltbutton id="saveStud">Save&lt/button>
+          &lt/td>
+        &lt/form>
+        &lt/tr>
+    &lt/tbody>
+  &lt/table>
+&lt/script>
 </code></pre>
 </body>
 </html>
