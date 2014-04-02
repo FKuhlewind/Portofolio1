@@ -60,7 +60,7 @@ createData = function () {
 
 <span class="yell" title="This function creates the SVG.">createSVG = function ()</span> {
 
-	<span class="yell" title="We need to define the scale functions first:"></span>// create scale functions
+	<span class="yell" title="We need to define the scale functions first:">// create scale functions</span>
 	var xScale = d3.scale.linear()
     		.domain([0, xMax])
     		<span class="yell" title="For the x scale, the domain is defined by the min/max values and mapped onto a range equal to the size of the diagram (minus padding),...">.range([padding, width-(padding*2)]);</span>
@@ -72,7 +72,7 @@ createData = function () {
 	<span class="yell" title="This defines the x axis using the above scale function."> var xAxis = d3.svg.axis()</span> 
     		.scale(xScale)
     		.orient("bottom")
-    		<span class="yell" title="Teh x axis should be placed at the bottom and the number of ticks should be about five.">.ticks(xMax/(xMax/5));</span>
+    		<span class="yell" title="The x axis should be placed at the bottom and the number of ticks should be about five.">.ticks(xMax/(xMax/5));</span>
 
 	// create svg 
 	var mySVG = d3.select(".here")
@@ -123,10 +123,10 @@ createData = function () {
     		.attr("transform", "translate(0," + (height - padding) + ")")
     		.style({ 'stroke': 'Black', 'fill': 'none', 'stroke-width': '1.5px',/
     			'font-family':'Arial', 'font-size':'12px'})
-    		<span class="yell" title="After style and position have been defined, the axis gets created by callind the axis' function."> .call(xAxis);</span>
+    		<span class="yell" title="After style and position have been defined, the axis gets created by calling the axis' function."> .call(xAxis);</span>
 	};
 
-<span class="yell" title="So this is where the actual script starts: First basic values such as size and padding are defined,..."> var width = 540;</span> 
+<span class="yell" title="So this is where the actual script starts: First basic values such as size and padding are defined,...">var width = 540;</span> 
 var height = 360;
 var padding = 30;
 
