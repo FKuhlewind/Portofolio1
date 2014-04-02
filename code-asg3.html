@@ -55,50 +55,50 @@ createData = function () {
   	
   	myObject = JSON.parse(localStorage.assignment);
 	xMax = d3.max(myObject.events, function(d) { return d.rating;}); // get highest value
-	yMax = myObject.events.length; // get number of values
+	<span class="yell" title="We need both the highest value and the total number of values to define the display range of our diagram.">yMax = myObject.events.length;</span> // get number of values
 	};
 
-createSVG = function () {
-<!-- <span class="yell" title="">       </span>   -->	
-	// create scale functions
+<span class="yell" title="This function creates the SVG.">createSVG = function ()</span> {
+
+	<span class="yell" title="We need to define the scale functions first:"></span>// create scale functions
 	var xScale = d3.scale.linear()
     		.domain([0, xMax])
-    		.range([padding, width-(padding*2)]);
+    		<span class="yell" title="For the x scale, the domain is defined by the min/max values and mapped onto a range equal to the size of the diagram (minus padding),...">.range([padding, width-(padding*2)]);</span>
 	var yScale = d3.scale.ordinal()
     		.domain(d3.range(yMax))
-    		.rangeRoundBands([height-padding, padding], 0.1);
+    		<span class="yell" title="...and for the y scale, domain is defined by ordinal values based on the amount of values, again mapped onto the diagrams total size.">.rangeRoundBands([height-padding, padding], 0.1);</span>
 	
 	// define X axis
-	var xAxis = d3.svg.axis()
+	<span class="yell" title="This defines the x axis using the above scale function."> var xAxis = d3.svg.axis()</span> 
     		.scale(xScale)
     		.orient("bottom")
-    		.ticks(xMax/(xMax/5));
+    		<span class="yell" title="Teh x axis should be placed at the bottom and the number of ticks should be about five.">.ticks(xMax/(xMax/5));</span>
 
 	// create svg 
 	var mySVG = d3.select(".here")
-	 	.append("svg")
+	 	<span class="yell" title="Appends the SVG at the correct location and applies widh and height.">.append("svg")</span> 
 	 	.attr("width", width)
     		.attr("height", height);
-    	
+	   	
     	// define color from localStorage	
-    	$("svg").css({'background-color':localStorage.myColor+'0.3)'});
+    	<span class="yell" title="Correct color can only be applied once the SVG is there (see #1).">$("svg").css({'background-color':localStorage.myColor+'0.3)'});</span>
     	
 	// create bars
-	mySVG.selectAll("rect")
+	<span class="yell" title="Now things become interesting: Select all rectangles (Which ones?)...">mySVG.selectAll("rect")</span>
     		.data(myObject.events)
     		.enter()
-    		.append("rect")
+    		<span class="yell" title="...bind them to the data and let them .enter the stage (Now they are there.)">.append("rect")</span>
     		.attr("y", function(d, i) {
                  	return yScale(i);})
     		.attr("x", function(d) {
             		return xScale(0);})
-    		.attr("height", yScale.rangeBand())
+    		<span class="yell" title="Attributes are applied to each rectangle based on the bound data and scale functions.">.attr("height", yScale.rangeBand())</span>
     		.attr("width", function(d) {
                  	return xScale(d.rating)-padding;})
     		.style("fill", function (d) {
-            		if (!d.ficticious) {return "#8f9d45"}
+            		<span class="yell" title="If the event is fictitious, color it orange, otherwise make it green.">if (!d.ficticious) {return "#8f9d45"}</span> 
             		else {return "#E89E0C"} ;});   
-	
+ <!-- <span class="yell" title="">       </span>   -->	
 	// add labels
 	mySVG.selectAll("text")
    		.data(myObject.events)
