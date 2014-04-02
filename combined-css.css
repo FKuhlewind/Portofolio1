@@ -22,7 +22,9 @@ iframe  { width: 100%;
 #toolRight { float: right;
           margin-left: 10px; 
 width : 540px;
-height : 360px; }
+height : 360px; 
+background-color: red;
+}
 
 #toolLeft { padding: 10px 30px 0px 30px;
           height: 370px;
