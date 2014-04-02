@@ -88,12 +88,7 @@ createSVG = function () {
             		return xScale(0)+10;})
     		.attr("alignment-baseline" , "middle")
     		.style({ /*'stroke': 'Black',*/ 'fill': 'black','font-family':'Arial' /*'stroke-width': '0.5px'*/ })
-		.style("font-size", function(d) {
-    			/*if (yMax < 11) {return "17px"}
-    			else if (yMax < 21) {return "14px"}
-    			else {return "11px"}*/
-    			return yMax*2+"px"
-    			});
+		.style("font-size", function(d) { return (yMax/2)*3+"px" });
     	
 	//create X axis
 	mySVG.append("g")
