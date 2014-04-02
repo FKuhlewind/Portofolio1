@@ -1,12 +1,15 @@
 $(document).ready(function() {
 
-$(".toolcontent").hide()
+$(".toolContent").hide()
 
 $('.carousel').on('click', function() {
-  $(".toolContent").hide()
+  
   val = $(this).data('value');
   
-  $(val).fadeIn("slow");
+  $(".toolContent").hide()
+  
+  
+  $('#'+val).fadeIn("slow");
   
   });
 
