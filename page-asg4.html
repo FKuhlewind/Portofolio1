@@ -17,6 +17,7 @@
     $('.pc').hide();
     $('.hc').on('click', function () {
       $('.pc').slideToggle("slow");
+      $('html, body').animate({scrollTop:0}, 'slow');
     });
   });
 </script>
