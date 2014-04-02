@@ -34,6 +34,13 @@ background-color: rgba(143,157,69,0.2);
           border-radius: 4px;
           }
 
+.carousel {
+        height: 30px;
+        width: 500px;
+        border-radius: 4px;
+        background-color: rgba(143,157,69,0.2);
+        margin: 0 0 10px 0;
+}
 
 /*stuff for tool page*/
 
