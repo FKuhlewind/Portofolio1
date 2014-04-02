@@ -11,13 +11,10 @@
   
   <script type="text/javascript">
   $(document).ready(function(){
-    a = $(document).height();
-    b = 0;
     $('.pc').hide();
     $('.hc').on('click', function () {
       $('.pc').slideToggle("slow");
       $('html, body').animate({scrollTop:a}, 'slow');
-      tmp=a; a=b; b=tmp;
     });
   });
   </script>
