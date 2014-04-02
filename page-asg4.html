@@ -11,6 +11,16 @@
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   
   <script type="text/javascript" src="code-asg4.js"></script>
+  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('body p:last-child').hide();
+    $('body h2:last-child').on('click', function () {
+      $('body p:last-child').slideToggle("slow");
+    })
+  });
+</script>
+  
 </head>
 
 <body class="framepad">
