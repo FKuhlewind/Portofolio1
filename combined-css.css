@@ -19,35 +19,13 @@ iframe  { width: 100%;
 
 /*stuff for tool page*/
 
-.carousel:hover 
-        { border: 2px solid blue;
-          border-right: none;
-          background-color: red;
-        }
-          
+#toolRight { float: right;
+          margin-left: 10px; }
 
-.carousel 
-        { width: 427px;
-          height: 30px;
-          margin-bottom: 20px;
-          /*border: 2px solid blue;*/
-          border-radius: 4px;
-          background-color: white;
-          z-index: 99;
-     
-          
-        }
-
-.explanations
-        { float: right;
-          width: 500px;
-          height: 490px /*490px*/;
-         background-color: blue;
-          border: 2px solid blue;
-          border-radius: 4px;
-          z-index: -15;
-     
-        }
+#toolLeft { padding: 10px 30px 0px 30px;
+          height: 370px;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          font-size: 14px; }
 
 
 /*stuff for tool page*/
