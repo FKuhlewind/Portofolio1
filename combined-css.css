@@ -20,7 +20,9 @@ iframe  { width: 100%;
 /*stuff for tool page*/
 
 #toolRight { float: right;
-          margin-left: 10px; }
+          margin-left: 10px; 
+width : 540px;
+height : 360px; }
 
 #toolLeft { padding: 10px 30px 0px 30px;
           height: 370px;
