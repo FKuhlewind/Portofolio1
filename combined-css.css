@@ -217,7 +217,9 @@ h1      { font-size: 18px;
 
 h2      { font-size: 16px; }
 
-p       { font-size: 14px; }
+p       { font-size: 14px; 
+          margin: 4px 0;
+}
 
 svg     { /*background-color: #eee8d5; */
           /*background-color: rgba(153,147,69,0.3);*/
