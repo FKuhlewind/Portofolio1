@@ -118,34 +118,37 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
 <div class="codeTop">
    <div class="codeLeft">// The Handlebars template as used in the page for this assignment <a href="https://github.com/FKuhlewind/Portofolio1/blob/gh-pages/page-asg2.html" target="_blank" class="codelink">(page-asg2.html)</a></div>
 </div>
-&ltscript id="students-template" type="text/x-handlebars-template">
+
+<!--   <span class="yell" title="">   </span>    -->  
+
+<span class="yell" title="This is the Handlebars template based on which the student table is generated.">&ltscript id="students-template" type="text/x-handlebars-template"></span>
   &lttable id="hand">
-    &ltthead>
+    <span class="yell" title="The table head is fixed and thus contains no reference to any variable.">&ltthead></span>
       &ltth>First&lt/th>
       &ltth>Last&lt/th>
       &ltth>UvA ID&lt/th>
       &ltth>Email&lt/th>
-      &ltth class="lastColShort" id="showHide">
+      <span class="yell" title="The last row of the table head contained buttons along with IDs that indicate which ones to hide/show for later reference.">&ltth class="lastColShort" id="showHide"></span>
       	&ltbutton id="edit">Edit&lt/button>
       	&ltbutton id="hide">Cancel&lt/button>
       &lt/th>
     &lt/thead>
     &lttbody>
-      {{#students}}
-        &lttr id="stud{{@index}}">
+      <span class="yell" title="This Handlebars block helper defines that for each student in our JSON object...">{{#students}}</span>
+        &lttr id="stud<span class="yell" title="(This is a very important bit as it creates a unique ID attribute for each row which we will need later to correctly reference each student entry.">{{@index}}</span>">
           &lttd class="inf1"> {{first}} &lt/td>
           &lttd class="inf2"> {{last}}  &lt/td>
-          &lttd class="inf3"> {{uvaID}} &lt/td>
+          <span class="yell" title="...a row should be created in the table showing first name, last name, UVA ID and the students' email address.">&lttd class="inf3"> {{uvaID}} &lt/td></span> 
           &lttd class="inf4"> {{email}} &lt/td>
           &lttd class="lastColShort"> 
             &ltbutton  class="editStud" value="{{@index}}">Edit&lt/button>
-            &ltbutton class="delete" value="{{@index}}">Del.&lt/button>
+            <span class="yell" title="The last column contains buttons which also have unique ID attributes connected to them.">&ltbutton class="delete" value="{{@index}}">Del.&lt/button></span>
             &ltbutton id="edit{{@index}}" class="saveChange">Save&lt/button>
           &lt/td>
         &lt/tr>
-      {{/students}}
+      <span class="yell" title="This indicates the end of the block helper section, i.e. the end of the section that is iterated over for each student.">{{/students}}</span>
         &lttr id="addStudent">
-        &ltform class="newS" id="newStud">
+        <span class="yell" title="The last row contains the input fields for entering a new student (hidden at first) and the buttons associated with this section.">&ltform class="newS" id="newStud"></span>
           &lttd>&ltinput type="text" id="firstin" class="newS"/>&lt/td>
           &lttd>&ltinput type="text" id="lastin" class="newS"/>&lt/td>
           &lttd>&ltinput type="text" id="uvaIDin" class="newS"/>&lt/td>
@@ -158,7 +161,7 @@ $('body, #onRight').css({'font-family':localStorage.myFont});
         &lt/tr>
     &lt/tbody>
   &lt/table>
-&lt/script>
+<span class="yell" title="End of script.">&lt/script></span>
 </code></pre>
 </body>
 </html>
