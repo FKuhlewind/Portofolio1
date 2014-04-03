@@ -22,7 +22,7 @@ a:hover, .codelink:hover
         
 .codeButton2, .codeButton3
         { top: 15px !important; 
-        position: fixed; }
+        position: fixed !important; }
 
 .codeButton1, .codeButton2, .codeButton3
         { position: absolute;
