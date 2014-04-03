@@ -7,6 +7,6 @@ $(document).ready(function() {
         });
     $('#hammSpan').on('click', function() {
         $(".toolContent").slideUp("slow")
-        $('.hammer').fadeIn("slow");
+        $('.hammer').slideDown("slow");
         });
 });
