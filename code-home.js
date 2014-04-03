@@ -23,7 +23,7 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
 	    	numb = messages.length;
 
-		for ( var i = 0;  i < numb; i++ ) {
+		for ( var i = 0;  i < 2; i++ ) {
 				
 				//p=i;
 				
