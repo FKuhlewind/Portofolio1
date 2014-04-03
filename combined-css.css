@@ -11,7 +11,7 @@ p.intro { font-size: 14px; }
 #messagebox
         { width: 97%;
           height: 72px;
-          padding: 5px 10px 0 10px;
+          padding: 0px 10px 0 10px;
           
           background-color: rgba(143,157,69,0.2);
           border: 0.5px solid gray;
