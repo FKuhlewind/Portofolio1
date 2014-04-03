@@ -6,6 +6,8 @@ $("#messagebox").css({'background-color':localStorage.myColor+'0.2)'});
 $(".message").css({'background-color':localStorage.myColor+'0.3)'});
 $("button").css({'background-color':localStorage.myColor+'0.6)'});
 
+myDataRef = new Firebase('https://floriansmessages.firebaseio.com/');
+
 function getTime () {
     var currentdate = new Date(); 
     datetime = " - " + currentdate.getDate() + "."
@@ -19,10 +21,14 @@ function getTime () {
 $("#sendMessage").on('click', function (){
     getTime();
   
-    name = $("#messName").val();
-    comment = $("#messText").val()
+    nameB = $("#messName").val();
     
-    alert(comment+' by '+name+' '+datetime);
+    comment = $("#messText").val();
+    name = nameB+' '+datetime;
+    
+    
+    
+    alert(comment+' '+name);
     
   
     });
