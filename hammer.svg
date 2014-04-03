@@ -24,7 +24,7 @@
         transition: fill 1s linear 0s;
     }
     g:hover {
-        fill: blue;
+        fill: red;
     }
     ]]>  
    </style> 
