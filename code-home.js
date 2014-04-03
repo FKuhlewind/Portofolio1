@@ -23,13 +23,13 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
 	    	numb = messages.length;
 
-		for ( var i = 0, l = numb; i < l; i++ ) {
+		for ( var i = 0;  i < numb; i++ ) {
 				
-				p=i;
+				//p=i;
 				
     				$('.appendMessage').prepend('<div class="line"></div>');
-  				$('.appendMessage').prepend('<div class="name">'+messages.messages[p].name+'</div>');
-  				$('.appendMessage').prepend('<div class="messa">'+messages.messages[p].message+'</div>');
+  				$('.appendMessage').prepend('<div class="name">'+messages.messages[i].name+'</div>');
+  				$('.appendMessage').prepend('<div class="messa">'+messages.messages[i].message+'</div>');
   				$('.appendMessage .line:last-child').remove();
 			
     				};
