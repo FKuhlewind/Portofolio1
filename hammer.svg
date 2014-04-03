@@ -14,6 +14,21 @@
    sodipodi:docname="Hamare.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0" transform="rotate(90)">
+   
+   <style type="text/css" media="screen">  
+    <![CDATA[  
+    g {  
+        fill: yellow;  
+        stroke: black;  
+        stroke-width: 1;
+        transition: fill 1s linear 0s;
+    }
+    g:hover {
+        fill: blue;
+    }
+    ]]>  
+   </style> 
+   
   <defs
      id="defs4">
     <inkscape:perspective
