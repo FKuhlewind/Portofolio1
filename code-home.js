@@ -21,9 +21,9 @@ $('.appendMessage').hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
-	    	numb = messages.length;
+	    	numb = messages.messages.length;
 
-		for ( var i = 0;  i < 2; i++ ) {
+		for ( var i = 0;  i < numb; i++ ) {
 				
 				//p=i;
 				
