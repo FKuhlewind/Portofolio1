@@ -1,9 +1,9 @@
 /*reset css*/
-/*body, div,*/ dl, dt, dd ,ul ,ol ,li /*,h1 ,h2 ,h3 ,h4 ,h5 ,h6*/ ,pre ,form ,fieldset ,input ,textarea /*,p*/ ,blockquote /*,th , td*/
+dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
         { margin: 0; 
           padding: 0;
           outline: none; }
-         
+        
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
           margin: 0; }
 
@@ -17,76 +17,7 @@ a:hover {color: orange; }
 iframe  { width: 100%;
           height: 100%; }
 
-/*stuff for tool page*/
-
-#toolRight { float: right;
-          margin: 10px; 
-width : 390px;
-height : 408px; 
-border-radius: 4px;
-background-color: rgba(143,157,69,0.2);
-padding: 20px;
-}
-
-#toolRight h1 {font-size: 22px;
-margin-bottom:10px;
-margin-top:0px;
-}
-#toolRight p {font-size: 18px;}
-#toolRight a {text-decoration: underline;}
-#toolRight a:hover {color: black;}
-
-#toolLeft { padding: 10px;
-          height: 450px;
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
-          font-size: 14px; 
-          border-radius: 4px;
-          }
-
-.carousel {
-        height: 27px;
-        width: 430px;
-        border-radius: 4px;
-        background-color: rgba(143,157,69,0.2);
-        margin: 0 0 10px 0;
-        padding: 7px 10px 0 10px;
-        font-size: 16px;
-        border: 1px solid rgba(143,157,69,0.2);
-}
-
-.carousel:hover { border: 1px solid orange;
-cursor: pointer;
-          cursor: hand;
-}
-
-.rr {text-align: right; }
-
-.toolImage { width: 40%;
-margin: 0 0 10px 10px;
-float: right;
-border-radius: 4px;
-}
-
-
-img.w50 {width:50%;}
-img.w60 {width:60%;}
-img.w70 {width:70%;}
-
-#hammSpan {text-decoration: underline;}
-
-
-.rotate90 {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    width: 100%;
-    margin-top: 85px;
-}
-
-
-/*stuff for tool page*/
+/*general CSS rules for the PAGE*/
 
 .framepad
         { padding: 0 10px 0 0; }
@@ -106,12 +37,12 @@ img.w70 {width:70%;}
           line-height: 0px;
           display: block; }
           
-/*layout*/
 .wrapper									
         { margin: 0 auto; 
           min-width: 980px; }
 
-/*header*/
+/*CSS rules for the QUOTE container*/
+
 .quote	{ width: 100%;
           background: #8f9d45; }
           
@@ -136,7 +67,8 @@ img.w70 {width:70%;}
           float: right;
           padding: 0px 24px 0px 0; }
 
-/*navigation*/
+/*CSS rules for the NAVIGATION bar*/
+
 .nav 	{ width: 100%;
           background: #333333;
           border-top: 1px solid gray;
@@ -161,17 +93,6 @@ img.w70 {width:70%;}
 
 .nav-in ul li svg
         { padding: 0 0px 0 0px; }
-    
-.svg_1  { fill: #ffffff;
-          stroke-width: 2; }
-
-.svg_button:hover > g > .svg_1
-        { fill: #E89E0C;  }
-.svg_button
-        { margin: 0px; 
-          background-color: transparent; } 
-
-.green  { fill: #8f9d45; }
 
 .nav-in ul li a								
         { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
@@ -180,7 +101,6 @@ img.w70 {width:70%;}
           color: #ffffff;
           display: inline-block; 
           padding: 1px 4px 0px 4px;
-          /*font-weight: bold;*/
           border-radius: 4px;
           border: 2px solid #333333; }
 
@@ -193,7 +113,20 @@ img.w70 {width:70%;}
 .nav-in ul li a:hover
         { color: #E89E0C; }
 
-/*main content*/
+.svg_1  { fill: #ffffff;
+          stroke-width: 2; }
+
+.svg_button:hover > g > .svg_1
+        { fill: #E89E0C;  }
+        
+.svg_button
+        { margin: 0px; 
+          background-color: transparent; } 
+
+.green  { fill: #8f9d45; }
+
+/*CSS rules for the main CONTENT*/
+
 .main	{ width: 980px;
           height: 700px;
           margin: 0 auto;
@@ -222,16 +155,21 @@ img.w70 {width:70%;}
 .left   { display: inline-block;
           text-align: left; }
 
+iframe::-webkit-scrollbar 
+        { width: 16px; }  
+iframe::-webkit-scrollbar-track   
+        { background-color: rgba(255, 255, 255, 0.9); }  
+iframe::-webkit-scrollbar-thumb   
+        { background-color: #8f9d4   ; /*MISSING BIT*/
+          border-radius: 8px;
+          border: 3px solid rgba(255, 255, 255, 0.9); }  
 
-        
+/*CSS rules for the FOOTER*/
 
-
-/*footer*/
 .footer	{ width: 100%;
           background: #333333; 
-          border-top: 1px solid gray;
-          /*border-bottom: 1px solid gray;*/
-          }
+          border-top: 1px solid gray; }
+          
 .footer-in									
         { width: 980px; 
           margin: 0 auto;
@@ -244,28 +182,23 @@ img.w70 {width:70%;}
           font-size: 12px;
           color: white; }
 
-.copy p { margin: 0}
+.copy p { margin: 0 }
 
+/* CSS rules for certain SECTIONS */
 
+/* General CSS for the ASSIGNMENT section*/
 
-/* ASG COPIED IN ------------------- */
 h1      { font-size: 18px; 
           margin: 10px 0 5px 0; }
 
 h2      { font-size: 14px; 
-        margin: 10px 0 5px 0;
-}
+          margin: 10px 0 5px 0; }
 
 p       { font-size: 14px; 
-          margin: 0 0 10px 0;
-}
+          margin: 0 0 10px 0; }
 
-svg     { /*background-color: #eee8d5; */
-          /*background-color: rgba(153,147,69,0.3);*/
-          margin: 10px; 
-          border-radius: 4px;}
-
-
+svg     { margin: 10px; 
+          border-radius: 4px; }
 
 input, select 
         { margin-right: 10px; }
@@ -276,15 +209,51 @@ button  { color: black;
           border-radius: 4px; }
 
 button:hover 
-        { /*background-color: #BAB5A7*/
-          border: 1px solid #E89E0C;
+        { border: 1px solid #E89E0C;
           cursor: pointer;
           cursor: hand; }
 
-.hc:hover { cursor: pointer;
+#background 
+        {  background-color: rgba(143,157,69,0.2);
+           border: 0.5px solid gray;
+           border-radius: 4px; }
+
+/* CSS for ASSIGNMENT 1 */
+
+#styleTable
+        { border: 0.5px solid gray;
+          border-radius: 4px;
+          background-color: rgba(143,157,69,0.2);
+          width: 600px;
+          height: 260px;
+          margin: 0 auto; }
+
+#styletable tbody tr td:first-child 
+        { text-align: right; }
+  
+#StyleTable div 
+        { display: table-cell;
+          vertical-align: middle;
+          border-radius: 4px;
+          text-align: center;
+          background-color: rgba(143,157,69,0.3);
+          border: 2px solid gray;
+          width: 140px;
+          height: 50px; }
+
+#StyleTable div#backPic 
+        { width: 325px; }
+
+#StyleTable div:hover 
+        { border: 2px solid #E89E0C; cursor: pointer;
+          cursor: hand; }
+
+/* CSS for ASSIGNMENT 2 */
+
+.hc:hover 
+        { cursor: pointer;
           cursor: hand;
-          color: orange;
-          }
+          color: orange; }
 
 .lastColShort 
         { width: 5%; }
@@ -297,16 +266,41 @@ button:hover
           line-height: 0px;
           display: block; }
 
-.smallF { font-size: 12px;}
+table#hand   
+        { display: block;
+          border: 0.5px solid gray;
+          border-radius: 4px;
+          float: left;
+          margin-right: 2.35765%;
+          width: 100%;
+          display: table;
+          background-color: rgba(143,157,69,0.2);
+          margin-bottom: 2em; }
+          
+table#hand:last-child 
+        { margin-right: 0; }
+        
+@media screen and (max-width: 43.75em) {
+table#hand
+        { margin-bottom: 1.5em;
+          margin-top: 0.5em; } }
+          
+table#hand th, table#hand td 
+        { padding: 0.5em;
+           border-radius: 4px;}
+           
+table#hand tr
+        { background-color: rgba(143,157,69,0.2); }
+        
+table#hand th 
+        { background-color: rgba(143,157,69,0.3);
+          color: black; }
 
-#background 
-        {  /*background-color: #fdf6e3; */
-           background-color: rgba(143,157,69,0.2);
-           /*border: 1px solid #eee8d5; */
-           border: 0.5px solid gray;
-           border-radius: 4px;
-           /*margin: 10px;*/
-           }
+#hand tbody tr td:last-child
+        { display: table-cell;
+         text-align: center; }
+
+/* CSS for ASSIGNMENT 3 */
 
 #onLeft { float: left;
           margin-right: 10px; }
@@ -316,87 +310,91 @@ button:hover
           font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
           font-size: 14px; }
 
+/* CSS for ASSIGNMENT 4 */
+
 #vibUpdate, #storeData 
         { margin: 10px 0;}
 
+.smallF { font-size: 12px;}
 
-#styleTable
-        { border: 0.5px solid gray;
-        border-radius: 4px;
-        background-color: rgba(143,157,69,0.2);
-        width: 600px;
-        height: 260px;
-        margin: 0 auto;
-        
-        }
+/* CSS for the TOOLS page */
 
-#styletable tbody tr td:first-child {text-align: right;
-}
-  
-#StyleTable div { /*margin: 0 0 0 20px ; */
-display: table-cell;
-vertical-align: middle;
-border-radius: 4px;
-text-align: center;
-background-color: rgba(143,157,69,0.3);
-border: 2px solid gray;
-width: 140px;
-height: 50px;}
-
-#StyleTable div#backPic {width: 325px; }
-
-#StyleTable div:hover { border: 2px solid #E89E0C; cursor: pointer;
-          cursor: hand;}
-
-
-table#hand   { display: block;
-          border: 0.5px solid gray;
+#toolRight 
+        { float: right;
+          margin: 10px; 
+          width : 390px;
+          height : 408px; 
           border-radius: 4px;
-          float: left;
-          margin-right: 2.35765%;
-          width: 100%;
-          display: table;
           background-color: rgba(143,157,69,0.2);
-          margin-bottom: 2em; }
-table#hand:last-child 
-        { margin-right: 0; }
-@media screen and (max-width: 43.75em) {
-table#hand
-        { margin-bottom: 1.5em;
-          margin-top: 0.5em; } }
-table#hand th, table#hand td 
-        { padding: 0.5em;
-           border-radius: 4px;     }
-table#hand tr
-        { background-color: rgba(143,157,69,0.2); }
-table#hand th 
-        { background-color: rgba(143,157,69,0.3);
-          color: black; }
+          padding: 20px; }
 
-#hand tbody tr td:last-child
-        { display: table-cell;
-         text-align: center; }
+#toolRight h1 
+        { font-size: 22px;
+          margin-bottom: 10px;
+          margin-top: 0px; }
+          
+#toolRight p 
+        { font-size: 18px; }
+        
+#toolRight a
+        { text-decoration: underline; }
+        
+#toolRight a:hover 
+        { color: black; }
 
-iframe::-webkit-scrollbar         { width: 16px; }  
-iframe::-webkit-scrollbar-track   { background-color: rgba(255, 255, 255, 0.9); }  
-iframe::-webkit-scrollbar-thumb   { background-color: #8f9d45;  
-                              border-radius: 8px;
-                              border: 3px solid rgba(255, 255, 255, 0.9); }  
-/*::-webkit-scrollbar-thumb:hover 
-                            { background-color: #E89E0C; }*/
+#toolLeft 
+        { padding: 10px;
+          height: 450px;
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+          font-size: 14px; 
+          border-radius: 4px;}
 
+#hammSpan {text-decoration: underline;}
 
-/* possibly not needed ..... from MAIN PAGE */
+.carousel 
+        { height: 27px;
+          width: 430px;
+          border-radius: 4px;
+          background-color: rgba(143,157,69,0.2);
+          margin: 0 0 10px 0;
+          padding: 7px 10px 0 10px;
+          font-size: 16px;
+          border: 1px solid rgba(143,157,69,0.2); }
+
+.carousel:hover 
+        { border: 1px solid orange;
+          cursor: pointer;
+          cursor: hand; }
+
+.rr     { text-align: right; }
+
+.toolImage 
+        { width: 40%;
+          margin: 0 0 10px 10px;
+          float: right;
+          border-radius: 4px; }
+
+.rotate90 
+        { -webkit-transform: rotate(270deg);
+          -moz-transform: rotate(270deg);
+          -o-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+          width: 100%;
+          margin-top: 85px; }
+
+img.w50 { width:50%; }
+img.w60 { width:60%; }
+img.w70 { width:70%; }
+
+/* possibly not needed ..... from MAIN PAGE 
 .last	
     {   margin: 0 !important; }
 .pad_last
     {   padding: 0 !important; }
 .no_bg
     {   background: none !important;}
-.nav-in ul									
-    {   /*width: 727px; */
-        /*margin: 0 auto;*/ }
-/*came after main, do I need it ? */      
+    
 .left_arr { float: left; }
 
-.right_arr { float: right; } 
+.right_arr { float: right; }  */
