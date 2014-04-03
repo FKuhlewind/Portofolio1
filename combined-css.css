@@ -184,6 +184,9 @@ iframe::-webkit-scrollbar-thumb
 
 .copy p { margin: 0 }
 
+a.mailto
+        { color: white; }
+
 /* CSS rules for certain SECTIONS */
 
 /* CSS for the INTRO page*/
