@@ -36,10 +36,8 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
   				$('.appendMessage').prepend('<div class="name">'+messages.messages[i].name+'</div>');
   				$('.appendMessage').prepend('<div class="messa">'+messages.messages[i].message+'</div>');
   				$('.appendMessage .line:last-child').remove();
-				});
-    				
-    				
-    				//};
+			
+    				};
 
 
 		$("#sendMessage").on('click', function (){
