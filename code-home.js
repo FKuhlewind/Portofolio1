@@ -27,31 +27,26 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
   			    $('.appendMessage').prepend('<div class="line"></div>');
   			    $('.appendMessage').prepend('<div class="name">'+value.name+'</div>');
   			    $('.appendMessage').prepend('<div class="messa">'+value.message+'</div>');
-  			    //7 remove one line!
   			    $('.appendMessage .line:last-child').remove();
 			    });
-            });
+            	});
 
-$(".others").on('click', function (){
-	    	
+		$("#sendMessage").on('click', function (){
+    			   getTime();
+    			   nameB = $("#messName").val();
+    
+    			   addcomment = $("#messText").val();
+    			   addname = nameB+' '+datetime;
+    
+    			   myDataRef.child(n).name.set(addname);
+    			   myDataRef.child(n).message.set(addcomment);
+    
+    			   alert("I have received your message, thank you!");
+    			   window.location.reload();
+		 });
+
+$(".others").on('click', function () {
 	    	$('.appendMessage').slideToggle("slow");
 	    	$('html, body').animate({scrollTop:$(document).height()}, 'slow');
-	    	
-            });
-	    	
-$("#sendMessage").on('click', function (){
-    getTime();
-    nameB = $("#messName").val();
-    
-    comment = $("#messText").val();
-    name = nameB+' '+datetime;
-    
-    
-    
-    alert(comment+' '+name);
-    
-  
-    });
-
-
+            	});
 });
