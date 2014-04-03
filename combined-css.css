@@ -4,6 +4,8 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
           padding: 0;
           outline: none; }
 
+.hammer { margin-top: 10px; }
+
 /*general CSS rules for the PAGE*/
         
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
