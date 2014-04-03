@@ -20,7 +20,10 @@ p.intro { font-size: 14.5px; }
 .message
         { font-size: 14px; }
 
-#messName { width: 50px;
+#messName { width: 150px;
+margin-right: 20px; }
+
+#messName { width: 450px;
 margin-right: 20px; }
 
 
