@@ -17,7 +17,8 @@ $("#background, #toolRight, .carousel").css({'background-color':localStorage.myC
               $('#'+val).slideDown("slow"); }
         });
     $('#hammSpan').on('click', function() {
-        $(".toolContent").slideUp("slow")
+        $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
+        $(".toolContent").slideUp("slow");
         $('.hammer').slideDown("slow");
         });
 });
