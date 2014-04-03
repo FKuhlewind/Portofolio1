@@ -4,60 +4,6 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
           padding: 0;
           outline: none; }
 
-/* CSS for the INTRO*/
-
-p.intro { font-size: 14px; }
-
-#messagebox
-        { width: 97%;
-          height: 72px;
-          padding: 2px 10px 0 10px;
-          background-color: rgba(143,157,69,0.2);
-          border: 0.5px solid gray;
-          border-radius: 4px; }
-
-.message
-        { font-size: 14px;
-          background-color: rgba(143,157,69,0.3);
-          padding: 4px 10px 4px 10px;
-          margin-bottom: 5px;
-          border-radius: 4px; }
-
-#messName 
-        { width: 130px;
-          margin-right: 20px; }
-
-#messText 
-        { width: 380px;
-          margin-right: 20px; }
-
-.appendMessage 
-        { width: 30%;
-          background-color: rgba(143,157,69,0.3);
-          border-radius: 4px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          display: block;
-          padding: 10px; }
-
-.messa  { text-align: center;
-          font-style: italic;
-          font-size: 15px;
-          margin-top: 15px; }
-
-.name   { text-align: center;
-          font-weight: bolder;
-          font-size: 11px;
-          margin-bottom: 15px; }
-
-.line   { width: 30%;
-          height: 1px;
-          border-bottom: 1px solid gray;
-          display: block;
-          margin-left: auto;
-          margin-right: auto; }
-
-
 /*general CSS rules for the PAGE*/
         
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
@@ -240,6 +186,59 @@ iframe::-webkit-scrollbar-thumb
 
 /* CSS rules for certain SECTIONS */
 
+/* CSS for the INTRO page*/
+
+p.intro { font-size: 14px; }
+
+#messagebox
+        { width: 97%;
+          height: 72px;
+          padding: 2px 10px 0 10px;
+          background-color: rgba(143,157,69,0.2);
+          border: 0.5px solid gray;
+          border-radius: 4px; }
+
+.message
+        { font-size: 14px;
+          background-color: rgba(143,157,69,0.3);
+          padding: 4px 10px 4px 10px;
+          margin-bottom: 5px;
+          border-radius: 4px; }
+
+#messName 
+        { width: 130px;
+          margin-right: 20px; }
+
+#messText 
+        { width: 380px;
+          margin-right: 20px; }
+
+.appendMessage 
+        { width: 30%;
+          background-color: rgba(143,157,69,0.3);
+          border-radius: 4px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          display: block;
+          padding: 10px; }
+
+.messa  { text-align: center;
+          font-style: italic;
+          font-size: 15px;
+          margin-top: 15px; }
+
+.name   { text-align: center;
+          font-weight: bolder;
+          font-size: 11px;
+          margin-bottom: 15px; }
+
+.line   { width: 30%;
+          height: 1px;
+          border-bottom: 1px solid gray;
+          display: block;
+          margin-left: auto;
+          margin-right: auto; }
+
 /* General CSS for the ASSIGNMENT section*/
 
 h1      { font-size: 18px; 
@@ -271,7 +270,6 @@ button:hover
         {  background-color: rgba(143,157,69,0.2);
            border: 0.5px solid gray;
            border-radius: 4px; }
-
 
 /* CSS for ASSIGNMENT 1 */
 
@@ -446,15 +444,3 @@ table#hand th
 img.w50 { width:50%; }
 img.w60 { width:60%; }
 img.w70 { width:70%; }
-
-/* possibly not needed ..... from MAIN PAGE 
-.last	
-    {   margin: 0 !important; }
-.pad_last
-    {   padding: 0 !important; }
-.no_bg
-    {   background: none !important;}
-    
-.left_arr { float: left; }
-
-.right_arr { float: right; }  */
