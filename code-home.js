@@ -52,6 +52,7 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
     
     			   alert("I have received your message, thank you!");
     			   window.location.reload();
+			   });
 		 });
 
 $(".others").on('click', function () {
