@@ -20,13 +20,13 @@ function getTime () {
 $('.appendMessage').hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
-	    	messages = data.messages;
+	    	messages = data;
 	    	n = messages.length;
 	    	$.each( messages , function( index, value ) {
   			    
   			    $('.appendMessage').prepend('<div class="line"></div>');
-  			    $('.appendMessage').prepend('<div class="name">'+value.name+'</div>');
-  			    $('.appendMessage').prepend('<div class="messa">'+value.message+'</div>');
+  			    $('.appendMessage').prepend('<div class="name">'+value[name]+'</div>');
+  			    $('.appendMessage').prepend('<div class="messa">'+value[message]+'</div>');
   			    $('.appendMessage .line:last-child').remove();
 			    });
             	});
