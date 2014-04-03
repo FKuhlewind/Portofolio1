@@ -67,11 +67,8 @@ float: right;
 border-radius: 4px;
 
 }
-/*
-.hammer {width: 100%;
-transform: "rotate(90)" ;
-}*/
-.rotate90 {
+
+.hammer {
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
