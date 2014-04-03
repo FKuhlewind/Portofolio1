@@ -6,7 +6,7 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
 
 /* CSS for the INTRO*/
 
-p.intro { font-size: 14.5px; }
+p.intro { font-size: 14px; }
 
 #messagebox
         { width: 99%;
