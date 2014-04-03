@@ -1,4 +1,4 @@
 Portofolio1
 ===========
 
-This repository contains the following files:
+This repository contains all files that are part of my portofolio.
