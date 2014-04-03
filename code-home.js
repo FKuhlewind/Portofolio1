@@ -33,7 +33,7 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
     				};
 
 
-		$("#sendMessage").on('click', function (){
+		$("#sendMessage").on('click', function (e){
 			
 			   e.preventDefault();
 			   e.stopPropagation();
