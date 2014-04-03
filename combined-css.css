@@ -32,7 +32,7 @@ margin-right: 20px; }
 margin-right: 20px; }
 
 .appendMessage {
-        width: 50%;
+        /*width: 50%;*/
         background-color: rgba(143,157,69,0.3);
         border-radius: 4px;
         margin-top: 10px;
