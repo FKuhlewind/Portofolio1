@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    
+// check localStorage and choose font accordingly
+$('body, #toolRight, #toolLeft').css({'font-family':localStorage.myFont});
+$("#background").css({'background-color':localStorage.myColor+'0.2)'});
+$(".carousel").css({'background-color':localStorage.myColor+'0.6)'});
+    
     $(".toolContent").hide();
     $('.carousel').on('click', function() {
         val = $(this).data('value');
