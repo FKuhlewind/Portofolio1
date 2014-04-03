@@ -21,7 +21,7 @@ a:hover, .codelink:hover
         { margin: 10px 0 0 0; }
         
 .codeButton2, .codeButton3
-        { top: 15px; 
+        { top: 15px !important; 
         position: fixed; }
 
 .codeButton1, .codeButton2, .codeButton3
