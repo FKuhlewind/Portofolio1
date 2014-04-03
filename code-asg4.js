@@ -207,7 +207,7 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 
 			d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 				vibData = data; 
-				alert("New data stored successfully, you can now select it from the dropdown menu to be diplayed.");
+				alert("New data stored successfully, you can now select it from the dropdown menu above to display it on the diagram.");
 				});
 		});
 });
