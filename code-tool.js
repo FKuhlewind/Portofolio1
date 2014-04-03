@@ -18,8 +18,8 @@ $("#background, #toolRight, .carousel").css({'background-color':localStorage.myC
               $('#'+val).slideDown("slow"); }
         });
     $('#hammSpan').on('click', function() {
-        $('.carousel').animate({backgroundColor:localStorage.myColor+'0.2)'});
-        $("#toolRight").animate({backgroundColor:localStorage.myColor+'0.2)'});
+        $('.carousel').animate({backgroundColor: localStorage.myColor+'0.2)'});
+        $("#toolRight").animate({backgroundColor: localStorage.myColor+'0.2)'});
         $(".toolContent").slideUp("slow");
         $('.hammer').slideDown("slow");
         });
