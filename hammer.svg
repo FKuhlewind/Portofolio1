@@ -23,7 +23,7 @@
         stroke-width: 1;
         transition: fill 1s linear 0s;
     }
-    svg:hover {
+    path:hover {
         fill: red;
     }
     ]]>  
