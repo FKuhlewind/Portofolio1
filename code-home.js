@@ -30,7 +30,7 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 		//	    });
             	//});
 
-		for ( var i = 0, l = num; i < l; i++ ) {
+		for ( var i = 0, l = numb; i < l; i++ ) {
 				
     				$('.appendMessage').prepend('<div class="line"></div>');
   				$('.appendMessage').prepend('<div class="name">'+messages.messages[i].name+'</div>');
