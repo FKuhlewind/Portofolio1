@@ -4,12 +4,6 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
           padding: 0;
           outline: none; }
 
-.coding {border-radius: 20px; }
-
-.coding:hover {background-color: rgba(255,165,0,0.2);
-                cursor: pointer;
-                cursor: hand; }
-
 /*general CSS rules for the PAGE*/
         
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
@@ -443,6 +437,13 @@ table#hand th
           margin: 0 0 10px 10px;
           float: right;
           border-radius: 4px; }
+
+
+.coding {border-radius: 20px; }
+
+.coding:hover { background-color: rgba(255,165,0,0.1);
+                cursor: pointer;
+                cursor: hand; }
 
 .rotate90 
         { -webkit-transform: rotate(270deg);
