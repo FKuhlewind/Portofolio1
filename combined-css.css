@@ -67,7 +67,9 @@ float: right;
 border-radius: 4px;
 }
 
-
+.hammer {width: 100%;
+transform: "rotate(90)" ;
+}
 
 /*stuff for tool page*/
 
