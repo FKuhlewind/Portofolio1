@@ -349,7 +349,12 @@ table#hand th
           font-size: 14px; 
           border-radius: 4px;}
 
-#hammSpan {text-decoration: underline;}
+#hammSpan 
+        { text-decoration: underline;}
+
+#hammSpan:hover
+        { cursor: pointer;
+          cursor: hand; }
 
 .carousel 
         { height: 27px;
