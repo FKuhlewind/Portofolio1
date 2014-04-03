@@ -2,8 +2,8 @@ $(document).ready(function() {
     
 // check localStorage and choose font accordingly
 $('body, #toolLeft').css({'font-family':localStorage.myFont});
-$("#background, .carousel").css({'background-color':localStorage.myColor+'0.2)'});
-$("#toolRight").css({'background-color':localStorage.myColor+'0.6)'});
+$("#background, #toolRight, .carousel").css({'background-color':localStorage.myColor+'0.2)'});
+
     
     $(".toolContent").hide();
     $('.carousel').on('click', function() {
@@ -11,6 +11,7 @@ $("#toolRight").css({'background-color':localStorage.myColor+'0.6)'});
         
         $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
         $(this).css({'background-color':localStorage.myColor+'0.6)'});
+        $("#toolRight").css({'background-color':localStorage.myColor+'0.6)'});
         
         if ( !$('#'+val).is(":visible") )
             { $(".toolContent, .hammer").slideUp("slow");
@@ -18,6 +19,7 @@ $("#toolRight").css({'background-color':localStorage.myColor+'0.6)'});
         });
     $('#hammSpan').on('click', function() {
         $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
+        $("#toolRight").css({'background-color':localStorage.myColor+'0.2)'});
         $(".toolContent").slideUp("slow");
         $('.hammer').slideDown("slow");
         });
