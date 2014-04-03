@@ -4,7 +4,7 @@ $(document).ready(function() {
 $('body, #toolLeft').css({'font-family':localStorage.myFont});
 $("#background, #toolRight, .carousel").css({'background-color':localStorage.myColor+'0.2)'});
 
-if ( !localStorage.myFont="Trebuchet MS" ) {
+if ( !localStorage.myFont=="Trebuchet MS" ) {
     $('.carousel').css({'font-size':'12px'})
     } ;
 
