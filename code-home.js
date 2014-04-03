@@ -20,7 +20,7 @@ function getTime () {
 $('.appendMessage').hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
-	    	messages = data;
+	    	messages = data.messages;
 	    	n = messages.length;
 	    	$.each( messages , function( index, value ) {
   			    
