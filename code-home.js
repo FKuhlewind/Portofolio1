@@ -23,9 +23,9 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
 	    	n = messages.length;
 	    	$.each( messages , function( index, value ) {
-  			    $('.appendMessage').append('<div class="messa">'+value.message+'</div>');
-  			    $('.appendMessage').append('<div class="name">'+value.name+'</div>');
-  			    $('.appendMessage').append('<div class="line"></div>');
+  			    $('.appendMessage').prepend('<div class="messa">'+value.message+'</div>');
+  			    $('.appendMessage').prepend('<div class="name">'+value.name+'</div>');
+  			    $('.appendMessage').prepend('<div class="line"></div>');
 			    });
             });
 
