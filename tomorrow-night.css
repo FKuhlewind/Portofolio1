@@ -1,14 +1,11 @@
-/* Tomorrow Night Theme */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-.prettyprint {
-  background: #333333;
-  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-  font-size: 12px;
-  /*line-height: 1.5;
-  border: 1px solid #ccc;
-  padding: 10px;*/
-}
+/* define background and font for prettyprint */
 
+.prettyprint 
+        { background: #333333;
+          font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+          font-size: 12px; }
+
+/* CSS for the top bit of the code page*/
 
 .codeTop, a
         { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
@@ -17,15 +14,15 @@
           text-decoration: none;
           display: inline-block}
 
-a:hover, .codelink:hover {color: orange;}
+a:hover, .codelink:hover 
+        { color: orange; }
 
 .codeLeft
-        { margin: 10px 0 0 0;
+        { margin: 10px 0 0 0; }
         
-        }
-
-.codeRight
-        {  }
+.codeButton2, .codeButton3
+        { top: 15px; 
+        position: fixed; }
 
 .codeButton1, .codeButton2, .codeButton3
         { position: absolute;
@@ -34,38 +31,23 @@ a:hover, .codelink:hover {color: orange;}
           width: 170px;
           border: 2px solid #969896;
           text-align: center;
-          background-color: #333333;
-        }
-
-.codeButton2, .codeButton3
-        { top: 15px; 
-        position: fixed;
-          
-          /*position: fixed;
-          right: 10px;
-          
-          width: 170px;
-          border: 2px solid #969896;
-          padding: 0 auto;
-          text-align: center;*/
-          }
+          background-color: #333333; }
 
 .codeButton1:hover, .codeButton2:hover, .codeButton3:hover
         { border: 2px solid orange; 
-        color: orange;
-        cursor: pointer;
+          color: orange;
+          cursor: pointer;
           cursor: hand; }
 
 /* style for hovering over tooltip */
 
-.yell { border: 2px solid #333333;  }
+.yell   { border: 2px solid #333333;}
 
-.tt {border-bottom: 2px #A7E9FF dashed !important; }
+.tt     { border-bottom: 2px #A7E9FF dashed !important; }
 
-.tt:hover { border: 2px solid orange !important;
-              border-radius: 6px;}
-
-
+.tt:hover 
+        { border: 2px solid orange !important;
+          border-radius: 6px; }
 
 /* toolbar style */
 ::-webkit-scrollbar {  
@@ -76,17 +58,13 @@ a:hover, .codelink:hover {color: orange;}
     background-color: #8f9d45;  
     border-radius: 8px;
     border: 3px solid white; }  
-/*::-webkit-scrollbar-thumb:hover {  
-    background-color: #E89E0C;  
-}  */
 
-
-
-
+/* Tomorrow Night Theme */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
 
 .pln {
-  color: #eaeaea;
-}
+     color: #eaeaea;
+   }
 
 @media screen {
   .str {
