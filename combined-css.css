@@ -6,7 +6,7 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
 
 .coding {border-radius: 4px; }
 
-.coding:hover {fill: orange;
+.coding:hover {background-color: orange;
                 cursor: pointer;
                 cursor: hand; }
 
