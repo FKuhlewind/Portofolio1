@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".toolContent").hide()
+    $(".toolContent").hide();
     $('.carousel').on('click', function() {
         val = $(this).data('value');
         if ( !$(t'#'+val).is(":visible") )
