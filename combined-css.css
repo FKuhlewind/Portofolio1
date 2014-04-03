@@ -33,10 +33,13 @@ margin-right: 20px; }
 
 .messa  {text-align: center;
 font-style: italic;
+font-size: 16px;
 }
 
 .name   {text-align: center;
 font-weight: bold;
+font-size: 12px;
+margin-bottom: 10px;
 }
 
 
