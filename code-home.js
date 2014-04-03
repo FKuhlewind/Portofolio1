@@ -17,7 +17,7 @@ function getTime () {
             + currentdate.getMinutes() + "h"
             };
 
-$('.appendMessage).hide();
+$('.appendMessage').hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
