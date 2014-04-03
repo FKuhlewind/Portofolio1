@@ -65,8 +65,9 @@ cursor: pointer;
 margin: 0 0 0 10px;
 float: right;
 border-radius: 4px;
-
 }
+
+img.iframepic {width:100%;}
 
 .rotate90 {
     -webkit-transform: rotate(270deg);
