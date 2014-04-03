@@ -3,9 +3,9 @@ svg {-webkit-transform: rotate(270deg);
           -o-transform: rotate(270deg);
           -ms-transform: rotate(270deg);
           transform: rotate(270deg);
-          /*width: 100%;*/
+          width: 100px;
           margin: 5px; 
-          /*height: 100%;*/
+          height: 200px;
           
           -webkit-transform-origin-x: 70px;
 -webkit-transform-origin-y: 100px !important;
