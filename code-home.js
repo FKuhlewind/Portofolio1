@@ -17,21 +17,21 @@ function getTime () {
             + currentdate.getMinutes() + "h"
             };
 
-$('.here').hide();
+$('.appendMessage).hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
 	    	n = messages.length;
 	    	$.each( messages , function( index, value ) {
-  			    $('.here').append('<div class="messa">'+value.message+'</div>');
-  			    $('.here').append('<div class="name">'+value.name+'</div>');
-  			    $('.here').append('<div class="line"></div>');
+  			    $('.appendMessage').append('<div class="messa">'+value.message+'</div>');
+  			    $('.appendMessage').append('<div class="name">'+value.name+'</div>');
+  			    $('.appendMessage').append('<div class="line"></div>');
 			    });
             });
 
 $(".others").on('click', function (){
 	    	
-	    	$('.here').slideToggle("slow");
+	    	$('.appendMessage').slideToggle("slow");
 	    	$('html, body').animate({scrollTop:$(document).height()}, 'slow');
 	    	
             });
