@@ -67,9 +67,11 @@ float: right;
 border-radius: 4px;
 }
 
-img.w60 {width:60%;
 
-}
+img.w60 {width:50%;}
+img.w60 {width:60%;}
+
+
 
 .rotate90 {
     -webkit-transform: rotate(270deg);
