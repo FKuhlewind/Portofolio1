@@ -31,6 +31,16 @@ margin-right: 20px; }
 #messText { width: 380px;
 margin-right: 20px; }
 
+.appendMessage {
+        width: 50%;
+        background-color: rgba(143,157,69,0.3);
+        border-radius: 4px;
+        margin 10px;
+        display: block;
+margin-left: auto;
+  margin-right: auto;
+}
+
 .messa  {text-align: center;
 font-style: italic;
 font-size: 16px;
