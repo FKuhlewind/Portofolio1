@@ -415,12 +415,62 @@ table#hand th
 img.w50 { width:50%; }
 img.w60 { width:60%; }
 img.w70 { width:70%; }
+</code>    
+</pre>
 <a name="bottom">
 <div class="codeTop">
    <div class="codeLeft">// Extracts from the CSS code for the code <a href="https://github.com/FKuhlewind/Portofolio1/blob/gh-pages/tomorrow-night.css" target="_blank" class="codelink">(tomorrow-night.css)</a></div>
 </div>
+<pre><code class="prettyprint">/* define background and font for prettyprint */
 
+.prettyprint 
+        { background: #333333;
+          font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+          font-size: 12px; }
 
+/* CSS for the top bit of the code page*/
+
+.codeTop, a
+        { font-family:  Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; 
+          color: #969896;
+          font-size: 14px;
+          text-decoration: none;
+          display: inline-block}
+
+a:hover, .codelink:hover 
+        { color: orange; }
+
+.codeLeft
+        { margin: 10px 0 0 0; }
+        
+.codeButton2, .codeButton3
+        { top: 15px !important; 
+        position: fixed !important; }
+
+.codeButton1, .codeButton2, .codeButton3
+        { position: absolute;
+          right: 10px;
+          top: 41px;
+          width: 170px;
+          border: 2px solid #969896;
+          text-align: center;
+          background-color: #333333; }
+
+.codeButton1:hover, .codeButton2:hover, .codeButton3:hover
+        { border: 2px solid orange; 
+          color: orange;
+          cursor: pointer;
+          cursor: hand; }
+
+/* style for hovering over tooltip */
+
+.yell   { border: 2px solid #333333;}
+
+.tt     { border-bottom: 2px #A7E9FF dashed !important; }
+
+.tt:hover 
+        { border: 2px solid orange !important;
+          border-radius: 6px; }
 </code>    
 </pre>
 </body>
