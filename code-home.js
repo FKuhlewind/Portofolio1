@@ -22,14 +22,25 @@ $('.appendMessage').hide();
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
 	    	numb = messages.length;
-	    	$.each( messages , function( index, value ) {
-  			    
-  			    $('.appendMessage').prepend('<div class="line"></div>');
-  			    $('.appendMessage').prepend('<div class="name">'+value.name+'</div>');
-  			    $('.appendMessage').prepend('<div class="messa">'+value.message+'</div>');
-  			    $('.appendMessage .line:last-child').remove();
-			    });
-            	});
+	    	//$.each( messages , function( index, value ) {
+  		//	    $('.appendMessage').prepend('<div class="line"></div>');
+  		//	    $('.appendMessage').prepend('<div class="name">'+value.name+'</div>');
+  		//	    $('.appendMessage').prepend('<div class="messa">'+value.message+'</div>');
+  		//	    $('.appendMessage .line:last-child').remove();
+		//	    });
+            	//});
+
+		for ( var i = 0, l = num; i < l; i++ ) {
+				
+    				$('.appendMessage').prepend('<div class="line"></div>');
+  				$('.appendMessage').prepend('<div class="name">'+messages.messages[i].name+'</div>');
+  				$('.appendMessage').prepend('<div class="messa">'+messages.messages[i].message+'</div>');
+  				$('.appendMessage .line:last-child').remove();
+				});
+    				
+    				
+    				//};
+
 
 		$("#sendMessage").on('click', function (){
     			   getTime();
