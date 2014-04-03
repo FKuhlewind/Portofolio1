@@ -19,7 +19,11 @@ function getTime () {
 $("#sendMessage").on('click', function (){
     getTime();
   
-    alert(datetime);
+    name = $("#messName").val();
+    comment = $("#messText").val()
+    
+    alert(comment+' by '+name+' '+datetime);
+    
   
     });
 
