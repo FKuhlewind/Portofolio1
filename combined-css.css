@@ -187,6 +187,9 @@ iframe::-webkit-scrollbar-thumb
 a.mailto
         { color: white; }
 
+a.mailto:hover
+        { color: orange; }
+
 /* CSS rules for certain SECTIONS */
 
 /* CSS for the INTRO page*/
