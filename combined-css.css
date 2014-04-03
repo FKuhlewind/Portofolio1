@@ -62,14 +62,13 @@ cursor: pointer;
 .rr {text-align: right; }
 
 .toolImage { width: 40%;
-margin: 0 0 0 10px;
+margin: 0 0 10px 10px;
 float: right;
 border-radius: 4px;
 }
 
-img.iframepic {width:60%;
-margin-bottom: 10px;
-float: right;
+img.w60 {width:60%;
+
 }
 
 .rotate90 {
