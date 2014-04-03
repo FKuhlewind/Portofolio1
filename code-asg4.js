@@ -49,8 +49,6 @@ function defineXYaxis () {
     		.ticks(5);
 	};
 function createForm () {
-	//$("#myForm").remove();
-	
 	$("#xAxisChoice option, #yAxisChoice option").remove();
 	
 	d3.json('https://vib-data.firebaseio.com/.json', function(data) {
@@ -60,11 +58,8 @@ function createForm () {
 		$.each( vibData , function( index, value ) {
   			a = a.concat('<option value='+index+'>'+value[10]+'</option>');
 			});
-		//$('body').append(f+a+n+a+t);
-		
 		$("#xAxisChoice, #yAxisChoice").append(a);
 		
-
 		// enable update
 		$("#vibUpdate").on("click", function(e) {
 
@@ -116,8 +111,6 @@ function createForm () {
 //// start of script
 //get JSON data
 d3.json('https://vib-data.firebaseio.com/.json', function(data) {
-
-
 	$("svg").remove();
 
 	vibData = data;
@@ -126,8 +119,6 @@ d3.json('https://vib-data.firebaseio.com/.json', function(data) {
 	updateScaleDomains();
 	defineXYaxis();
 	
-	
-
 	//create svg 
 	mySVG = d3.select(".here")
 	  .append("svg")
