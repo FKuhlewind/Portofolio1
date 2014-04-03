@@ -447,6 +447,9 @@ table#hand th
           width: 100%;
           margin-top: 85px; }
 
+.hammer:hover
+        { fill: orange; }
+
 img.w50 { width:50%; }
 img.w60 { width:60%; }
 img.w70 { width:70%; }
