@@ -9,10 +9,10 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
 p.intro { font-size: 14.5px; }
 
 #messagebox
-        { width: 100%;
+        { width: 95%;
           height: 70px;
           padding: 5px 0 0 10px;
-          margin-right: 10px;
+          
           background-color: rgba(143,157,69,0.2);
           border: 0.5px solid gray;
           border-radius: 4px; }
