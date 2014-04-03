@@ -10,14 +10,14 @@ $(".toolContent").css({'background-color':localStorage.myColor+'0.6)'});
         val = $(this).data('value');
         
         $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
-        $(this).css({'background-color':localStorage.myColor+'0.6)'});
+        $('#toolRight').css({'background-color':localStorage.myColor+'0.6)'});
         
         if ( !$('#'+val).is(":visible") )
             { $(".toolContent, .hammer").slideUp("slow");
               $('#'+val).slideDown("slow"); }
         });
     $('#hammSpan').on('click', function() {
-        $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
+        $('.carousel, #toolRight').css({'background-color':localStorage.myColor+'0.2)'});
         $(".toolContent").slideUp("slow");
         $('.hammer').slideDown("slow");
         });
