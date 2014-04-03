@@ -14,6 +14,10 @@ $("#background, #toolRight, .carousel").css({'background-color':localStorage.myC
         
         if ( !$('#'+val).is(":visible") )
             { $(".toolContent, .hammer").slideUp("slow");
+            
+              $('.carousel').css({'background-color':localStorage.myColor+'0.2)'});
+              $(this).css({'background-color':localStorage.myColor+'0.6)'});
+            
               $('#'+val).slideDown("slow"); }
         });
     $('#hammSpan').on('click', function() {
