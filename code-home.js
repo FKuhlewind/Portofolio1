@@ -10,14 +10,15 @@ myDataRef = new Firebase('https://floriansmessages.firebaseio.com/');
 
 function getTime () {
     var currentdate = new Date();
-    if (currentdate.getMinutes() < 10) {
-        add = "0" } else { add = "" };
+    if (currentdate.getMinutes() < 10) 
+       { add = "0" } else { add = "" };
+       
     datetime = " - " + currentdate.getDate() + "."
             + (currentdate.getMonth()+1)  + "." 
             + currentdate.getFullYear() + ", "  
             + currentdate.getHours() + ":" + add 
             + currentdate.getMinutes() + "h"
-            };
+    };
 
 $('.appendMessage').hide();
 
