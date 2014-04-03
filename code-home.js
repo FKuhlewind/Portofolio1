@@ -15,12 +15,27 @@ function getTime () {
             + currentdate.getFullYear() + ", "  
             + currentdate.getHours() + ":"  
             + currentdate.getMinutes() + "h"
-    };
+            };
 
+$('.here').hide();
 
+d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
+	    	messages = data;
+	    	n = messages.length;
+	    	$.each( messages , function( index, value ) {
+  			    $('.here').append('<div class="messa">'+value.message+'</div>');
+  			    $('.here').append('<div class="name">'+value.message+'</div>');
+			    });
+            });
+
+$(".others").on('click', function (){
+	    	
+	    	$('.here').slideToggle("slow");
+	    	
+            });
+	    	
 $("#sendMessage").on('click', function (){
     getTime();
-  
     nameB = $("#messName").val();
     
     comment = $("#messText").val();
