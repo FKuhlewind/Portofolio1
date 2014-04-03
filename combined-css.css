@@ -4,11 +4,6 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
           padding: 0;
           outline: none; }
 
-.hammer:hover
-        { fill: orange; 
-        color: red;
-        }
-
 /*general CSS rules for the PAGE*/
         
 body    { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
@@ -443,14 +438,14 @@ table#hand th
           float: right;
           border-radius: 4px; }
 
-.rotate90 
+/*.rotate90 
         { -webkit-transform: rotate(270deg);
           -moz-transform: rotate(270deg);
           -o-transform: rotate(270deg);
           -ms-transform: rotate(270deg);
           transform: rotate(270deg);
           width: 100%;
-          margin-top: 85px; }
+          margin-top: 85px; }*/
 
 
 
