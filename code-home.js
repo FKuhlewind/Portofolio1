@@ -21,7 +21,7 @@ $('.appendMessage').hide();
 
 d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	messages = data;
-	    	n = messages.length;
+	    	numb = messages.length;
 	    	$.each( messages , function( index, value ) {
   			    
   			    $('.appendMessage').prepend('<div class="line"></div>');
@@ -38,8 +38,8 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
     			   addcomment = $("#messText").val();
     			   addname = nameB+' '+datetime;
     
-    			   myDataRef.child("messages").child(n).child("name").set(addname);
-    			   myDataRef.child("messages").child(n).child("message").set(addcomment);
+    			   myDataRef.child("messages").child(numb).child("name").set(addname);
+    			   myDataRef.child("messages").child(nnumb).child("message").set(addcomment);
     
     			   alert("I have received your message, thank you!");
     			   window.location.reload();
