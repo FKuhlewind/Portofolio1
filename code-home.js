@@ -19,7 +19,7 @@ function getTime () {
 $("#sendMessage").on('click', function (){
     getTime();
   
-    alert(dateTime);
+    alert(datetime);
   
     });
 
