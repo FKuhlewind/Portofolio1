@@ -38,8 +38,8 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
     			   addcomment = $("#messText").val();
     			   addname = nameB+' '+datetime;
     
-    			   myDataRef.child("floriansmessages").child(n).name.set(addname);
-    			   myDataRef.child("floriansmessages").child(n).message.set(addcomment);
+    			   myDataRef.child("messages").child(n).name.set(addname);
+    			   myDataRef.child("messages").child(n).message.set(addcomment);
     
     			   alert("I have received your message, thank you!");
     			   window.location.reload();
