@@ -16,7 +16,8 @@ p.intro { font-size: 14.5px; }
           border: 0.5px solid gray;
           border-radius: 4px; }
 
-
+.message
+        { font-size: 14px; }
 
 
 /*general CSS rules for the PAGE*/
