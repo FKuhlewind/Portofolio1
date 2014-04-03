@@ -1,6 +1,5 @@
 
-    <![CDATA[  
-    svg {-webkit-transform: rotate(270deg);
+svg {-webkit-transform: rotate(270deg);
           -moz-transform: rotate(270deg);
           -o-transform: rotate(270deg);
           -ms-transform: rotate(270deg);
@@ -9,15 +8,15 @@
           margin-top: 85px; }
     
     
-    g {  
+g {  
         fill: black;  
         stroke: black;  
         stroke-width: 1;
         transition: fill 1s linear 0s;
     }
-    g:hover {
+g:hover {
         fill: orange;
         stroke: orange; 
     }
-    ]]>  
+
 
