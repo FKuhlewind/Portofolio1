@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 // check localStorage and style accordingly
 $('body, #onRight').css({'font-family':localStorage.myFont});
-$("#messagebox").css({'background-color':localStorage.myColor+'0.2)'});
-$(".message, .appendMessage").css({'background-color':localStorage.myColor+'0.3)'});
+$("#messagebox, .appendMessage").css({'background-color':localStorage.myColor+'0.2)'});
+$(".message").css({'background-color':localStorage.myColor+'0.3)'});
 $("button").css({'background-color':localStorage.myColor+'0.6)'});
 
 myDataRef = new Firebase('https://floriansmessages.firebaseio.com/');
