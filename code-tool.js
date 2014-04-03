@@ -2,7 +2,8 @@ $(document).ready(function() {
     $(".toolContent").hide()
     $('.carousel').on('click', function() {
         val = $(this).data('value');
-        $(".toolContent, .hammer").slideUp("slow")
+        $(".hammer").fadeOut("slow");
+        $(".toolContent").slideUp("slow")
         $('#'+val).slideDown("slow");
         });
 });
