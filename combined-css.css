@@ -66,16 +66,17 @@ margin: 0 0 0 10px;
 float: right;
 border-radius: 4px;
 }
-
+/*
 .hammer {width: 100%;
 transform: "rotate(90)" ;
-}
+}*/
 .rotate90 {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    width: 100%;
 }
 
 
