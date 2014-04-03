@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $(".toolContent").hide()
     $('.carousel').on('click', function() {
-        if ( $(this).is(":visible") )
-            { val = $(this).data('value');
+        val = $(this).data('value');
+        if ( !$(t'#'+val).is(":visible") )
+            { 
               $(".toolContent, .hammer").slideUp("slow")
               $('#'+val).slideDown("slow"); }
               });
