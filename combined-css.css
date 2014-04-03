@@ -11,14 +11,16 @@ p.intro { font-size: 14px; }
 #messagebox
         { width: 99%;
           height: 70px;
-          padding: 5px 0 0 10px;
+          padding: 5px 10px 0 10px;
           
           background-color: rgba(143,157,69,0.2);
           border: 0.5px solid gray;
           border-radius: 4px; }
 
 .message
-        { font-size: 14px; }
+        { font-size: 14px;
+          background-color: rgba(143,157,69,0.3);
+        }
 
 #messName { width: 150px;
 margin-right: 20px; }
