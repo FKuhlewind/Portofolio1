@@ -9,11 +9,13 @@ $("button").css({'background-color':localStorage.myColor+'0.6)'});
 myDataRef = new Firebase('https://floriansmessages.firebaseio.com/');
 
 function getTime () {
-    var currentdate = new Date(); 
+    var currentdate = new Date();
+    if (currentdate.getMinutes() < 10) {
+        add = "0" } else { add = "" };
     datetime = " - " + currentdate.getDate() + "."
             + (currentdate.getMonth()+1)  + "." 
             + currentdate.getFullYear() + ", "  
-            + currentdate.getHours() + ":"  
+            + currentdate.getHours() + ":" + add 
             + currentdate.getMinutes() + "h"
             };
 
@@ -24,19 +26,13 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 	    	numb = messages.messages.length;
 
 		for ( var i = 0;  i < numb; i++ ) {
-				
-				//p=i;
-				
     				$('.appendMessage').prepend('<div class="line"></div>');
   				$('.appendMessage').prepend('<div class="name">'+messages.messages[i].name+'</div>');
   				$('.appendMessage').prepend('<div class="messa">'+messages.messages[i].message+'</div>');
   				$('.appendMessage .line:last-child').remove();
-			
     				};
 
-
 		$("#sendMessage").on('click', function (e){
-			
 			   e.preventDefault();
 			   e.stopPropagation();
 			
