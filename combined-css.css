@@ -4,9 +4,9 @@ dl, dt, dd ,ul ,ol ,li ,pre ,form ,fieldset ,input ,textarea ,blockquote
           padding: 0;
           outline: none; }
 
-.coding {border-radius: 4px; }
+.coding {border-radius: 20px; }
 
-.coding:hover {background-color: orange;
+.coding:hover {background-color: rgba(255,165,0,0.2);
                 cursor: pointer;
                 cursor: hand; }
 
