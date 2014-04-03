@@ -17,6 +17,15 @@
    
    <style type="text/css" media="screen">  
     <![CDATA[  
+    svg {-webkit-transform: rotate(270deg);
+          -moz-transform: rotate(270deg);
+          -o-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+          width: 100%;
+          margin-top: 85px;}
+    
+    
     g {  
         fill: black;  
         stroke: black;  
