@@ -31,6 +31,14 @@ margin-right: 20px; }
 #messText { width: 380px;
 margin-right: 20px; }
 
+.messa  {text-align: center;
+font-style: italic;
+}
+
+.name   {text-align: center;
+font-weight: bold;
+}
+
 
 /*general CSS rules for the PAGE*/
         
