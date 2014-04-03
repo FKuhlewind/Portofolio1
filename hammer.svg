@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> 
-<?xml-stylesheet type="text/css" href="hammer.css" ?>
+
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -16,29 +16,6 @@
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0" transform="rotate(90)">
    
-   <!--<style type="text/css" media="screen">  
-    <![CDATA[  
-    -webkit-transform: rotate(270deg);
-          -moz-transform: rotate(270deg);
-          -o-transform: rotate(270deg);
-          -ms-transform: rotate(270deg);
-          transform: rotate(270deg);
-          width: 100%;
-          margin-top: 85px;
-    
-    
-    g {  
-        fill: black;  
-        stroke: black;  
-        stroke-width: 1;
-        transition: fill 1s linear 0s;
-    }
-    g:hover {
-        fill: orange;
-        stroke: orange; 
-    }
-    ]]>  
-   </style> -->
    
   <defs
      id="defs4">
