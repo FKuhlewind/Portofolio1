@@ -9,18 +9,19 @@ $("#background, #toolRight, .carousel").css({'background-color':localStorage.myC
     $('.carousel').on('click', function() {
         val = $(this).data('value');
         
-        $('.carousel').animate({'backgroundColor':localStorage.myColor+'0.2)'});
-        $(this).css({'background-color':localStorage.myColor+'0.6)'});
-        $("#toolRight").animate({'backgroundColor':localStorage.myColor+'0.6)'});
+        $('.carousel').animate({backgroundColor:localStorage.myColor+'0.2)'});
+        $(this).animate({backgroundColor:localStorage.myColor+'0.6)'});
+        $("#toolRight").animate({backgroundColor:localStorage.myColor+'0.6)'});
         
         if ( !$('#'+val).is(":visible") )
             { $(".toolContent, .hammer").slideUp("slow");
               $('#'+val).slideDown("slow"); }
         });
     $('#hammSpan').on('click', function() {
-        $('.carousel').animate({'backgroundColor':localStorage.myColor+'0.2)'});
-        $("#toolRight").animate({'backgroundColor':localStorage.myColor+'0.2)'});
+        $('.carousel').animate({backgroundColor:localStorage.myColor+'0.2)'});
+        $("#toolRight").animate({backgroundColor:localStorage.myColor+'0.2)'});
         $(".toolContent").slideUp("slow");
         $('.hammer').slideDown("slow");
         });
 });
+
