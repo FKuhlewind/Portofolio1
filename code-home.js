@@ -31,6 +31,7 @@ d3.json('https://floriansmessages.firebaseio.com/.json', function(data) {
 $(".others").on('click', function (){
 	    	
 	    	$('.here').slideToggle("slow");
+	    	$('html, body').animate({scrollTop:$(document).height()}, 'slow');
 	    	
             });
 	    	
