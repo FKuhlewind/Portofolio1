@@ -16,7 +16,7 @@ picGallery = ["none",
             "url(http://www.npl.co.uk/upload/img/turing-5.jpg)",
             "url(http://www.geekwithenvy.com/wp-content/uploads/2014/01/Aurora-.jpg)",
             "url(http://www.fabiovisentin.com//photography/photo/25/sky-wallpaper-02939.jpg)",
-            "url(http://stereopol.de/wp-content/uploads/Tocotronic-Cover-CMS-Source.jpg)",
+            "url(http://images.hhv.de/catalog/detail_big/00315/315055_1.jpg)",
              ];
 
 // content, font, bars, quote
